@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Edit profile — handle taken</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<div style="position:absolute; left:0; top:0; width:390px; height:844px"><dc-import name="N14-EditProfile" hint-size="390px,844px"></dc-import></div>
+<button type="button" disabled style="position:absolute; left:302px; top:54px; width:80px; height:44px; border:0; padding:0 8px; background:#FAF7F2; color:#A39C91; text-align:right; font:700 16px Inter, sans-serif">Save</button>
+<div style="position:absolute; left:0; top:380px; width:390px; height:170px; background:#FAF7F2">
+<label style="position:absolute; left:20px; right:20px; top:4px; display:flex; flex-direction:column; gap:8px; font-size:13px; line-height:18px; font-weight:600; color:#6F685E">Handle<span style="height:52px; box-sizing:border-box; padding:0 14px 0 16px; border:2px solid #C8372D; border-radius:14px; background:#FFFFFF; display:flex; align-items:center; gap:2px; font:500 16px Inter, sans-serif; color:#6F685E">@<input type="text" value="sam" aria-label="Handle" aria-invalid="true" aria-describedby="handle-error" style="flex:1; min-width:0; border:0; padding:0; background:transparent; color:#16130F; font:500 16px Inter, sans-serif; outline:none"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="color:#C8372D"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5M12 16.5h.01"></path></svg></span><span id="handle-error" style="font-size:12px; line-height:17px"><strong style="color:#C8372D; font-weight:600">That handle is taken.</strong> <span style="font-weight:400">Try one of these:</span></span></label>
+<div style="position:absolute; left:20px; top:116px; display:flex; gap:8px">
+<button type="button" style="height:36px; padding:0 12px; border:1px solid #ECE6DC; border-radius:18px; background:#FFFFFF; color:#16130F; font:500 13px 'DM Mono', monospace">@sam.shoots.26</button>
+<button type="button" style="height:36px; padding:0 12px; border:1px solid #ECE6DC; border-radius:18px; background:#FFFFFF; color:#16130F; font:500 13px 'DM Mono', monospace">@samshoots</button>
+<button type="button" style="height:36px; padding:0 12px; border:1px solid #ECE6DC; border-radius:18px; background:#FFFFFF; color:#16130F; font:500 13px 'DM Mono', monospace">@sam_frames</button>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

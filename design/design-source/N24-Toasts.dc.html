@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Toasts and banners</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:760px; height:560px; box-sizing:border-box; padding:40px; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<h1 style="margin:0; font:800 26px/30px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.6px">Toasts &amp; banners</h1>
+<p style="margin:6px 0 0; font-size:13px; line-height:18px; color:#6F685E">Inverse surface: ink on light screens, white in the dark editor. One at a time, about 4 seconds, swipe to dismiss. They sit above the tab bar or dock.</p>
+<div style="display:flex; gap:20px; margin-top:24px">
+<section aria-label="Light screens" style="width:330px; display:flex; flex-direction:column; gap:12px">
+<p style="margin:0 0 2px; font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">HOME · LIBRARY · PROFILE</p>
+<div role="status" style="height:52px; box-sizing:border-box; padding:0 6px 0 16px; border-radius:16px; background:#16130F; color:#FFFFFF; display:flex; align-items:center; gap:12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="color:#FF5A36; stroke-width:2.2"><path d="M20 6 9 17l-5-5"></path></svg><span style="flex:1; font-size:14px">Draft saved</span></div>
+<div role="status" style="height:52px; box-sizing:border-box; padding:0 6px 0 16px; border-radius:16px; background:#16130F; color:#FFFFFF; display:flex; align-items:center; gap:12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z" fill="#FF5A36" stroke="#FF5A36"></path></svg><span style="flex:1; font-size:14px">Added to favourites</span><button type="button" style="height:44px; padding:0 12px; border:0; background:transparent; color:#FF5A36; font:700 14px Inter, sans-serif">Undo</button></div>
+<div role="status" style="height:52px; box-sizing:border-box; padding:0 6px 0 16px; border-radius:16px; background:#16130F; color:#FFFFFF; display:flex; align-items:center; gap:12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4.4l2.7-2.7a4.5 4.5 0 0 0-6.4-6.4l-1.5 1.5"></path><path d="M14 10.5a4.5 4.5 0 0 0-6.4-.4l-2.7 2.7a4.5 4.5 0 0 0 6.4 6.4l1.5-1.5"></path></svg><span style="flex:1; font-size:14px">Link copied</span></div>
+<div role="status" style="height:56px; box-sizing:border-box; padding:0 6px 0 16px; border-radius:16px; background:#16130F; color:#FFFFFF; display:flex; align-items:center; gap:12px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18"></path><path d="M8.5 16.4a5 5 0 0 1 7 0"></path><path d="M5 12.9a10 10 0 0 1 5.2-2.7"></path><path d="M19 12.9a10 10 0 0 0-2-1.5"></path><path d="M2 8.8a15 15 0 0 1 4.2-2.6"></path><path d="M22 8.8a15 15 0 0 0-11.3-3.8"></path><path d="M12 20h.01"></path></svg><span style="flex:1; font-size:13px; line-height:18px"><strong>You're offline.</strong> Showing built-in templates.</span><button type="button" style="height:44px; padding:0 12px; border:0; background:transparent; color:#FF5A36; font:700 14px Inter, sans-serif">Retry</button></div>
+</section>
+<section aria-label="Editor" style="flex:1; box-sizing:border-box; padding:16px; border-radius:22px; background:#0B0B0C; display:flex; flex-direction:column; gap:12px">
+<p style="margin:0 0 2px; font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#8E8E93">EDITOR</p>
+<div role="status" style="height:52px; box-sizing:border-box; padding:0 6px 0 14px; border-radius:16px; background:#FFFFFF; color:#16130F; display:flex; align-items:center; gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"></rect><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"></path></svg><span style="flex:1; font-size:13px; line-height:17px"><strong>Photo is locked.</strong> Unlock to delete.</span><button type="button" style="height:44px; padding:0 10px; border:0; background:transparent; color:#B33A17; font:700 14px Inter, sans-serif">Unlock</button></div>
+<div role="status" style="height:52px; box-sizing:border-box; padding:0 6px 0 14px; border-radius:16px; background:#FFFFFF; color:#16130F; display:flex; align-items:center; gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 16v-4.5M12 8h.01"></path></svg><span style="flex:1; font-size:13px; line-height:17px"><strong>No empty spot.</strong></span><button type="button" style="height:44px; padding:0 10px; border:0; background:transparent; color:#B33A17; font:700 14px Inter, sans-serif">Add slide</button></div>
+<div role="status" style="height:52px; box-sizing:border-box; padding:0 6px 0 14px; border-radius:16px; background:#FFFFFF; color:#16130F; display:flex; align-items:center; gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 21-3.6-3.6a2 2 0 0 1 0-2.8l9.9-9.9a2 2 0 0 1 2.8 0l4.3 4.3a2 2 0 0 1 0 2.8L13 19.2"></path><path d="M21 21H7"></path><path d="m6.5 11.5 6 6"></path></svg><span style="flex:1; font-size:13px; line-height:17px">5 photos removed</span><button type="button" style="height:44px; padding:0 10px; border:0; background:transparent; color:#B33A17; font:700 14px Inter, sans-serif">Undo</button></div>
+<div role="status" style="height:52px; box-sizing:border-box; padding:0 6px 0 14px; border-radius:16px; background:#FFFFFF; color:#16130F; display:flex; align-items:center; gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="stroke-width:2.2"><path d="M20 6 9 17l-5-5"></path></svg><span style="flex:1; font-size:13px; line-height:17px">Draft saved</span></div>
+</section>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":760,"height":560}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

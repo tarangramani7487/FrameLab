@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FrameLab colour tokens. Names match HANDOFF.md §3. -->
+<resources>
+    <!-- Light surfaces — Home, Explore, My Designs, Profile -->
+    <color name="fl_ink">#FF16130F</color> <!-- Primary text, dark cards, dark buttons -->
+    <color name="fl_paper">#FFFAF7F2</color> <!-- App background (light side) -->
+    <color name="fl_card">#FFFFFFFF</color> <!-- Cards, fields, tab bar, light sheets -->
+    <color name="fl_muted">#FF6F685E</color> <!-- Secondary text (5.1:1 on paper) — replaces #8A8378 -->
+    <color name="fl_line">#FFECE6DC</color> <!-- Borders, dividers -->
+    <color name="fl_line_strong">#FFD9D2C7</color> <!-- Sheet handles, outlined buttons on white -->
+    <color name="fl_sunk">#FFF1ECE4</color> <!-- Segmented-control tracks, skeletons, secondary buttons -->
+    <color name="fl_track">#FFE4DED4</color> <!-- Progress tracks, pressed sunk surfaces -->
+    <color name="fl_accent">#FFFF5A36</color> <!-- Brand accent — FILLS ONLY; put ink text on it (5.97:1) -->
+    <color name="fl_accent_ink">#FFB33A17</color> <!-- Accent-coloured text/icons on light (5.6:1) -->
+    <color name="fl_accent_soft">#FFFFE6DE</color> <!-- Badges, icon wells -->
+    <color name="fl_accent_soft_text">#FFA8361A</color> <!-- Text on accentSoft (NEW badge) -->
+    <color name="fl_danger">#FFC8372D</color> <!-- Destructive buttons/text (white text on it 5.2:1) -->
+    <color name="fl_control_off">#FF8F877B</color> <!-- Switch-off border/knob, inactive page dots on light -->
+    <color name="fl_disabled_text">#FFA39C91</color> <!-- Disabled text on light -->
+    <!-- Dark surfaces — Editor -->
+    <color name="fl_ed_bg">#FF0B0B0C</color> <!-- Editor background -->
+    <color name="fl_ed_surface">#FF1C1C1E</color> <!-- Dock, dark sheets, dialogs -->
+    <color name="fl_ed_raised">#FF2C2C2E</color> <!-- Chips, tiles, toasts on dark -->
+    <color name="fl_ed_text">#FFFFFFFF</color> <!-- Text on dark -->
+    <color name="fl_ed_muted">#FF8E8E93</color> <!-- Secondary text on bg/surface (not on raised) -->
+    <color name="fl_ed_muted_raised">#FFA1A1A6</color> <!-- Secondary text on raised -->
+    <color name="fl_ed_disabled">#FF5A5A5E</color> <!-- Disabled icons/labels -->
+    <color name="fl_ed_dots">#FF6E6E73</color> <!-- Inactive page dots, dashed outlines -->
+    <color name="fl_ed_handle">#FF48484A</color> <!-- Sheet handles, input borders on dark -->
+    <color name="fl_ed_danger">#FFFF6961</color> <!-- Destructive text on dark -->
+    <!-- Translucent -->
+    <color name="fl_ed_active_tint">#1AFF5A36</color> <!-- Active dock tool background (accent 10%) -->
+    <color name="fl_scrim_light">#7316130F</color> <!-- Scrim behind light sheets (Create) -->
+    <color name="fl_scrim">#8016130F</color> <!-- Scrim behind light dialogs/sheets -->
+    <color name="fl_scrim_editor">#99000000</color> <!-- Scrim behind editor dialogs/sheets -->
+    <color name="fl_peek_dim">#990B0B0C</color> <!-- Dims the neighbouring slide peek in the editor -->
+    <color name="fl_badge_scrim">#BD16130F</color> <!-- Slide-count badge on cards -->
+    <!-- Template palette (drawn by the template renderer) -->
+    <color name="tpl_kraft">#FFEFE6D6</color> <!-- Torn Diary default background -->
+    <color name="tpl_paper">#FFFBF6EC</color> <!-- Diary paper -->
+    <color name="tpl_lab_print">#FFF4ECDC</color> <!-- Cream lab print border -->
+    <color name="tpl_ink">#FF2B2621</color> <!-- Handwritten-style template text -->
+    <color name="tpl_ink_soft">#FF4A4238</color> <!-- Captions on polaroids -->
+    <color name="tpl_label">#FF7A6E60</color> <!-- Mono labels on paper -->
+    <color name="tpl_date_stamp">#FFFF8A3D</color> <!-- Disposable-camera date stamp (add 6px glow) -->
+    <color name="tpl_tape">#E6ECD6A3</color> <!-- Masking tape -->
+    <color name="tpl_rule">#26786046</color> <!-- Ruled lines on diary paper (every 18dp) -->
+    <color name="tpl_margin">#59D65C50</color> <!-- Red margin line on diary paper -->
+    <!-- Editor › Color swatches, in this order -->
+    <color name="swatch_white">#FFFFFFFF</color>
+    <color name="swatch_paper">#FFFAF7F2</color>
+    <color name="swatch_cream">#FFF3EDE3</color>
+    <color name="swatch_blush">#FFFFE8EC</color>
+    <color name="swatch_mist">#FFEAF1F4</color>
+    <color name="swatch_sage">#FFE7EEDF</color>
+    <color name="swatch_ink">#FF16130F</color>
+    <color name="swatch_navy">#FF0F1E2E</color>
+    <!-- Pastel placeholders for empty photo spots in thumbnails -->
+    <color name="pastel_1">#FFF3CFC3</color>
+    <color name="pastel_2">#FFCDE7EA</color>
+    <color name="pastel_3">#FFE3E0F3</color>
+    <color name="pastel_4">#FFFDE7C4</color>
+    <color name="pastel_5">#FFD7EBDD</color>
+    <color name="pastel_6">#FFF6D3DC</color>
+    <color name="ic_launcher_background">#FF16130F</color>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Editor strings (HANDOFF §7.2, ui-copy.json E*/N18–N23/D5–D7). Exact wording; %d/%s for live values. -->
+<resources>
+    <!-- Top bar -->
+    <string name="ed_back">Back</string>
+    <string name="ed_undo">Undo</string>
+    <string name="ed_redo">Redo</string>
+    <string name="ed_preview">Preview</string>
+    <string name="ed_save">Save</string>
+    <string name="ed_saving">Saving</string>
+    <!-- Opening / error -->
+    <string name="ed_opening">Opening %1$s</string>
+    <string name="ed_getting_ready">Getting %1$d slides ready</string>
+    <string name="ed_couldnt_open">Couldn\'t open this design</string>
+    <string name="ed_couldnt_open_body">%1$s didn\'t finish downloading. Check your connection and try again.</string>
+    <string name="ed_couldnt_open_body_generic">This design didn\'t finish downloading. Check your connection and try again.</string>
+    <string name="ed_error_line">Error: %1$s</string>
+    <string name="ed_error_not_found">Template not found</string>
+    <string name="ed_try_again">Try again</string>
+    <string name="ed_go_back">Go back</string>
+    <!-- Hint line -->
+    <string name="ed_photos_count">%1$d/%2$d photos</string>
+    <string name="ed_hint_empty">tap + to add photos</string>
+    <string name="ed_hint_partial">tap a photo to edit it</string>
+    <string name="ed_hint_full">ready to save</string>
+    <string name="ed_hint_selected">Drag to move · corners resize · sides stretch</string>
+    <string name="ed_hint_locked">Locked — unlock to move or delete</string>
+    <!-- Dock -->
+    <string name="ed_tools">Editor tools</string>
+    <string name="ed_photos">Photos</string>
+    <string name="ed_shuffle">Shuffle</string>
+    <string name="ed_color">Color</string>
+    <string name="ed_order">Order</string>
+    <string name="ed_clear">Clear</string>
+    <string name="ed_frame">Frame</string>
+    <string name="ed_position">Position</string>
+    <string name="ed_style">Style</string>
+    <string name="ed_duplicate">Duplicate</string>
+    <string name="ed_delete">Delete</string>
+    <string name="ed_deselect">Deselect photo</string>
+    <!-- Selection -->
+    <string name="ed_photo_actions">Photo actions</string>
+    <string name="ed_delete_photo">Delete photo</string>
+    <string name="ed_replace_photo">Replace photo</string>
+    <string name="ed_lock_photo">Lock photo</string>
+    <string name="ed_unlock_photo">Unlock photo</string>
+    <string name="ed_rotate_photo">Rotate photo — drag to rotate, tap for 90°</string>
+    <string name="ed_add_photo">Add photo</string>
+    <string name="ed_add_background_photo">Add background photo</string>
+    <!-- Panels -->
+    <string name="ed_frame_shape">Frame shape</string>
+    <string name="ed_shape_original">Original</string>
+    <string name="ed_shape_square">Square</string>
+    <string name="ed_shape_rounded">Rounded</string>
+    <string name="ed_shape_circle">Circle</string>
+    <string name="ed_shape_arch">Arch</string>
+    <string name="ed_adjust_inside">Adjust inside</string>
+    <string name="ed_reset_size">Reset size</string>
+    <string name="ed_zoom_out">Zoom out</string>
+    <string name="ed_zoom_in">Zoom in</string>
+    <string name="ed_turn_photo">Turn photo</string>
+    <string name="ed_center_photo">Center photo</string>
+    <string name="ed_adjusting_inside">Adjusting inside · drag to move, pinch to zoom</string>
+    <string name="ed_fill">Fill</string>
+    <string name="ed_fit">Fit</string>
+    <string name="ed_flip">Flip</string>
+    <string name="ed_background_caption">BACKGROUND · SHOWS AROUND PAPER AND PHOTOS</string>
+    <string name="ed_background_colour">Background colour</string>
+    <string name="ed_template_colour">Template colour (reset)</string>
+    <string name="ed_order_caption">PHOTO ORDER · SLIDE BY SLIDE, TOP TO BOTTOM</string>
+    <string name="ed_photo_order">Photo order</string>
+    <string name="ed_slide_short">S%1$d</string>
+    <string name="ed_slide_of">Slide %1$d of %2$d</string>
+    <!-- Extra tool entry points -->
+    <string name="ed_stickers">Stickers</string>
+    <string name="ed_slides">Slides</string>
+    <string name="ed_text">Text</string>
+    <!-- Text sheet -->
+    <string name="ed_edit_text">Edit text</string>
+    <string name="ed_done">Done</string>
+    <string name="ed_text_field">Text</string>
+    <string name="ed_font">Font</string>
+    <string name="ed_aa">Aa</string>
+    <string name="ed_sans">Sans</string>
+    <string name="ed_serif">Serif</string>
+    <string name="ed_mono">Mono</string>
+    <string name="ed_alignment">Alignment</string>
+    <string name="ed_align_left">Align left</string>
+    <string name="ed_align_centre">Align centre</string>
+    <string name="ed_align_right">Align right</string>
+    <string name="ed_size">Size</string>
+    <string name="ed_colour">Colour</string>
+    <string name="ed_text_colour">Text colour</string>
+    <!-- Stickers -->
+    <string name="ed_close_stickers">Close stickers</string>
+    <string name="ed_sticker_type">Sticker type</string>
+    <string name="ed_st_all">All</string>
+    <string name="ed_st_tape">Tape</string>
+    <string name="ed_st_stamps">Stamps</string>
+    <string name="ed_st_dates">Dates</string>
+    <string name="ed_st_doodles">Doodles</string>
+    <string name="ed_st_chips">Chips</string>
+    <!-- Slides sheet -->
+    <string name="ed_slides_meta">%1$d · %2$s</string>
+    <string name="ed_add_slide">Add slide</string>
+    <string name="ed_move_left">Move left</string>
+    <string name="ed_move_right">Move right</string>
+    <string name="ed_slide_actions">Slide %1$d actions</string>
+    <string name="ed_slides_pair_note">%1$s share a photo, so they move as a pair. Long-press a slide to drag it.</string>
+    <string name="ed_slides_note">Long-press a slide to drag it.</string>
+    <string name="ed_slides_range">Slides %1$d–%2$d</string>
+    <string name="ed_and">%1$s and %2$s</string>
+    <!-- Preview mode -->
+    <string name="ed_close_preview">Close preview</string>
+    <string name="ed_counter">%1$d / %2$d</string>
+    <string name="ed_keep_editing">Keep editing</string>
+    <string name="ed_save_n_images">Save %1$d images</string>
+    <!-- Draft -->
+    <string name="ed_save_as_draft">Save as a draft?</string>
+    <string name="ed_draft_body">You\'ve placed %1$d of %2$d photos. Save now and pick up where you left off in My Designs.</string>
+    <string name="ed_save_draft">Save draft</string>
+    <string name="ed_discard">Discard</string>
+    <string name="ed_cancel">Cancel</string>
+    <string name="ed_draft_saved">Draft saved</string>
+    <!-- Coach marks -->
+    <string name="ed_tip_of">TIP %1$d OF %2$d</string>
+    <string name="ed_tip1_title">Tap + to add photos</string>
+    <string name="ed_tip1_body">Pick photos once and they fill the spots in order, slide by slide. This one spans slides 1 and 2.</string>
+    <string name="ed_tip2_title">Drag, pinch and turn</string>
+    <string name="ed_tip2_body">Tap a photo to select it. Drag to move it, pinch to resize, and use the round button to turn it.</string>
+    <string name="ed_tip3_title">Save every slide</string>
+    <string name="ed_tip3_body">Save puts each slide in your gallery as a full-size image, numbered and in order.</string>
+    <string name="ed_skip_tips">Skip tips</string>
+    <string name="ed_next">Next</string>
+    <string name="ed_got_it">Got it</string>
+    <!-- Export -->
+    <string name="ed_spots_empty_one">1 spot is still empty</string>
+    <string name="ed_spots_empty">%1$d spots are still empty</string>
+    <string name="ed_spots_empty_body">Empty spots save as plain paper. Fill them first, or save the %1$d slides as they are.</string>
+    <string name="ed_save_anyway">Save anyway</string>
+    <string name="ed_slide_n_empty">Slide %1$d: %2$d empty</string>
+    <string name="ed_slide_n_full">Slide %1$d: all filled</string>
+    <string name="ed_saving_slide">Saving slide %1$d of %2$d</string>
+    <string name="ed_saving_body">Keep FrameLab open. It only takes a few seconds.</string>
+    <string name="ed_slides_saved">Slides saved</string>
+    <string name="ed_export_failed">Export failed</string>
+    <string name="ed_export_failed_body">Slide %1$d couldn\'t be saved. Slides 1–%2$d are already in your gallery, and nothing in your design was lost.</string>
+    <string name="ed_export_failed_body_first">Slide %1$d couldn\'t be saved. Nothing in your design was lost.</string>
+    <string name="ed_export_failed_body_second">Slide %1$d couldn\'t be saved. Slide 1 is already in your gallery, and nothing in your design was lost.</string>
+    <string name="ed_close">Close</string>
+    <string name="ed_remove_all">Remove all photos?</string>
+    <string name="ed_remove_all_body">Locked photos stay. You can undo this.</string>
+    <string name="ed_remove">Remove</string>
+    <string name="ed_photos_removed">%1$d photos removed</string>
+    <string name="ed_photo_removed">1 photo removed</string>
+    <string name="ed_photo_locked">Photo is locked.</string>
+    <string name="ed_photo_locked_body">Unlock it to delete.</string>
+    <string name="ed_unlock">Unlock</string>
+    <string name="ed_no_empty_spot">No empty spot.</string>
+    <string name="ed_no_empty_spot_body">Every spot has a photo.</string>
+</resources>

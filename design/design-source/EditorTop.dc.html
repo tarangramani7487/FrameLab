@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Editor top bar</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:390px; height:56px; box-sizing:border-box; padding:0 12px 0 4px; display:flex; align-items:center; gap:2px; background:#0B0B0C; color:#FFFFFF; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<button type="button" aria-label="Back" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#FFFFFF; display:flex; align-items:center; justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+<sc-if value="{{full}}" hint-placeholder-val="{{ true }}">
+<div style="flex:1"></div>
+<button type="button" aria-label="Undo" disabled="{{noUndo}}" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:{{uc}}; display:flex; align-items:center; justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14 4 9l5-5"></path><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"></path></svg></button>
+<button type="button" aria-label="Redo" disabled="{{noRedo}}" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:{{rc}}; display:flex; align-items:center; justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 14 5-5-5-5"></path><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"></path></svg></button>
+<button type="button" aria-label="Preview" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#FFFFFF; display:flex; align-items:center; justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+<button type="button" style="margin-left:6px; height:36px; box-sizing:border-box; padding:0 16px; border:0; border-radius:18px; background:#FF5A36; color:#16130F; display:flex; align-items:center; gap:6px; font:700 15px Inter, sans-serif">
+<sc-if value="{{saving}}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="stroke-width:2.8"><path d="M21 12a9 9 0 1 1-6.2-8.56"></path></svg>Saving</sc-if>
+<sc-if value="{{idle}}" hint-placeholder-val="{{ true }}">Save</sc-if>
+</button>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mode":{"editor":"enum","options":["edit","minimal","saving"],"default":"edit"},"undo":{"editor":"enum","options":["on","off"],"default":"on"},"redo":{"editor":"enum","options":["on","off"],"default":"off"},"$preview":{"width":390,"height":56}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const p = this.props;
+    const mode = p.mode ?? 'edit';
+    const undoOn = (p.undo ?? 'on') === 'on';
+    const redoOn = (p.redo ?? 'off') === 'on';
+    return {
+      full: mode !== 'minimal',
+      saving: mode === 'saving',
+      idle: mode !== 'saving',
+      noUndo: !undoOn, noRedo: !redoOn,
+      uc: undoOn ? '#FFFFFF' : '#5A5A5E',
+      rc: redoOn ? '#FFFFFF' : '#5A5A5E'
+    };
+  }
+}
+</script>
+</body>
+</html>

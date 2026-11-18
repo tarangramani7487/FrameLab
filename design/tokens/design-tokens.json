@@ -1,0 +1,442 @@
+{
+  "light": {
+    "fl_ink": {
+      "hex": "#16130F",
+      "use": "Primary text, dark cards, dark buttons"
+    },
+    "fl_paper": {
+      "hex": "#FAF7F2",
+      "use": "App background (light side)"
+    },
+    "fl_card": {
+      "hex": "#FFFFFF",
+      "use": "Cards, fields, tab bar, light sheets"
+    },
+    "fl_muted": {
+      "hex": "#6F685E",
+      "use": "Secondary text (5.1:1 on paper) \u2014 replaces #8A8378"
+    },
+    "fl_line": {
+      "hex": "#ECE6DC",
+      "use": "Borders, dividers"
+    },
+    "fl_line_strong": {
+      "hex": "#D9D2C7",
+      "use": "Sheet handles, outlined buttons on white"
+    },
+    "fl_sunk": {
+      "hex": "#F1ECE4",
+      "use": "Segmented-control tracks, skeletons, secondary buttons"
+    },
+    "fl_track": {
+      "hex": "#E4DED4",
+      "use": "Progress tracks, pressed sunk surfaces"
+    },
+    "fl_accent": {
+      "hex": "#FF5A36",
+      "use": "Brand accent \u2014 FILLS ONLY; put ink text on it (5.97:1)"
+    },
+    "fl_accent_ink": {
+      "hex": "#B33A17",
+      "use": "Accent-coloured text/icons on light (5.6:1)"
+    },
+    "fl_accent_soft": {
+      "hex": "#FFE6DE",
+      "use": "Badges, icon wells"
+    },
+    "fl_accent_soft_text": {
+      "hex": "#A8361A",
+      "use": "Text on accentSoft (NEW badge)"
+    },
+    "fl_danger": {
+      "hex": "#C8372D",
+      "use": "Destructive buttons/text (white text on it 5.2:1)"
+    },
+    "fl_control_off": {
+      "hex": "#8F877B",
+      "use": "Switch-off border/knob, inactive page dots on light"
+    },
+    "fl_disabled_text": {
+      "hex": "#A39C91",
+      "use": "Disabled text on light"
+    }
+  },
+  "editor": {
+    "fl_ed_bg": {
+      "hex": "#0B0B0C",
+      "use": "Editor background"
+    },
+    "fl_ed_surface": {
+      "hex": "#1C1C1E",
+      "use": "Dock, dark sheets, dialogs"
+    },
+    "fl_ed_raised": {
+      "hex": "#2C2C2E",
+      "use": "Chips, tiles, toasts on dark"
+    },
+    "fl_ed_text": {
+      "hex": "#FFFFFF",
+      "use": "Text on dark"
+    },
+    "fl_ed_muted": {
+      "hex": "#8E8E93",
+      "use": "Secondary text on bg/surface (not on raised)"
+    },
+    "fl_ed_muted_raised": {
+      "hex": "#A1A1A6",
+      "use": "Secondary text on raised"
+    },
+    "fl_ed_disabled": {
+      "hex": "#5A5A5E",
+      "use": "Disabled icons/labels"
+    },
+    "fl_ed_dots": {
+      "hex": "#6E6E73",
+      "use": "Inactive page dots, dashed outlines"
+    },
+    "fl_ed_handle": {
+      "hex": "#48484A",
+      "use": "Sheet handles, input borders on dark"
+    },
+    "fl_ed_danger": {
+      "hex": "#FF6961",
+      "use": "Destructive text on dark"
+    }
+  },
+  "alpha": {
+    "fl_ed_active_tint": {
+      "argb": "#1AFF5A36",
+      "use": "Active dock tool background (accent 10%)"
+    },
+    "fl_scrim_light": {
+      "argb": "#7316130F",
+      "use": "Scrim behind light sheets (Create)"
+    },
+    "fl_scrim": {
+      "argb": "#8016130F",
+      "use": "Scrim behind light dialogs/sheets"
+    },
+    "fl_scrim_editor": {
+      "argb": "#99000000",
+      "use": "Scrim behind editor dialogs/sheets"
+    },
+    "fl_peek_dim": {
+      "argb": "#990B0B0C",
+      "use": "Dims the neighbouring slide peek in the editor"
+    },
+    "fl_badge_scrim": {
+      "argb": "#BD16130F",
+      "use": "Slide-count badge on cards"
+    }
+  },
+  "template": {
+    "tpl_kraft": {
+      "argb": "#FFEFE6D6",
+      "use": "Torn Diary default background"
+    },
+    "tpl_paper": {
+      "argb": "#FFFBF6EC",
+      "use": "Diary paper"
+    },
+    "tpl_lab_print": {
+      "argb": "#FFF4ECDC",
+      "use": "Cream lab print border"
+    },
+    "tpl_ink": {
+      "argb": "#FF2B2621",
+      "use": "Handwritten-style template text"
+    },
+    "tpl_ink_soft": {
+      "argb": "#FF4A4238",
+      "use": "Captions on polaroids"
+    },
+    "tpl_label": {
+      "argb": "#FF7A6E60",
+      "use": "Mono labels on paper"
+    },
+    "tpl_date_stamp": {
+      "argb": "#FFFF8A3D",
+      "use": "Disposable-camera date stamp (add 6px glow)"
+    },
+    "tpl_tape": {
+      "argb": "#E6ECD6A3",
+      "use": "Masking tape"
+    },
+    "tpl_rule": {
+      "argb": "#26786046",
+      "use": "Ruled lines on diary paper (every 18dp)"
+    },
+    "tpl_margin": {
+      "argb": "#59D65C50",
+      "use": "Red margin line on diary paper"
+    }
+  },
+  "swatches": {
+    "swatch_white": "#FFFFFF",
+    "swatch_paper": "#FAF7F2",
+    "swatch_cream": "#F3EDE3",
+    "swatch_blush": "#FFE8EC",
+    "swatch_mist": "#EAF1F4",
+    "swatch_sage": "#E7EEDF",
+    "swatch_ink": "#16130F",
+    "swatch_navy": "#0F1E2E"
+  },
+  "pastels": [
+    "#F3CFC3",
+    "#CDE7EA",
+    "#E3E0F3",
+    "#FDE7C4",
+    "#D7EBDD",
+    "#F6D3DC"
+  ],
+  "typography": {
+    "families": {
+      "display": "Bricolage Grotesque (res/font/bricolage_grotesque_bold|extrabold)",
+      "ui": "Inter (res/font/inter_*)",
+      "mono": "DM Mono (res/font/dm_mono_*)",
+      "template_serif": "Noto Serif italic on Android (Georgia on iOS) \u2014 template text only"
+    },
+    "styles": [
+      {
+        "name": "wordmark",
+        "family": "display",
+        "weight": 800,
+        "size": 28,
+        "line": 30,
+        "tracking": -0.8,
+        "use": "Home header \u201cFrameLab.\u201d (splash 46/50, tracking -1.6)"
+      },
+      {
+        "name": "display",
+        "family": "display",
+        "weight": 800,
+        "size": 36,
+        "line": 40,
+        "tracking": -1.1,
+        "use": "Onboarding titles"
+      },
+      {
+        "name": "screen_title",
+        "family": "display",
+        "weight": 800,
+        "size": 30,
+        "line": 34,
+        "tracking": -0.8,
+        "use": "Explore, My Designs, Profile, success, sign-in"
+      },
+      {
+        "name": "sheet_title",
+        "family": "display",
+        "weight": 800,
+        "size": 24,
+        "line": 28,
+        "tracking": -0.5,
+        "use": "Light sheets, template preview (26/30)"
+      },
+      {
+        "name": "title",
+        "family": "display",
+        "weight": 700,
+        "size": 22,
+        "line": 28,
+        "tracking": -0.3,
+        "use": "Empty states, dark sheet titles"
+      },
+      {
+        "name": "dialog_title",
+        "family": "display",
+        "weight": 700,
+        "size": 20,
+        "line": 26,
+        "tracking": 0,
+        "use": "Dialogs"
+      },
+      {
+        "name": "section",
+        "family": "display",
+        "weight": 700,
+        "size": 19,
+        "line": 24,
+        "tracking": -0.3,
+        "use": "Row titles on Home"
+      },
+      {
+        "name": "nav_title",
+        "family": "ui",
+        "weight": 700,
+        "size": 17,
+        "line": 22,
+        "tracking": 0,
+        "use": "Pushed-screen top bars"
+      },
+      {
+        "name": "body_l",
+        "family": "ui",
+        "weight": 400,
+        "size": 16,
+        "line": 24,
+        "tracking": 0,
+        "use": "Onboarding body"
+      },
+      {
+        "name": "body",
+        "family": "ui",
+        "weight": 400,
+        "size": 15,
+        "line": 22,
+        "tracking": 0,
+        "use": "Default body, list rows"
+      },
+      {
+        "name": "body_s",
+        "family": "ui",
+        "weight": 400,
+        "size": 14,
+        "line": 20,
+        "tracking": 0,
+        "use": "Dialog/sheet body"
+      },
+      {
+        "name": "secondary",
+        "family": "ui",
+        "weight": 400,
+        "size": 13,
+        "line": 18,
+        "tracking": 0,
+        "use": "Meta text, hints"
+      },
+      {
+        "name": "caption",
+        "family": "ui",
+        "weight": 400,
+        "size": 12,
+        "line": 16,
+        "tracking": 0,
+        "use": "Card info line, helper text"
+      },
+      {
+        "name": "label",
+        "family": "ui",
+        "weight": 600,
+        "size": 11,
+        "line": 14,
+        "tracking": 0,
+        "use": "Tab bar, dock, tiles"
+      },
+      {
+        "name": "button_l",
+        "family": "ui",
+        "weight": 700,
+        "size": 16,
+        "line": 20,
+        "tracking": 0,
+        "use": "52dp primary buttons"
+      },
+      {
+        "name": "button",
+        "family": "ui",
+        "weight": 600,
+        "size": 15,
+        "line": 20,
+        "tracking": 0,
+        "use": "48dp buttons, Save pill 15/700"
+      },
+      {
+        "name": "chip",
+        "family": "ui",
+        "weight": 600,
+        "size": 13,
+        "line": 18,
+        "tracking": 0,
+        "use": "Chips, segmented controls (14 on Home tabs)"
+      },
+      {
+        "name": "tag",
+        "family": "ui",
+        "weight": 700,
+        "size": 10,
+        "line": 18,
+        "tracking": 0.6,
+        "use": "NEW tag (uppercase)"
+      },
+      {
+        "name": "mono_label",
+        "family": "mono",
+        "weight": 500,
+        "size": 11,
+        "line": 16,
+        "tracking": 1.0,
+        "use": "Section labels, meta (UPPERCASE)"
+      },
+      {
+        "name": "mono_small",
+        "family": "mono",
+        "weight": 500,
+        "size": 10,
+        "line": 14,
+        "tracking": 1.0,
+        "use": "Kickers, step labels (UPPERCASE)"
+      }
+    ]
+  },
+  "spacing": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    20,
+    24,
+    32
+  ],
+  "radius": {
+    "thumb_xs": 4,
+    "tag": 6,
+    "thumb_s": 10,
+    "card": 14,
+    "list_card": 16,
+    "group": 18,
+    "hero_dock": 22,
+    "dialog": 24,
+    "sheet_light_top": 28,
+    "pill": 999
+  },
+  "elevation": {
+    "card": "0 1 2 ink@10%",
+    "popover": "0 12 32 ink@22% + 1dp ink@5% outline",
+    "dialog": "0 20 50 ink@30%",
+    "dock": "0 8 24 black@35%",
+    "toast_light": "0 10 28 ink@30%",
+    "toast_editor": "0 12 30 black@50%",
+    "action_pill": "0 8 20 black@40%"
+  },
+  "motion": {
+    "editor_push_ms": 260,
+    "editor_pop_ms": 220,
+    "sheet_ms": 280,
+    "toast_duration_ms": 4000,
+    "press": {
+      "scale": 0.97,
+      "alpha": 0.82,
+      "ms": 120
+    }
+  },
+  "sizes": {
+    "min_touch_dp": 48,
+    "button_l_dp": 52,
+    "button_dp": 48,
+    "chip_dp": 40,
+    "small_chip_dp": 36,
+    "icon_dp": 24,
+    "tab_bar_dp": 64,
+    "dock_dp": 64,
+    "editor_top_bar_dp": 56,
+    "card_thumb_dp": [
+      128,
+      160
+    ],
+    "grid_card_width_dp": 169
+  }
+}

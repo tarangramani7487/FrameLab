@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FrameLab icon: share (24dp, 1.75 stroke). Tint at use site. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:pathData="M12 3v12"
+        android:fillColor="#00000000" android:strokeColor="#FF000000" android:strokeWidth="1.75"
+        android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    <path android:pathData="m8 7 4-4 4 4"
+        android:fillColor="#00000000" android:strokeColor="#FF000000" android:strokeWidth="1.75"
+        android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    <path android:pathData="M5 12v6.5A2.5 2.5 0 0 0 7.5 21h9a2.5 2.5 0 0 0 2.5-2.5V12"
+        android:fillColor="#00000000" android:strokeColor="#FF000000" android:strokeWidth="1.75"
+        android:strokeLineCap="round" android:strokeLineJoin="round"/>
+</vector>

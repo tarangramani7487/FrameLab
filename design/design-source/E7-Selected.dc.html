@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Editor — photo selected</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#0B0B0C; color:#FFFFFF; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<div style="position:absolute; left:0; top:48px; width:390px; height:56px"><dc-import name="EditorTop" mode="edit" undo="on" redo="off" hint-size="390px,56px"></dc-import></div>
+<div style="position:absolute; left:24px; top:168px; width:366px; height:428px; overflow:hidden">
+<dc-import name="Diary" w="342" count="2" state="full" hint-size="684px,428px"></dc-import>
+<div aria-hidden="true" style="position:absolute; left:342px; top:0; width:24px; height:428px; background:rgba(11,11,12,.6)"></div>
+</div>
+
+<div aria-hidden="true" style="position:absolute; left:68px; top:382px; width:112px; height:132px; transform:rotate(5deg)">
+<div style="position:absolute; left:6px; top:6px; width:100px; height:100px; box-sizing:border-box; border:1.5px solid #FFFFFF; box-shadow:0 0 0 1px rgba(0,0,0,.25)"></div>
+<span style="position:absolute; left:-1px; top:-1px; width:14px; height:14px; box-sizing:border-box; border-radius:50%; background:#FFFFFF; border:1px solid rgba(0,0,0,.2); box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:99px; top:-1px; width:14px; height:14px; box-sizing:border-box; border-radius:50%; background:#FFFFFF; border:1px solid rgba(0,0,0,.2); box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:-1px; top:99px; width:14px; height:14px; box-sizing:border-box; border-radius:50%; background:#FFFFFF; border:1px solid rgba(0,0,0,.2); box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:99px; top:99px; width:14px; height:14px; box-sizing:border-box; border-radius:50%; background:#FFFFFF; border:1px solid rgba(0,0,0,.2); box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:45px; top:3px; width:22px; height:6px; border-radius:3px; background:#FFFFFF; box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:45px; top:103px; width:22px; height:6px; border-radius:3px; background:#FFFFFF; box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:3px; top:45px; width:6px; height:22px; border-radius:3px; background:#FFFFFF; box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:103px; top:45px; width:6px; height:22px; border-radius:3px; background:#FFFFFF; box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+</div>
+
+<div role="toolbar" aria-label="Photo actions" style="position:absolute; left:50px; top:326px; width:150px; height:48px; border-radius:24px; background:#FFFFFF; color:#16130F; display:flex; align-items:center; justify-content:space-around; box-shadow:0 8px 20px rgba(0,0,0,.4)">
+<button type="button" aria-label="Delete photo" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"></path><path d="M9.5 7V4.5h5V7"></path><path d="M6 7l1 12.5A1.5 1.5 0 0 0 8.5 21h7a1.5 1.5 0 0 0 1.5-1.5L18 7"></path><path d="M10 11v6M14 11v6"></path></svg></button>
+<button type="button" aria-label="Replace photo" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4 3.5 7.5 7 11"></path><path d="M3.5 7.5h17"></path><path d="m17 13 3.5 3.5L17 20"></path><path d="M20.5 16.5h-17"></path></svg></button>
+<button type="button" aria-label="Lock photo" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"></rect><path d="M8 10.5V7.5a4 4 0 0 1 7.8-1.2"></path></svg></button>
+</div>
+<button type="button" aria-label="Rotate photo — drag to rotate, tap for 90°" style="position:absolute; left:105px; top:503px; width:40px; height:40px; border:0; padding:0; border-radius:50%; background:#FFFFFF; color:#16130F; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 14px rgba(0,0,0,.4)"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="stroke-width:2"><path d="M20 12a8 8 0 1 1-2.3-5.6"></path><path d="M20 4v4.5h-4.5"></path></svg></button>
+
+<p style="position:absolute; left:20px; right:20px; top:704px; margin:0; text-align:center; font-size:13px; line-height:18px; color:#8E8E93">Drag to move · corners resize · sides stretch</p>
+<div style="position:absolute; left:0; top:734px; width:390px; height:80px"><dc-import name="Dock" mode="select" hint-size="390px,80px"></dc-import></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

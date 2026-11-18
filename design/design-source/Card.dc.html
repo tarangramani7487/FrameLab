@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Template card</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:{{wpx}}; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round; transform:{{press}}; opacity:{{op}}">
+<div style="position:relative; width:{{wpx}}; height:{{hpx}}; border-radius:14px; overflow:hidden; background:#F1ECE4; box-shadow:0 1px 2px rgba(22,19,15,.10)">
+<div aria-hidden="true" style="position:absolute; left:0; top:0; width:128px; height:160px; transform-origin:0 0; transform:scale({{s}})">
+
+<sc-if value="{{k.diary}}" hint-placeholder-val="{{ false }}"><dc-import name="Diary" w="128" count="1" state="{{dstate}}" bg="{{tone}}" l1="{{l1}}" l2="{{l2}}" hint-size="128px,160px"></dc-import></sc-if>
+
+<sc-if value="{{k.film}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#2A2420">
+<div style="position:absolute; left:10px; top:7px; font:italic 14px/16px Georgia, serif; color:#F3EDE3">film reel</div>
+<div style="position:absolute; left:0; top:30px; width:128px; height:102px; background:#14110E"></div>
+<div style="position:absolute; left:0; top:34px; width:128px; height:6px; background:repeating-linear-gradient(90deg, #EFE6D6 0 6px, rgba(0,0,0,0) 6px 12px)"></div>
+<div style="position:absolute; left:0; top:122px; width:128px; height:6px; background:repeating-linear-gradient(90deg, #EFE6D6 0 6px, rgba(0,0,0,0) 6px 12px)"></div>
+<div style="position:absolute; left:-20px; top:46px; width:52px; height:70px; background:{{c.p1}}"></div>
+<div style="position:absolute; left:38px; top:46px; width:52px; height:70px; background:{{c.p2}}"></div>
+<div style="position:absolute; left:96px; top:46px; width:52px; height:70px; background:{{c.p3}}"></div>
+<div style="position:absolute; left:10px; top:140px; font:500 7px/10px 'DM Mono', monospace; letter-spacing:1px; color:#FF8A3D">FL 400 · 24 EXP</div>
+</div></sc-if>
+
+<sc-if value="{{k.polaroid}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#EDE3D3">
+<div style="position:absolute; left:8px; top:14px; width:64px; height:76px; background:#FFFFFF; transform:rotate(-8deg); box-shadow:0 2px 5px rgba(40,28,15,.22)"><div style="position:absolute; left:5px; top:5px; width:54px; height:54px; background:{{c.p1}}"></div></div>
+<div style="position:absolute; left:56px; top:30px; width:64px; height:76px; background:#FFFFFF; transform:rotate(7deg); box-shadow:0 2px 5px rgba(40,28,15,.22)"><div style="position:absolute; left:5px; top:5px; width:54px; height:54px; background:{{c.p2}}"></div></div>
+<div style="position:absolute; left:28px; top:74px; width:64px; height:76px; background:#FFFFFF; transform:rotate(-2deg); box-shadow:0 2px 5px rgba(40,28,15,.22)"><div style="position:absolute; left:5px; top:5px; width:54px; height:54px; background:{{c.p3}}"></div><div style="position:absolute; left:0; right:0; top:61px; text-align:center; font:italic 8px/10px Georgia, serif; color:#4A4238">us, again</div></div>
+<div style="position:absolute; left:48px; top:68px; width:30px; height:9px; background:rgba(236,214,163,.92); transform:rotate(-14deg)"></div>
+</div></sc-if>
+
+<sc-if value="{{k.stamp}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#EAF1F4">
+<div style="position:absolute; left:18px; top:30px; width:70px; height:90px; background:radial-gradient(circle at 5px 5px, rgba(0,0,0,0) 2.6px, #FFFDF8 3px) -5px -5px / 10px 10px; filter:drop-shadow(0 2px 3px rgba(30,40,60,.22))"><div style="position:absolute; left:6px; top:6px; width:58px; height:78px; background:{{c.p1}}"></div><div style="position:absolute; right:9px; bottom:9px; font:500 8px/10px 'DM Mono', monospace; color:#16130F">26c</div></div>
+<div style="position:absolute; left:74px; top:86px; width:50px; height:60px; transform:rotate(8deg); background:radial-gradient(circle at 5px 5px, rgba(0,0,0,0) 2.6px, #FFFDF8 3px) -5px -5px / 10px 10px; filter:drop-shadow(0 2px 3px rgba(30,40,60,.22))"><div style="position:absolute; left:6px; top:6px; width:38px; height:48px; background:{{c.p2}}"></div></div>
+<div style="position:absolute; left:62px; top:12px; width:44px; height:44px; box-sizing:border-box; border-radius:50%; border:1.5px solid rgba(40,52,80,.5)"></div>
+<svg width="60" height="22" viewBox="0 0 60 22" style="position:absolute; left:84px; top:23px; stroke:rgba(40,52,80,.5); stroke-width:1.4"><path d="M0 4q7.5-4 15 0t15 0 15 0 15 0M0 11q7.5-4 15 0t15 0 15 0 15 0M0 18q7.5-4 15 0t15 0 15 0 15 0"></path></svg>
+</div></sc-if>
+
+<sc-if value="{{k.camera}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#FFE8EC">
+<div style="position:absolute; left:9px; top:8px; font:500 7px/10px 'DM Mono', monospace; letter-spacing:1px; color:#8A4B58">CAMERA ROLL</div>
+<div style="position:absolute; left:26px; top:96px; width:76px; height:56px; box-sizing:border-box; padding:4px; background:#FFFFFF; transform:rotate(-6deg); box-shadow:0 2px 5px rgba(60,30,40,.18)"><div style="width:100%; height:100%; background:{{c.p2}}"></div></div>
+<div style="position:absolute; left:12px; top:24px; width:104px; height:74px; border-radius:12px; background:linear-gradient(180deg, #F0F1F4, #B8BBC3); box-shadow:0 3px 8px rgba(60,30,40,.22)">
+<div style="position:absolute; left:8px; top:9px; width:62px; height:50px; box-sizing:border-box; padding:3px; border-radius:4px; background:#1E1E22"><div style="width:100%; height:100%; background:{{c.p1}}"></div></div>
+<div style="position:absolute; left:78px; top:12px; width:18px; height:18px; border-radius:50%; background:radial-gradient(circle, #2E323C 0 35%, #8E929C 40% 60%, #D9DBE0 65%)"></div>
+<div style="position:absolute; left:80px; top:40px; width:14px; height:5px; border-radius:3px; background:#9A9EA8"></div>
+<div style="position:absolute; left:80px; top:50px; width:14px; height:5px; border-radius:3px; background:#9A9EA8"></div>
+</div>
+</div></sc-if>
+
+<sc-if value="{{k.bigtype}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#F3EDE3">
+<div style="position:absolute; left:8px; top:8px; width:112px; height:96px; background:{{c.p1}}"></div>
+<div style="position:absolute; left:7px; top:110px; font:800 31px/30px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-1.5px; color:#16130F">SUMMER</div>
+<div style="position:absolute; left:9px; top:144px; font:500 7px/10px 'DM Mono', monospace; letter-spacing:1px; color:#6F685E">VOL. 03 · 2026</div>
+</div></sc-if>
+
+<sc-if value="{{k.flash}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#0F1E2E">
+<div style="position:absolute; left:18px; top:18px; width:92px; height:114px; box-sizing:border-box; padding:4px; background:#FFFFFF; transform:rotate(-3deg); box-shadow:0 6px 14px rgba(0,0,0,.45)"><div style="width:100%; height:100%; background:{{c.p1}}"></div><div style="position:absolute; right:9px; bottom:8px; font:500 7px/10px 'DM Mono', monospace; color:#FF8A3D; text-shadow:0 0 4px rgba(255,120,40,.8)">'26 11 17</div></div>
+<div style="position:absolute; left:10px; top:142px; font:500 7px/10px 'DM Mono', monospace; letter-spacing:1.4px; color:#EAF1F4">NIGHT FLASH</div>
+</div></sc-if>
+
+<sc-if value="{{k.prints}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#F3EDE3">
+<div style="position:absolute; left:10px; top:6px; font:italic 12px/14px Georgia, serif; color:#4A4238">shoreline</div>
+<div style="position:absolute; left:8px; top:26px; width:72px; height:90px; box-sizing:border-box; padding:5px; background:#FFFFFF; transform:rotate(-5deg); box-shadow:0 2px 6px rgba(40,28,15,.2)"><div style="width:100%; height:100%; background:{{c.p1}}"></div></div>
+<div style="position:absolute; left:48px; top:56px; width:72px; height:90px; box-sizing:border-box; padding:5px; background:#FFFFFF; transform:rotate(6deg); box-shadow:0 2px 6px rgba(40,28,15,.2)"><div style="width:100%; height:100%; background:{{c.p2}}"></div></div>
+</div></sc-if>
+
+<sc-if value="{{k.journal}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:repeating-linear-gradient(180deg, rgba(0,0,0,0) 0 11px, rgba(120,96,70,.14) 11px 12px), #F6EFE2">
+<div style="position:absolute; left:12px; top:14px; width:104px; height:74px; box-sizing:border-box; padding:3px; background:#FFFFFF; transform:rotate(-2deg)"><div style="width:100%; height:100%; background:{{c.p1}}"></div></div>
+<div style="position:absolute; left:44px; top:8px; width:40px; height:11px; background:rgba(236,214,163,.92); transform:rotate(-4deg)"></div>
+<div style="position:absolute; left:10px; top:98px; width:108px; height:46px; border-radius:4px; background:#FFFFFF; box-shadow:0 1px 3px rgba(40,28,15,.18); transform:rotate(1.5deg)">
+<div style="position:absolute; left:8px; top:7px; font:500 6px/8px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">BOARDING PASS</div>
+<div style="position:absolute; left:8px; top:16px; font:700 14px/16px 'Bricolage Grotesque', sans-serif; color:#16130F">BOM · LIS</div>
+<div style="position:absolute; left:8px; top:34px; font:500 6px/8px 'DM Mono', monospace; color:#6F685E">GATE 12 · SEAT 4A</div>
+<div style="position:absolute; left:80px; top:4px; bottom:4px; border-left:1px dashed #CFC6B8"></div>
+<div style="position:absolute; left:86px; top:10px; width:16px; height:26px; background:repeating-linear-gradient(90deg, #16130F 0 1px, rgba(0,0,0,0) 1px 3px)"></div>
+</div>
+</div></sc-if>
+
+<sc-if value="{{k.mix}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#FAF7F2">
+<div style="position:absolute; left:10px; top:14px; width:58px; height:58px; border-radius:50%; background:{{c.p1}}"></div>
+<div style="position:absolute; left:74px; top:10px; width:44px; height:70px; border-radius:22px 22px 3px 3px; background:{{c.p2}}"></div>
+<div style="position:absolute; left:26px; top:84px; width:72px; height:64px; box-sizing:border-box; padding:4px; background:#FFFFFF; transform:rotate(-5deg); box-shadow:0 2px 6px rgba(40,28,15,.18)"><div style="width:100%; height:100%; background:{{c.p3}}"></div></div>
+</div></sc-if>
+
+<sc-if value="{{k.grid}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; box-sizing:border-box; padding:8px; background:#FFFFFF; display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); grid-template-rows:repeat(2, minmax(0, 1fr)); gap:4px">
+<div style="background:{{c.p1}}"></div><div style="background:{{c.p2}}"></div><div style="background:{{c.p3}}"></div><div style="background:{{c.p4}}"></div>
+</div></sc-if>
+
+<sc-if value="{{k.fpolaroid}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#EFEAE2">
+<div style="position:absolute; left:20px; top:20px; width:88px; height:106px; background:#FFFFFF; transform:rotate(-3deg); box-shadow:0 3px 8px rgba(40,28,15,.2)"><div style="position:absolute; left:6px; top:6px; width:76px; height:76px; background:{{c.p1}}"></div><div style="position:absolute; left:10px; top:90px; width:46px; height:1px; background:#CFC6B8"></div></div>
+</div></sc-if>
+
+<sc-if value="{{k.ffilm}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#EFEAE2">
+<div style="position:absolute; left:16px; top:16px; width:96px; height:128px; border-radius:3px; background:#14110E">
+<div style="position:absolute; left:5px; top:6px; bottom:6px; width:6px; background:repeating-linear-gradient(180deg, #EFEAE2 0 6px, rgba(0,0,0,0) 6px 11px)"></div>
+<div style="position:absolute; right:5px; top:6px; bottom:6px; width:6px; background:repeating-linear-gradient(180deg, #EFEAE2 0 6px, rgba(0,0,0,0) 6px 11px)"></div>
+<div style="position:absolute; left:16px; top:12px; width:64px; height:102px; background:{{c.p1}}"></div>
+<div style="position:absolute; left:17px; top:117px; font:500 6px/8px 'DM Mono', monospace; color:#FF8A3D">24A</div>
+</div>
+</div></sc-if>
+
+<sc-if value="{{k.fstamp}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#EFEAE2">
+<div style="position:absolute; left:24px; top:28px; width:80px; height:100px; transform:rotate(3deg); background:radial-gradient(circle at 5px 5px, rgba(0,0,0,0) 2.6px, #FFFDF8 3px) -5px -5px / 10px 10px; filter:drop-shadow(0 2px 4px rgba(40,28,15,.22))"><div style="position:absolute; left:7px; top:7px; width:66px; height:86px; background:{{c.p1}}"></div></div>
+</div></sc-if>
+
+<sc-if value="{{k.flab}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#EFEAE2">
+<div style="position:absolute; left:20px; top:20px; width:88px; height:116px; background:#F4ECDC; transform:rotate(-2deg); box-shadow:0 3px 8px rgba(40,28,15,.18)"><div style="position:absolute; left:7px; top:7px; width:74px; height:90px; background:{{c.p1}}"></div><div style="position:absolute; right:8px; top:102px; font:500 6px/8px 'DM Mono', monospace; color:#9C8D74">26.11</div></div>
+</div></sc-if>
+
+<sc-if value="{{k.ftorn}}" hint-placeholder-val="{{ false }}"><div style="position:absolute; left:0; top:0; width:128px; height:160px; overflow:hidden; background:#EFEAE2">
+<div style="position:absolute; left:14px; top:18px; width:100px; height:124px; background:#FFFDF8; clip-path:polygon(0 3%, 8% 0, 17% 2%, 26% 0, 35% 3%, 44% 1%, 53% 3%, 62% 0, 71% 2%, 80% 0, 90% 3%, 100% 1%, 98% 12%, 100% 24%, 97% 36%, 100% 48%, 98% 60%, 100% 72%, 97% 84%, 100% 96%, 92% 100%, 82% 97%, 72% 100%, 62% 98%, 52% 100%, 42% 97%, 32% 100%, 22% 98%, 12% 100%, 2% 97%, 0 86%, 3% 74%, 0 62%, 2% 50%, 0 38%, 3% 26%, 0 14%)"></div>
+<div style="position:absolute; left:24px; top:28px; width:80px; height:104px; background:{{c.p1}}"></div>
+</div></sc-if>
+
+</div>
+<sc-if value="{{multi}}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" style="position:absolute; top:7px; right:7px; height:22px; box-sizing:border-box; padding:0 7px 0 6px; border-radius:11px; background:rgba(22,19,15,.74); color:#FFFFFF; display:flex; align-items:center; gap:3px; font:600 11px/22px Inter, sans-serif"><svg width="13" height="13" viewBox="0 0 24 24" style="stroke-width:2.2"><path d="M2.5 7v10M6.5 5v14"></path><rect x="10" y="3" width="11.5" height="18" rx="2"></rect></svg>{{slides}}</span></sc-if>
+<sc-if value="{{isnew}}" hint-placeholder-val="{{ false }}"><span style="position:absolute; left:7px; bottom:7px; height:20px; padding:0 7px; border-radius:6px; background:#FF5A36; color:#16130F; font:700 10px/20px Inter, sans-serif; letter-spacing:.6px">NEW</span></sc-if>
+<sc-if value="{{pro}}" hint-placeholder-val="{{ false }}"><span style="position:absolute; left:7px; top:7px; width:26px; height:26px; border-radius:50%; background:#16130F; color:#FF5A36; display:flex; align-items:center; justify-content:center"><svg width="15" height="15" viewBox="0 0 24 24" role="img" aria-label="Pro template" style="stroke-width:2"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg></span></sc-if>
+<sc-if value="{{fav}}" hint-placeholder-val="{{ false }}"><span style="position:absolute; left:7px; top:7px; width:28px; height:28px; border-radius:50%; background:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 1px 3px rgba(22,19,15,.2)"><svg width="16" height="16" viewBox="0 0 24 24" role="img" aria-label="Favourite"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z" fill="#FF5A36" stroke="#FF5A36"></path></svg></span></sc-if>
+</div>
+<sc-if value="{{cap}}" hint-placeholder-val="{{ true }}">
+<div style="margin-top:8px; font-size:14px; line-height:18px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis">{{label}}</div>
+<div style="margin-top:2px; font-size:12px; line-height:16px; color:#6F685E; white-space:nowrap; overflow:hidden; text-overflow:ellipsis">{{info}}</div>
+<a href="#" aria-label="{{label}}" style="position:absolute; left:0; top:0; right:0; bottom:0; border-radius:14px"></a>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"kind":{"editor":"enum","options":["diary","film","polaroid","stamp","camera","bigtype","flash","prints","journal","mix","grid","fpolaroid","ffilm","fstamp","flab","ftorn"],"default":"diary"},"photos":{"editor":"enum","options":["no","yes"],"default":"no"},"label":{"editor":null,"default":"Torn Diary"},"info":{"editor":null,"default":"6 slides · 12 photos"},"slides":{"editor":null,"default":"6"},"isnew":{"editor":null},"pro":{"editor":null},"fav":{"editor":null},"bare":{"editor":null},"pressed":{"editor":null},"seed":{"editor":null},"tone":{"editor":null},"l1":{"editor":null},"l2":{"editor":null},"w":{"editor":null},"$preview":{"width":128,"height":204}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const p = this.props;
+    const w = Number(p.w ?? 128);
+    const kind = p.kind ?? 'diary';
+    const photos = p.photos === 'yes';
+    const pastel = ['#F3CFC3', '#CDE7EA', '#E3E0F3', '#FDE7C4', '#D7EBDD', '#F6D3DC'];
+    const pics = [
+      'radial-gradient(circle at 40% 52%, #FFF1C9 0 4%, rgba(255,241,201,0) 16%), linear-gradient(180deg, #F7C59B 0%, #F39A74 36%, #E9785F 54%, #3F7C8E 55%, #2D6577 74%, #E7CFA6 75%)',
+      'repeating-linear-gradient(165deg, rgba(255,255,255,.22) 0 2px, rgba(255,255,255,0) 2px 9px), linear-gradient(180deg, #9EE0EA, #49B3CB)',
+      'linear-gradient(118deg, rgba(0,0,0,0) 0 58%, rgba(92,48,30,.22) 58% 100%), linear-gradient(180deg, #F6DDB4, #E9B07E)',
+      'radial-gradient(circle at 22% 70%, #FFD27A 0 3%, rgba(255,210,122,0) 7%), radial-gradient(circle at 60% 62%, #FFC56B 0 3%, rgba(255,197,107,0) 7%), linear-gradient(180deg, #2F3B63 0%, #6E5A8F 50%, #E98C6E 100%)',
+      'radial-gradient(ellipse at 70% 20%, #F9F3D9 0 14%, rgba(249,243,217,0) 32%), linear-gradient(150deg, #A9D8BC 0%, #4F9B7A 58%, #2C6A51 100%)',
+      'radial-gradient(circle at 70% 30%, #FFF0C4 0 7%, rgba(255,240,196,0) 20%), linear-gradient(180deg, #FCD9A0 0%, #F4AE66 52%, #C98550 53%, #B07040 100%)'
+    ];
+    const src = photos ? pics : pastel;
+    const seed = Number(p.seed ?? 0);
+    const c = {};
+    for (let i = 0; i < 4; i++) c['p' + (i + 1)] = src[(i + seed) % src.length];
+    const k = {};
+    ['diary', 'film', 'polaroid', 'stamp', 'camera', 'bigtype', 'flash', 'prints', 'journal', 'mix', 'grid', 'fpolaroid', 'ffilm', 'fstamp', 'flab', 'ftorn'].forEach((x) => { k[x] = x === kind; });
+    const slides = Number(p.slides ?? 1);
+    const pressed = p.pressed === 'yes';
+    return {
+      k, c, s: w / 128, wpx: w + 'px', hpx: (w * 1.25) + 'px',
+      label: p.label ?? 'Torn Diary', info: p.info ?? '6 slides · 12 photos',
+      slides, multi: slides > 1,
+      isnew: p.isnew === 'yes', pro: p.pro === 'yes', fav: p.fav === 'yes',
+      cap: p.bare !== 'yes',
+      press: pressed ? 'scale(.97)' : 'none', op: pressed ? 0.82 : 1,
+      dstate: photos ? 'full' : 'pastel', tone: p.tone ?? '#EFE6D6', l1: p.l1 ?? 'summer', l2: p.l2 ?? 'diary'
+    };
+  }
+}
+</script>
+</body>
+</html>

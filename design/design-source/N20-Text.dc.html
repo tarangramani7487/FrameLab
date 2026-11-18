@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Editor — edit text</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#0B0B0C; color:#FFFFFF; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<div style="position:absolute; left:0; top:48px; width:390px; height:56px"><dc-import name="EditorTop" mode="edit" undo="on" redo="off" hint-size="390px,56px"></dc-import></div>
+<div style="position:absolute; left:58px; top:112px; width:274px; height:343px; overflow:hidden"><dc-import name="Diary" w="274" count="1" state="full" hint-size="274px,343px"></dc-import></div>
+<div aria-hidden="true" style="position:absolute; left:69px; top:152px; width:146px; height:269px; transform:rotate(-2deg)">
+<div style="position:absolute; left:16px; top:14px; width:120px; height:77px; box-sizing:border-box; border:1.5px solid #FFFFFF; box-shadow:0 0 0 1px rgba(0,0,0,.25)"></div>
+<span style="position:absolute; left:11px; top:9px; width:10px; height:10px; border-radius:50%; background:#FFFFFF; box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:131px; top:9px; width:10px; height:10px; border-radius:50%; background:#FFFFFF; box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:11px; top:86px; width:10px; height:10px; border-radius:50%; background:#FFFFFF; box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+<span style="position:absolute; left:131px; top:86px; width:10px; height:10px; border-radius:50%; background:#FFFFFF; box-shadow:0 1px 3px rgba(0,0,0,.4)"></span>
+</div>
+
+<section role="dialog" aria-label="Edit text" style="position:absolute; left:0; top:470px; width:390px; height:374px; box-sizing:border-box; padding:0 20px; border-radius:24px 24px 0 0; background:#1C1C1E; box-shadow:0 -10px 30px rgba(0,0,0,.45)">
+<div style="width:36px; height:5px; margin:8px auto 0; border-radius:3px; background:#48484A"></div>
+<div style="display:flex; align-items:center; justify-content:space-between; height:40px; margin-top:4px">
+<h2 style="margin:0; font:700 16px/20px Inter, sans-serif">Edit text</h2>
+<button type="button" style="height:44px; margin-right:-10px; padding:0 10px; border:0; background:transparent; color:#FF5A36; font:700 15px Inter, sans-serif">Done</button>
+</div>
+<textarea aria-label="Text" style="display:block; width:100%; height:72px; box-sizing:border-box; margin-top:6px; padding:10px 14px; border:1.5px solid #48484A; border-radius:14px; background:#2C2C2E; color:#FFFFFF; font:italic 22px/26px Georgia, 'Times New Roman', serif; resize:none; outline:none">summer
+diary</textarea>
+<div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px">
+<div role="radiogroup" aria-label="Font" style="display:flex; gap:4px; padding:4px; border-radius:14px; background:#2C2C2E">
+<button type="button" role="radio" aria-checked="false" aria-label="Sans" style="width:56px; height:36px; border:0; border-radius:10px; background:transparent; color:#FFFFFF; font:600 17px Inter, sans-serif">Aa</button>
+<button type="button" role="radio" aria-checked="true" aria-label="Serif" style="width:56px; height:36px; border:0; border-radius:10px; background:#FFFFFF; color:#16130F; font:italic 18px Georgia, serif">Aa</button>
+<button type="button" role="radio" aria-checked="false" aria-label="Mono" style="width:56px; height:36px; border:0; border-radius:10px; background:transparent; color:#FFFFFF; font:500 15px 'DM Mono', monospace">Aa</button>
+</div>
+<div role="radiogroup" aria-label="Alignment" style="display:flex; gap:2px">
+<button type="button" role="radio" aria-checked="true" aria-label="Align left" style="width:44px; height:44px; border:0; padding:0; border-radius:12px; background:#2C2C2E; color:#FFFFFF; display:flex; align-items:center; justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h14"></path></svg></button>
+<button type="button" role="radio" aria-checked="false" aria-label="Align centre" style="width:44px; height:44px; border:0; padding:0; border-radius:12px; background:transparent; color:#A1A1A6; display:flex; align-items:center; justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M5 18h14"></path></svg></button>
+<button type="button" role="radio" aria-checked="false" aria-label="Align right" style="width:44px; height:44px; border:0; padding:0; border-radius:12px; background:transparent; color:#A1A1A6; display:flex; align-items:center; justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M10 12h10M6 18h14"></path></svg></button>
+</div>
+</div>
+<label style="display:block; margin-top:12px"><span style="display:flex; justify-content:space-between; font-size:13px; line-height:18px; color:#8E8E93">Size<span style="font:500 12px/18px 'DM Mono', monospace; color:#FFFFFF">46</span></span><input type="range" min="12" max="96" value="46" style="display:block; width:100%; margin:6px 0 0; accent-color:#FF5A36"></label>
+<div style="margin-top:12px; font-size:13px; line-height:18px; color:#8E8E93">Colour</div>
+<div role="radiogroup" aria-label="Text colour" style="display:flex; gap:12px; margin-top:8px">
+<button type="button" role="radio" aria-checked="true" aria-label="Ink" style="width:32px; height:32px; box-sizing:border-box; border:1px solid rgba(255,255,255,.3); padding:0; border-radius:50%; background:#2B2621; box-shadow:0 0 0 2px #1C1C1E, 0 0 0 4px #FF5A36"></button>
+<button type="button" role="radio" aria-checked="false" aria-label="White" style="width:32px; height:32px; border:0; padding:0; border-radius:50%; background:#FFFFFF"></button>
+<button type="button" role="radio" aria-checked="false" aria-label="Coral" style="width:32px; height:32px; border:0; padding:0; border-radius:50%; background:#FF5A36"></button>
+<button type="button" role="radio" aria-checked="false" aria-label="Rust" style="width:32px; height:32px; border:0; padding:0; border-radius:50%; background:#B33A17"></button>
+<button type="button" role="radio" aria-checked="false" aria-label="Sea" style="width:32px; height:32px; border:0; padding:0; border-radius:50%; background:#3F7C8E"></button>
+<button type="button" role="radio" aria-checked="false" aria-label="Dusk" style="width:32px; height:32px; border:0; padding:0; border-radius:50%; background:#6E5A8F"></button>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

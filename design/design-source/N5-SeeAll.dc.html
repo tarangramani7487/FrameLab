@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Category — Torn Paper Stories</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+
+<div style="position:absolute; left:4px; right:8px; top:52px; height:48px; display:flex; align-items:center; gap:4px">
+<button type="button" aria-label="Back" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+<div style="flex:1; min-width:0">
+<h1 style="margin:0; font:700 19px/24px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.3px">Torn Paper Stories</h1>
+<p style="margin:0; font-size:12px; line-height:16px; color:#6F685E">40 templates · diary pages, torn edges</p>
+</div>
+<button type="button" aria-label="Filters" style="width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"></path><circle cx="15" cy="7" r="2"></circle><circle cx="9" cy="17" r="2"></circle></svg></button>
+</div>
+
+<div role="tablist" aria-label="Sort" style="position:absolute; left:20px; top:112px; width:350px; height:40px; box-sizing:border-box; padding:4px; border-radius:12px; background:#F1ECE4; display:flex; gap:4px">
+<button type="button" role="tab" aria-selected="true" style="flex:1; border:0; border-radius:9px; background:#FFFFFF; box-shadow:0 1px 3px rgba(22,19,15,.12); font:600 13px Inter, sans-serif; color:#16130F">Trending</button>
+<button type="button" role="tab" aria-selected="false" style="flex:1; border:0; border-radius:9px; background:transparent; font:600 13px Inter, sans-serif; color:#6F685E">New</button>
+<button type="button" role="tab" aria-selected="false" style="flex:1; border:0; border-radius:9px; background:transparent; font:600 13px Inter, sans-serif; color:#6F685E">Most used</button>
+</div>
+
+<div style="position:absolute; left:20px; top:168px; width:350px; display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:16px 12px">
+<div><dc-import name="Card" w="169" kind="diary" label="Summer Diary" info="6 slides · 12 photos" slides="6" isnew="yes" hint-size="169px,255px"></dc-import></div>
+<div><dc-import name="Card" w="169" kind="diary" label="Paris Notes" info="6 slides · 11 photos" slides="6" tone="#FFE8EC" l1="paris" l2="notes" hint-size="169px,255px"></dc-import></div>
+<div><dc-import name="Card" w="169" kind="diary" label="Coffee Run" info="5 slides · 9 photos" slides="5" tone="#E7EEDF" l1="coffee" l2="run" hint-size="169px,255px"></dc-import></div>
+<div><dc-import name="Card" w="169" kind="diary" label="Pet Diary" info="6 slides · 12 photos" slides="6" tone="#EAF1F4" l1="pet" l2="diary" hint-size="169px,255px"></dc-import></div>
+<div><dc-import name="Card" w="169" kind="diary" label="Wedding" info="6 slides · 12 photos" slides="6" tone="#F3EDE3" l1="our" l2="wedding" hint-size="169px,255px"></dc-import></div>
+<div><dc-import name="Card" w="169" kind="diary" label="Japan Notes" info="6 slides · 12 photos" slides="6" tone="#16130F" l1="japan" l2="notes" hint-size="169px,255px"></dc-import></div>
+</div>
+
+<div style="position:absolute; left:0; top:756px; width:390px; height:88px"><dc-import name="TabBar" active="home" hint-size="390px,88px"></dc-import></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

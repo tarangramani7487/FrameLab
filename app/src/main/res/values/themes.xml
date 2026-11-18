@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FrameLab" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/fl_paper</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <!-- Android 12 SplashScreen API: launcher icon on paper (HANDOFF §7.5 N1). -->
+    <style name="Theme.FrameLab.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/fl_paper</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.FrameLab</item>
+    </style>
+</resources>

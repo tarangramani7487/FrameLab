@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Template card variants</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width:760px; height:660px; box-sizing:border-box; padding:44px 52px; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<h1 style="margin:0; font:800 26px/30px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.6px">Template card</h1>
+<p style="margin:6px 0 0; font-size:13px; line-height:18px; color:#6F685E">Thumbnails are the first slide drawn live from layout data, so a card never depends on a fixed image. 128 × 160, radius 14. Badges sit outside the scaled art and stay crisp at any size.</p>
+<div style="display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:28px 40px; margin-top:26px">
+<div style="display:flex; flex-direction:column; gap:10px"><span style="font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">SINGLE SLIDE</span><div style="width:128px"><dc-import name="Card" kind="grid" label="Clean Grid" info="4:5 · 4 photos" seed="0" hint-size="128px,204px"></dc-import></div></div>
+<div style="display:flex; flex-direction:column; gap:10px"><span style="font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">MULTI-SLIDE</span><div style="width:128px"><dc-import name="Card" kind="film" label="Film Reel" info="6 slides · 9 photos" slides="6" seed="1" hint-size="128px,204px"></dc-import></div></div>
+<div style="display:flex; flex-direction:column; gap:10px"><span style="font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">NEW · FRAMELAB-MADE</span><div style="width:128px"><dc-import name="Card" kind="diary" label="Torn Diary" info="6 slides · 12 photos" slides="6" isnew="yes" hint-size="128px,204px"></dc-import></div></div>
+<div style="display:flex; flex-direction:column; gap:10px"><span style="font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">FRAME · REMOTE IMAGE</span><div style="width:128px"><dc-import name="Card" kind="fpolaroid" label="Polaroid" info="Frame · 1 photo" seed="1" hint-size="128px,204px"></dc-import></div></div>
+<div style="display:flex; flex-direction:column; gap:10px"><span style="font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">PRESSED · 0.97 + FADE</span><div style="width:128px"><dc-import name="Card" kind="polaroid" label="Polaroid Pile" info="6 slides · 11 photos" slides="6" pressed="yes" seed="2" hint-size="128px,204px"></dc-import></div></div>
+<div style="display:flex; flex-direction:column; gap:10px"><span style="font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">PRO · LOCKED</span><div style="width:128px"><dc-import name="Card" kind="stamp" label="Stamp Collection" info="6 slides · 10 photos" slides="6" pro="yes" seed="0" hint-size="128px,204px"></dc-import></div></div>
+<div style="display:flex; flex-direction:column; gap:10px"><span style="font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">FAVOURITE</span><div style="width:128px"><dc-import name="Card" kind="prints" label="Shoreline Prints" info="5 slides · 8 photos" slides="5" fav="yes" seed="1" hint-size="128px,204px"></dc-import></div></div>
+<div style="display:flex; flex-direction:column; gap:10px"><span style="font:500 10px/14px 'DM Mono', monospace; letter-spacing:.8px; color:#6F685E">DRAFT · YOUR PHOTOS</span><div style="width:128px"><dc-import name="Card" kind="diary" label="Torn Diary" info="Edited 2 h ago" slides="6" photos="yes" hint-size="128px,204px"></dc-import></div></div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":760,"height":660}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

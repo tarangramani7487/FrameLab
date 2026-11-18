@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Edit profile — change photo</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<div style="position:absolute; left:0; top:0; width:390px; height:844px"><dc-import name="N14-EditProfile" hint-size="390px,844px"></dc-import></div>
+<div style="position:absolute; left:0; top:0; width:390px; height:844px; background:rgba(22,19,15,.5)"></div>
+<section role="dialog" aria-label="Profile photo" style="position:absolute; left:0; top:512px; width:390px; height:332px; box-sizing:border-box; padding:0 20px; border-radius:28px 28px 0 0; background:#FFFFFF">
+<div style="width:36px; height:5px; margin:10px auto 0; border-radius:3px; background:#D9D2C7"></div>
+<h2 style="margin:14px 0 6px; font:700 17px/22px Inter, sans-serif">Profile photo</h2>
+<div role="menu" aria-label="Profile photo options" style="display:flex; flex-direction:column">
+<button type="button" role="menuitem" style="height:56px; border:0; border-bottom:1px solid #F1ECE4; padding:0; background:transparent; color:#16130F; display:flex; align-items:center; gap:14px; font:500 16px Inter, sans-serif"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5h3l2-2.5h6l2 2.5h3A1.5 1.5 0 0 1 21.5 9v9a1.5 1.5 0 0 1-1.5 1.5H4A1.5 1.5 0 0 1 2.5 18V9A1.5 1.5 0 0 1 4 7.5z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Take photo</button>
+<button type="button" role="menuitem" style="height:56px; border:0; border-bottom:1px solid #F1ECE4; padding:0; background:transparent; color:#16130F; display:flex; align-items:center; gap:14px; font:500 16px Inter, sans-serif"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2.5"></rect><circle cx="9" cy="9" r="1.6"></circle><path d="m20.5 15-4-4a1.8 1.8 0 0 0-2.6 0L5 20"></path></svg>Choose from library</button>
+<button type="button" role="menuitem" style="height:56px; border:0; padding:0; background:transparent; color:#C8372D; display:flex; align-items:center; gap:14px; font:500 16px Inter, sans-serif"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"></path><path d="M9.5 7V4.5h5V7"></path><path d="M6 7l1 12.5A1.5 1.5 0 0 0 8.5 21h7a1.5 1.5 0 0 0 1.5-1.5L18 7"></path><path d="M10 11v6M14 11v6"></path></svg>Remove photo</button>
+</div>
+<button type="button" style="display:block; width:100%; height:52px; margin-top:12px; border:0; border-radius:26px; background:#F1ECE4; color:#16130F; font:600 16px Inter, sans-serif">Cancel</button>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

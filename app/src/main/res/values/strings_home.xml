@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home & Explore: dynamic / format strings (wording from design/tokens/ui-copy.json). -->
+<resources>
+    <plurals name="home_row_matches">
+        <item quantity="one">%d match</item>
+        <item quantity="other">%d matches</item>
+    </plurals>
+    <string name="home_nothing_matches">Nothing matches “%s”</string>
+    <string name="home_tab_templates_count">Templates · %d</string>
+    <string name="home_tab_frames_count">Frames · %d</string>
+    <string name="home_offline_lead">You\'re offline.</string>
+    <string name="home_offline_text">Showing built-in templates.</string>
+    <string name="home_error_line">Error: %s</string>
+    <string name="home_frame_photos">Frame · %d photos</string>
+
+    <plurals name="explore_count">
+        <item quantity="one">%d template</item>
+        <item quantity="other">%d templates</item>
+    </plurals>
+    <plurals name="explore_no_match">
+        <item quantity="one">No templates match this filter</item>
+        <item quantity="other">No templates match all %d filters</item>
+    </plurals>
+    <string name="explore_filter_value">%1$s · %2$s</string>
+    <string name="explore_remove_filter">Remove filter %1$s %2$s</string>
+    <string name="explore_slides">Slides</string>
+    <string name="explore_photos">Photos</string>
+    <string name="explore_ratio">Ratio</string>
+    <string name="explore_style">Style</string>
+    <string name="explore_topic">Topic</string>
+    <string name="explore_all_filters">All filters</string>
+    <string name="explore_sort_by">Sort by</string>
+    <string name="explore_clear">Clear</string>
+    <string name="explore_done">Done</string>
+    <string name="explore_show_results">Show %d templates</string>
+
+    <string name="seeall_subtitle">%1$d templates · %2$s</string>
+    <string name="seeall_subtitle_plain">%d templates</string>
+
+    <string name="preview_meta">%1$d SLIDES · %2$d PHOTOS · %3$s</string>
+    <string name="preview_meta_one">1 SLIDE · %1$d PHOTO · %2$s</string>
+    <string name="preview_joined">ALL %d SLIDES, JOINED — HOW THE SWIPE FLOWS</string>
+    <string name="preview_cd">%s preview</string>
+    <string name="preview_remove_favourite">Remove from favourites</string>
+    <string name="preview_removed_favourite">Removed from favourites</string>
+    <string name="preview_share_text">%1$s on FrameLab: [APP LINK]</string>
+    <string name="preview_info_slides">%d slides</string>
+    <string name="preview_info_frame">Frame</string>
+    <string name="preview_pro">Pro</string>
+
+    <string name="create_draft_meta">%1$s · %2$d of %3$d photos · %4$s</string>
+    <string name="create_browse">Browse %d designs</string>
+
+    <string name="time_now">just now</string>
+    <string name="time_min">%d min ago</string>
+    <string name="time_hours">%d h ago</string>
+    <string name="time_days">%d d ago</string>
+</resources>

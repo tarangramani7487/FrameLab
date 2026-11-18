@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Designs — Saved</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<h1 style="position:absolute; left:20px; top:54px; margin:0; font:800 30px/34px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.8px">My Designs</h1>
+<div role="tablist" aria-label="My Designs" style="position:absolute; left:20px; top:104px; width:350px; height:42px; box-sizing:border-box; padding:4px; border-radius:13px; background:#F1ECE4; display:flex; gap:4px">
+<button type="button" role="tab" aria-selected="false" style="flex:1; border:0; border-radius:10px; background:transparent; font:600 14px Inter, sans-serif; color:#6F685E">Drafts · 3</button>
+<button type="button" role="tab" aria-selected="true" style="flex:1; border:0; border-radius:10px; background:#FFFFFF; box-shadow:0 1px 3px rgba(22,19,15,.12); font:600 14px Inter, sans-serif; color:#16130F">Saved · 4</button>
+<button type="button" role="tab" aria-selected="false" style="flex:1; border:0; border-radius:10px; background:transparent; font:600 14px Inter, sans-serif; color:#6F685E">Favourites · 6</button>
+</div>
+<div style="position:absolute; left:20px; top:166px; width:350px; display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:16px 12px">
+<div><dc-import name="Card" w="169" kind="diary" photos="yes" label="Torn Diary" info="6 images · saved today" slides="6" hint-size="169px,255px"></dc-import></div>
+<div><dc-import name="Card" w="169" kind="flash" photos="yes" label="Night Flash" info="6 images · Nov 14" slides="6" seed="3" hint-size="169px,255px"></dc-import></div>
+<div><dc-import name="Card" w="169" kind="prints" photos="yes" label="Shoreline Prints" info="5 images · Nov 9" slides="5" seed="1" hint-size="169px,255px"></dc-import></div>
+<div><dc-import name="Card" w="169" kind="stamp" photos="yes" label="Stamp Collection" info="6 images · Oct 30" slides="6" seed="4" hint-size="169px,255px"></dc-import></div>
+</div>
+<div style="position:absolute; left:0; top:756px; width:390px; height:88px"><dc-import name="TabBar" active="designs" hint-size="390px,88px"></dc-import></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

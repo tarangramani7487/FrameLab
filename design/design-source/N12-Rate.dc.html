@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rate FrameLab</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<div style="position:absolute; left:0; top:0; width:390px; height:844px"><dc-import name="N12-Profile" hint-size="390px,844px"></dc-import></div>
+<div style="position:absolute; left:0; top:0; width:390px; height:844px; background:rgba(22,19,15,.5)"></div>
+<section role="dialog" aria-label="Enjoying FrameLab?" style="position:absolute; left:0; top:420px; width:390px; height:424px; box-sizing:border-box; padding:0 24px; border-radius:28px 28px 0 0; background:#FFFFFF; text-align:center">
+<div style="width:36px; height:5px; margin:10px auto 0; border-radius:3px; background:#D9D2C7"></div>
+<div aria-hidden="true" style="position:relative; width:120px; height:86px; margin:16px auto 0">
+<div style="position:absolute; left:32px; top:4px; width:56px; height:70px; transform:rotate(-6deg); box-shadow:0 4px 12px rgba(40,28,15,.18)"><dc-import name="Diary" w="56" count="1" state="full" hint-size="56px,70px"></dc-import></div>
+<svg width="30" height="30" viewBox="0 0 24 24" style="position:absolute; left:84px; top:0; color:#FF5A36; stroke-width:1.8"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6l-5.4 2.9 1.2-6-4.5-4.2 6.1-.7z" fill="#FF5A36"></path></svg>
+</div>
+<h2 style="margin:12px 0 0; font:800 24px/28px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.5px">Enjoying FrameLab?</h2>
+<p style="margin:6px 0 0; font-size:14px; line-height:20px; color:#6F685E">A quick rating helps other creators find us. If something feels off, tell us instead.</p>
+<div style="display:flex; flex-direction:column; gap:8px; margin-top:20px">
+<button type="button" style="height:52px; border:0; border-radius:26px; background:#FF5A36; color:#16130F; font:700 16px Inter, sans-serif">Yes, rate FrameLab</button>
+<button type="button" style="height:52px; border:1px solid #ECE6DC; border-radius:26px; background:#FFFFFF; color:#16130F; font:600 15px Inter, sans-serif">Not really, send feedback</button>
+<button type="button" style="height:44px; border:0; background:transparent; color:#6F685E; font:600 15px Inter, sans-serif">Maybe later</button>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

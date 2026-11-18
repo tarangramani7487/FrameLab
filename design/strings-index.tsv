@@ -1,0 +1,821 @@
+s_framelab	Main	FrameLab.
+s_seamless_carousels_frames_collages	Main	Seamless carousels, frames & collages
+s_n_126	Main	126
+s_designs	Main	designs
+s_search_templates	Main	Search templates
+s_templates	Main	Templates
+s_frames	Main	Frames
+s_new_framelab_originals	Main	NEW · FRAMELAB ORIGINALS
+s_one_photo_three_slides	Main	One photo, three slides.
+s_photos_that_flow_across_every_swipe	Main	Photos that flow across every swipe.
+s_try_film_roll	Main	Try Film Roll
+s_instagram_trending	Main	Instagram Trending
+s_new	Main	NEW
+s_see_all	Main	See all
+s_n_10	Main	10
+s_torn_diary	Main	Torn Diary
+s_n_6_slides_12_photos	Main	6 slides · 12 photos
+s_film_reel	Main	Film Reel
+s_n_6_slides_9_photos	Main	6 slides · 9 photos
+s_polaroid_pile	Main	Polaroid Pile
+s_n_6_slides_11_photos	Main	6 slides · 11 photos
+s_torn_paper_stories	Main	Torn Paper Stories
+s_n_40	Main	40
+s_home	Main	Home
+s_explore	Main	Explore
+s_create	Main	Create
+s_my_designs	Main	My Designs
+s_profile	Main	Profile
+cd_library	Main	Library
+cd_framelab_originals	Main	FrameLab Originals
+cd_instagram_trending	Main	Instagram Trending
+cd_torn_diary	Main	Torn Diary
+cd_film_reel	Main	Film Reel
+cd_polaroid_pile	Main	Polaroid Pile
+cd_torn_paper_stories	Main	Torn Paper Stories
+cd_main	Main	Main
+s_summer_diary	Diary	summer diary
+s_vol_03_the_slow_days	Diary	VOL. 03 · THE SLOW DAYS
+s_salt_hair_late_lunches_zero_plans	Diary	salt hair, late lunches & zero plans
+s_first_swim	Diary	first swim
+s_swipe	Diary	swipe
+s_n_26_11_17	Diary	'26 11 17
+s_arrival	Diary	arrival
+s_day_01	Diary	day 01
+s_arrived_late_ate_early_swam_anyway	Diary	ARRIVED LATE ATE EARLY SWAM ANYWAY
+s_us_sunburnt	Diary	us, sunburnt
+s_boat_day	Diary	boat day
+s_the_two_of_us_mostly_sunburnt	Diary	the two of us, mostly sunburnt
+s_day_04	Diary	day 04
+s_market_beach_noodles	Diary	MARKET — BEACH — NOODLES
+s_best_mango_of_my_life	Diary	best mango of my life
+s_n_26_11	Diary	26.11
+s_until_next_year	Diary	until next year
+s_save_this_for_your_next_slow_summer	Diary	save this for your next slow summer
+s_save_tag_comment	Diary	SAVE · TAG · COMMENT
+s_yourhandle	Diary	@yourhandle
+s_save	EditorTop	Save
+cd_back	EditorTop	Back
+cd_undo	EditorTop	Undo
+cd_redo	EditorTop	Redo
+cd_preview	EditorTop	Preview
+s_photos	Dock	Photos
+s_shuffle	Dock	Shuffle
+s_color	Dock	Color
+s_order	Dock	Order
+s_clear	Dock	Clear
+cd_editor_tools	Dock	Editor tools
+s_framelab_foundations	Foundations	FrameLab. Foundations
+s_darkroom_paper_warm_paper_for_browsing_a	Foundations	Darkroom & Paper: warm paper for browsing, a dark photo-first editor, one coral accent. Tokens come from src/theme.ts; tokens marked * are new, added so every text pair passes WCAG AA.
+s_portrait_phones_390_844_touch_targets_44	Foundations	PORTRAIT PHONES · 390 × 844 TOUCH TARGETS ≥ 44 PX
+s_colour_light_home_library	Foundations	Colour · light (Home & library)
+s_ink	Foundations	ink
+s_n_16130f	Foundations	#16130F
+s_text_dark_cards	Foundations	Text, dark cards
+s_paper	Foundations	paper
+s_faf7f2	Foundations	#FAF7F2
+s_background	Foundations	Background
+s_card	Foundations	card
+s_ffffff	Foundations	#FFFFFF
+s_fields_cards_tab_bar	Foundations	Fields, cards, tab bar
+s_muted	Foundations	muted*
+s_n_6f685e	Foundations	#6F685E
+s_secondary_text_was_8a8378_3_5_1	Foundations	Secondary text (was #8A8378, 3.5:1)
+s_line	Foundations	line
+s_ece6dc	Foundations	#ECE6DC
+s_borders	Foundations	Borders
+s_sunk	Foundations	sunk
+s_f1ece4	Foundations	#F1ECE4
+s_tracks_skeletons	Foundations	Tracks, skeletons
+s_accent	Foundations	accent
+s_ff5a36	Foundations	#FF5A36
+s_fills_only_ink_label_on_top	Foundations	Fills only, ink label on top
+s_accentink	Foundations	accentInk*
+s_b33a17	Foundations	#B33A17
+s_accent_text_on_light	Foundations	Accent text on light
+s_accentsoft	Foundations	accentSoft
+s_ffe6de	Foundations	#FFE6DE
+s_badges_icon_wells	Foundations	Badges, icon wells
+s_danger	Foundations	danger
+s_c8372d	Foundations	#C8372D
+s_destructive	Foundations	Destructive
+s_colour_dark_editor	Foundations	Colour · dark (Editor)
+s_bg	Foundations	bg
+s_n_0b0b0c	Foundations	#0B0B0C
+s_surface	Foundations	surface
+s_n_1c1c1e_dock_sheets	Foundations	#1C1C1E · dock, sheets
+s_raised	Foundations	raised
+s_n_2c2c2e_chips	Foundations	#2C2C2E · chips
+s_text	Foundations	text
+s_muted_2	Foundations	muted
+s_n_8e8e93_on_bg_surface	Foundations	#8E8E93 · on bg/surface
+s_mutedraised	Foundations	mutedRaised*
+s_a1a1a6_on_raised	Foundations	#A1A1A6 · on raised
+s_disabled	Foundations	disabled
+s_n_5a5a5e	Foundations	#5A5A5E
+s_dangerdark	Foundations	dangerDark*
+s_ff6961	Foundations	#FF6961
+s_active_tool_accent_icon_label_on_a_10_ac	Foundations	Active tool: accent icon + label on a 10% accent tint (4.9:1). Accent text never sits on raised #2C2C2E (4.5:1 fails at 11 px).
+s_type	Foundations	Type
+s_display_bricolage_800_34_36	Foundations	DISPLAY · BRICOLAGE 800 · 34/36
+s_posts_that_flow	Foundations	Posts that flow
+s_screen_title_800_30_34	Foundations	SCREEN TITLE · 800 · 30/34
+s_section_bricolage_700_19_24	Foundations	SECTION · BRICOLAGE 700 · 19/24
+s_body_inter_500_15_22	Foundations	BODY · INTER 500 · 15/22
+s_pick_photos_once_they_fill_the_spots_in	Foundations	Pick photos once — they fill the spots in order.
+s_secondary_inter_400_13_18	Foundations	SECONDARY · INTER 400 · 13/18
+s_label_inter_600_11_14	Foundations	LABEL · INTER 600 · 11/14
+s_photos_shuffle_color_order_clear	Foundations	Photos · Shuffle · Color · Order · Clear
+s_mono_dm_mono_500_1011	Foundations	MONO · DM MONO 500 · 10–11
+s_new_framelab_originals_26_11_17	Foundations	NEW · FRAMELAB ORIGINALS · '26 11 17
+s_template_serif_renderer	Foundations	TEMPLATE SERIF · RENDERER
+s_icons	Foundations	Icons
+s_one_stroke_set_replaces_the_unicode_glyp	Foundations	One stroke set replaces the Unicode glyphs: 24 px grid, 1.75 stroke, round caps and joins.
+s_back	Foundations	back
+s_next	Foundations	next
+s_expand	Foundations	expand
+s_close	Foundations	close
+s_check	Foundations	check
+s_add	Foundations	add
+s_search	Foundations	search
+s_filters	Foundations	filters
+s_home_2	Foundations	home
+s_explore_2	Foundations	explore
+s_profile_2	Foundations	profile
+s_settings	Foundations	settings
+s_favourite	Foundations	favourite
+s_share	Foundations	share
+s_post	Foundations	post
+s_save_2	Foundations	save
+s_photos_2	Foundations	photos
+s_shuffle_2	Foundations	shuffle
+s_color_2	Foundations	color
+s_order_2	Foundations	order
+s_clear_2	Foundations	clear
+s_frame	Foundations	frame
+s_position	Foundations	position
+s_style	Foundations	style
+s_duplicate	Foundations	duplicate
+s_delete	Foundations	delete
+s_replace	Foundations	replace
+s_lock	Foundations	lock
+s_unlock	Foundations	unlock
+s_rotate	Foundations	rotate
+s_undo	Foundations	undo
+s_redo	Foundations	redo
+s_preview	Foundations	preview
+s_adjust	Foundations	adjust
+s_zoom	Foundations	zoom
+s_sticker	Foundations	sticker
+s_slides	Foundations	slides
+s_alert	Foundations	alert
+s_offline	Foundations	offline
+s_pro	Foundations	pro
+s_more	Foundations	more
+s_link	Foundations	link
+s_email	Foundations	email
+s_camera	Foundations	camera
+s_help	Foundations	help
+s_controls	Foundations	Controls
+s_use_template	Foundations	Use template
+s_share_2	Foundations	Share…
+s_try_again	Foundations	Try again
+s_delete_2	Foundations	Delete
+s_disabled_2	Foundations	Disabled
+s_torn_paper	Foundations	Torn paper
+s_ratio_4_5	Foundations	Ratio · 4:5
+s_style_2	Foundations	Style
+s_zoom_in	Foundations	Zoom in
+s_arch	Foundations	Arch
+s_reset_size	Foundations	Reset size
+s_shape_spacing	Foundations	Shape & spacing
+s_n_6_tag	Foundations	6 tag
+s_n_10_thumb	Foundations	10 thumb
+s_n_14_card	Foundations	14 card
+s_n_22_dock	Foundations	22 dock
+s_n_28_sheet	Foundations	28 sheet
+s_n_4	Foundations	4
+s_n_8	Foundations	8
+s_n_12	Foundations	12
+s_n_16	Foundations	16
+s_n_20	Foundations	20
+s_n_24	Foundations	24
+cd_example_on	Foundations	Example on
+cd_example_off	Foundations	Example off
+cd_loading_templates	H2-Loading	Loading templates
+s_n_26	H3-Error	26
+s_framelab_originals	H3-Error	FrameLab Originals
+s_built_in	H3-Error	BUILT-IN
+s_film_roll	H3-Error	Film Roll
+s_n_3_slides_3_photos	H3-Error	3 slides · 3 photos
+s_booth_night	H3-Error	Booth Night
+s_n_5_slides_8_photos	H3-Error	5 slides · 8 photos
+s_postcard	H3-Error	Postcard
+s_n_4_slides_6_photos	H3-Error	4 slides · 6 photos
+s_couldn_t_load_more_templates	H3-Error	Couldn't load more templates
+s_designs_built_into_the_app_still_work_ch	H3-Error	Designs built into the app still work. Check your connection, then try again.
+s_error_network_request_failed	H3-Error	Error: Network request failed
+cd_film_roll	H3-Error	Film Roll
+cd_booth_night	H3-Error	Booth Night
+cd_postcard	H3-Error	Postcard
+cd_couldn_t_load_more_templates	H3-Error	Couldn't load more templates
+s_n_36	H4-Frames	36
+s_search_frames	H4-Frames	Search frames
+s_prints_polaroids	H4-Frames	Prints & Polaroids
+s_polaroid	H4-Frames	Polaroid
+s_frame_1_photo	H4-Frames	Frame · 1 photo
+s_cream_lab_print	H4-Frames	Cream lab print
+s_torn_edge	H4-Frames	Torn edge
+s_film_cameras	H4-Frames	Film & cameras
+s_n_9	H4-Frames	9
+s_n_35_mm_film	H4-Frames	35 mm film
+s_digicam	H4-Frames	Digicam
+s_frame_2_photos	H4-Frames	Frame · 2 photos
+s_postage_stamp	H4-Frames	Postage stamp
+cd_prints_and_polaroids	H4-Frames	Prints and Polaroids
+cd_polaroid	H4-Frames	Polaroid
+cd_cream_lab_print	H4-Frames	Cream lab print
+cd_torn_edge	H4-Frames	Torn edge
+cd_film_and_cameras	H4-Frames	Film and cameras
+cd_n_35_mm_film	H4-Frames	35 mm film
+cd_digicam	H4-Frames	Digicam
+cd_postage_stamp	H4-Frames	Postage stamp
+s_n_18	H5-Search	18
+s_templates_18	H5-Search	Templates · 18
+s_frames_4	H5-Search	Frames · 4
+s_also_try	H5-Search	ALSO TRY
+s_beach	H5-Search	Beach
+s_road_trip	H5-Search	Road trip
+s_japan	H5-Search	Japan
+s_paris	H5-Search	Paris
+s_travel	H5-Search	Travel
+s_travel_journal	H5-Search	Travel Journal
+s_n_6_slides_10_photos	H5-Search	6 slides · 10 photos
+s_shoreline_prints	H5-Search	Shoreline Prints
+s_n_1_match	H5-Search	1 match
+cd_search_templates	H5-Search	Search templates
+cd_clear_search	H5-Search	Clear search
+cd_results	H5-Search	Results
+cd_travel	H5-Search	Travel
+cd_travel_journal	H5-Search	Travel Journal
+cd_shoreline_prints	H5-Search	Shoreline Prints
+cd_instagram_trending_1_match	H5-Search	Instagram Trending, 1 match
+s_n_0	H6-NoResults	0
+s_templates_0	H6-NoResults	Templates · 0
+s_frames_0	H6-NoResults	Frames · 0
+s_nothing_matches_bowling_night	H6-NoResults	Nothing matches “bowling night”
+s_try_a_shorter_word_or_start_from_one_of	H6-NoResults	Try a shorter word, or start from one of these:
+s_celebrations	H6-NoResults	Celebrations
+s_night_flash	H6-NoResults	Night Flash
+s_birthday	H6-NoResults	Birthday
+s_stories	H6-NoResults	Stories
+s_clear_search	H6-NoResults	Clear search
+s_you_re_offline_showing_built_in_template	N24-Offline	You're offline. Showing built-in templates.
+s_retry	N24-Offline	Retry
+s_template_card	H7-Cards	Template card
+s_thumbnails_are_the_first_slide_drawn_liv	H7-Cards	Thumbnails are the first slide drawn live from layout data, so a card never depends on a fixed image. 128 × 160, radius 14. Badges sit outside the scaled art and stay crisp at any size.
+s_single_slide	H7-Cards	SINGLE SLIDE
+s_clean_grid	H7-Cards	Clean Grid
+s_n_4_5_4_photos	H7-Cards	4:5 · 4 photos
+s_multi_slide	H7-Cards	MULTI-SLIDE
+s_new_framelab_made	H7-Cards	NEW · FRAMELAB-MADE
+s_frame_remote_image	H7-Cards	FRAME · REMOTE IMAGE
+s_pressed_0_97_fade	H7-Cards	PRESSED · 0.97 + FADE
+s_pro_locked	H7-Cards	PRO · LOCKED
+s_stamp_collection	H7-Cards	Stamp Collection
+s_favourite_2	H7-Cards	FAVOURITE
+s_draft_your_photos	H7-Cards	DRAFT · YOUR PHOTOS
+s_edited_2_h_ago	H7-Cards	Edited 2 h ago
+cd_clean_grid	H7-Cards	Clean Grid
+cd_stamp_collection	H7-Cards	Stamp Collection
+s_search_templates_styles_topics	N3-Explore	Search templates, styles, topics
+s_filters_2	N3-Explore	Filters
+s_n_2	N3-Explore	2
+s_slides_56	N3-Explore	Slides · 5–6
+s_topic	N3-Explore	Topic
+s_n_24_templates	N3-Explore	24 templates
+s_trending	N3-Explore	Trending
+s_slides_1	N4-NoResults	Slides · 1
+s_photos_10	N4-NoResults	Photos · 10+
+s_ratio_9_16	N4-NoResults	Ratio · 9:16
+s_n_0_templates	N4-NoResults	0 templates
+s_no_templates_match_all_4_filters	N4-NoResults	No templates match all 4 filters
+s_try_fewer_filters_remove_one_below_or_cl	N4-NoResults	Try fewer filters. Remove one below, or clear them all.
+s_style_stamp	N4-NoResults	Style · Stamp
+s_clear_all_filters	N4-NoResults	Clear all filters
+cd_remove_filter_slides_1	N4-NoResults	Remove filter Slides 1
+cd_remove_filter_photos_10_or_more	N4-NoResults	Remove filter Photos 10 or more
+cd_remove_filter_ratio_9_16	N4-NoResults	Remove filter Ratio 9:16
+cd_remove_filter_style_stamp	N4-NoResults	Remove filter Style Stamp
+s_n_40_templates_diary_pages_torn_edges	N5-SeeAll	40 templates · diary pages, torn edges
+s_new_2	N5-SeeAll	New
+s_most_used	N5-SeeAll	Most used
+s_summer_diary_2	N5-SeeAll	Summer Diary
+s_paris_notes	N5-SeeAll	Paris Notes
+s_coffee_run	N5-SeeAll	Coffee Run
+s_n_5_slides_9_photos	N5-SeeAll	5 slides · 9 photos
+s_pet_diary	N5-SeeAll	Pet Diary
+s_wedding	N5-SeeAll	Wedding
+s_japan_notes	N5-SeeAll	Japan Notes
+cd_filters	N5-SeeAll	Filters
+cd_sort	N5-SeeAll	Sort
+cd_summer_diary	N5-SeeAll	Summer Diary
+cd_paris_notes	N5-SeeAll	Paris Notes
+cd_coffee_run	N5-SeeAll	Coffee Run
+cd_pet_diary	N5-SeeAll	Pet Diary
+cd_wedding	N5-SeeAll	Wedding
+cd_japan_notes	N5-SeeAll	Japan Notes
+s_continue_last_draft	N6-Create	Continue last draft
+s_torn_diary_5_of_12_photos_2_h_ago	N6-Create	Torn Diary · 5 of 12 photos · 2 h ago
+s_start_from_a_template	N6-Create	Start from a template
+s_browse_126_designs	N6-Create	Browse 126 designs
+s_blank_carousel	N6-Create	Blank carousel
+s_choose_a_ratio_and_slide_count	N6-Create	Choose a ratio and slide count
+s_soon	N6-Create	SOON
+s_add_a_frame	N6-Create	Add a frame
+s_one_photo_one_decorative_frame	N6-Create	One photo, one decorative frame
+cd_create	N6-Create	Create
+cd_close	N6-Create	Close
+s_n_6_slides_12_photos_4_5	N7-Preview	6 SLIDES · 12 PHOTOS · 4:5
+s_summer	N7-Preview	Summer
+s_diary	N7-Preview	Diary
+s_all_6_slides_joined_how_the_swipe_flows	N7-Preview	ALL 6 SLIDES, JOINED — HOW THE SWIPE FLOWS
+s_similar_templates	N7-Preview	Similar templates
+s_n_6_slides	N7-Preview	6 slides
+cd_torn_diary_preview	N7-Preview	Torn Diary preview
+cd_slide_1_of_6	N7-Preview	Slide 1 of 6
+cd_add_to_favourites	N7-Preview	Add to favourites
+cd_share_link	N7-Preview	Share link
+s_opening_torn_diary	E1-Loading	Opening Torn Diary
+s_getting_6_slides_ready	E1-Loading	Getting 6 slides ready
+s_couldn_t_open_this_design	E2-Error	Couldn't open this design
+s_torn_diary_didn_t_finish_downloading_che	E2-Error	Torn Diary didn't finish downloading. Check your connection and try again.
+s_error_request_timed_out	E2-Error	Error: Request timed out
+s_go_back	E2-Error	Go back
+s_n_0_12_photos_tap_to_add_photos	E3-Empty	0/12 photos · tap + to add photos
+cd_slide_1_current	E3-Empty	Slide 1, current
+cd_slide_2	E3-Empty	Slide 2
+cd_slide_3	E3-Empty	Slide 3
+cd_slide_4	E3-Empty	Slide 4
+cd_slide_5	E3-Empty	Slide 5
+cd_slide_6	E3-Empty	Slide 6
+s_n_5_12_photos_tap_a_photo_to_edit_it	E4-Filled	5/12 photos · tap a photo to edit it
+s_background_shows_around_paper_and_photos	E5-Color	BACKGROUND · SHOWS AROUND PAPER AND PHOTOS
+cd_background_colour	E5-Color	Background colour
+cd_template_colour_reset	E5-Color	Template colour (reset)
+cd_white	E5-Color	White
+cd_paper	E5-Color	Paper
+cd_cream	E5-Color	Cream
+cd_blush	E5-Color	Blush
+cd_mist	E5-Color	Mist
+cd_sage	E5-Color	Sage
+cd_ink	E5-Color	Ink
+cd_navy	E5-Color	Navy
+s_photo_order_slide_by_slide_top_to_bottom	E6-Order	PHOTO ORDER · SLIDE BY SLIDE, TOP TO BOTTOM
+s_n_1	E6-Order	1
+s_s1	E6-Order	S1
+s_n_3	E6-Order	3
+s_s2	E6-Order	S2
+s_n_5	E6-Order	5
+s_n_6	E6-Order	6
+s_s3	E6-Order	S3
+s_n_7	E6-Order	7
+s_s4	E6-Order	S4
+s_n_11	E6-Order	11
+s_s5	E6-Order	S5
+s_s6	E6-Order	S6
+cd_photo_order	E6-Order	Photo order
+s_drag_to_move_corners_resize_sides_stretc	E7-Selected	Drag to move · corners resize · sides stretch
+s_frame_2	E7-Selected	Frame
+s_position_2	E7-Selected	Position
+s_duplicate_2	E7-Selected	Duplicate
+cd_photo_actions	E7-Selected	Photo actions
+cd_delete_photo	E7-Selected	Delete photo
+cd_replace_photo	E7-Selected	Replace photo
+cd_lock_photo	E7-Selected	Lock photo
+cd_rotate_photo_drag_to_rotate_tap_for_90	E7-Selected	Rotate photo — drag to rotate, tap for 90°
+cd_deselect_photo	E7-Selected	Deselect photo
+s_original	E8-Frame	Original
+s_square	E8-Frame	Square
+s_rounded	E8-Frame	Rounded
+s_circle	E8-Frame	Circle
+cd_rotate_photo	E8-Frame	Rotate photo
+cd_frame_shape	E8-Frame	Frame shape
+s_adjust_inside	E9-Position	Adjust inside
+s_zoom_out	E9-Position	Zoom out
+s_turn_photo	E9-Position	Turn photo
+s_center_photo	E9-Position	Center photo
+cd_position	E9-Position	Position
+s_n_1_5	E10-Crop	1.5×
+s_adjusting_inside_drag_to_move_pinch_to_z	E10-Crop	Adjusting inside · drag to move, pinch to zoom
+s_fill	E11-Style	Fill
+s_fit	E11-Style	Fit
+s_flip	E11-Style	Flip
+cd_style	E11-Style	Style
+s_locked_unlock_to_move_or_delete	E12-Locked	Locked — unlock to move or delete
+cd_unlock_photo	E12-Locked	Unlock photo
+s_preview_2	N19-PreviewMode	Preview
+s_n_1_6	N19-PreviewMode	1 / 6
+s_keep_editing	N19-PreviewMode	Keep editing
+s_save_6_images	N19-PreviewMode	Save 6 images
+cd_close_preview	N19-PreviewMode	Close preview
+s_edit_text	N20-Text	Edit text
+s_done	N20-Text	Done
+s_aa	N20-Text	Aa
+s_size	N20-Text	Size
+s_n_46	N20-Text	46
+s_colour	N20-Text	Colour
+cd_edit_text	N20-Text	Edit text
+cd_text	N20-Text	Text
+cd_font	N20-Text	Font
+cd_sans	N20-Text	Sans
+cd_serif	N20-Text	Serif
+cd_mono	N20-Text	Mono
+cd_alignment	N20-Text	Alignment
+cd_align_left	N20-Text	Align left
+cd_align_centre	N20-Text	Align centre
+cd_align_right	N20-Text	Align right
+cd_text_colour	N20-Text	Text colour
+cd_coral	N20-Text	Coral
+cd_rust	N20-Text	Rust
+cd_sea	N20-Text	Sea
+cd_dusk	N20-Text	Dusk
+s_stickers	N21-Stickers	Stickers
+s_all	N21-Stickers	All
+s_tape	N21-Stickers	Tape
+s_stamps	N21-Stickers	Stamps
+s_dates	N21-Stickers	Dates
+s_doodles	N21-Stickers	Doodles
+s_chips	N21-Stickers	Chips
+s_note	N21-Stickers	NOTE
+s_lis	N21-Stickers	LIS
+cd_stickers	N21-Stickers	Stickers
+cd_close_stickers	N21-Stickers	Close stickers
+cd_sticker_type	N21-Stickers	Sticker type
+cd_masking_tape	N21-Stickers	Masking tape
+cd_pink_tape	N21-Stickers	Pink tape
+cd_gingham_tape	N21-Stickers	Gingham tape
+cd_date_stamp	N21-Stickers	Date stamp
+cd_postmark	N21-Stickers	Postmark
+cd_star_doodle	N21-Stickers	Star doodle
+cd_arrow_doodle	N21-Stickers	Arrow doodle
+cd_swipe_chip	N21-Stickers	Swipe chip
+cd_heart_doodle	N21-Stickers	Heart doodle
+cd_paper_label	N21-Stickers	Paper label
+cd_boarding_pass	N21-Stickers	Boarding pass
+s_slides_2	N22-Slides	Slides
+s_n_6_4_5	N22-Slides	6 · 4:5
+s_slides_12_and_56_share_a_photo_so_they_m	N22-Slides	Slides 1–2 and 5–6 share a photo, so they move as a pair. Long-press a slide to drag it.
+s_move_left	N22-Slides	Move left
+s_move_right	N22-Slides	Move right
+cd_slides	N22-Slides	Slides
+cd_add_slide	N22-Slides	Add slide
+cd_slide_2_actions	N22-Slides	Slide 2 actions
+s_save_as_a_draft	N23-Draft	Save as a draft?
+s_you_ve_placed_5_of_12_photos_save_now_an	N23-Draft	You've placed 5 of 12 photos. Save now and pick up where you left off in My Designs.
+s_save_draft	N23-Draft	Save draft
+s_discard	N23-Draft	Discard
+s_cancel	N23-Draft	Cancel
+cd_save_as_a_draft	N23-Draft	Save as a draft?
+s_tip_1_of_3	N23-Coach	TIP 1 OF 3
+s_tap_to_add_photos	N23-Coach	Tap + to add photos
+s_pick_photos_once_and_they_fill_the_spots	N23-Coach	Pick photos once and they fill the spots in order, slide by slide. This one spans slides 1 and 2.
+s_skip_tips	N23-Coach	Skip tips
+s_next_2	N23-Coach	Next
+cd_tip_1_of_3	N23-Coach	Tip 1 of 3
+s_n_7_spots_are_still_empty	N18-Precheck	7 spots are still empty
+s_empty_spots_save_as_plain_paper_fill_the	N18-Precheck	Empty spots save as plain paper. Fill them first, or save the 6 slides as they are.
+s_save_anyway	N18-Precheck	Save anyway
+cd_n_7_spots_are_still_empty	N18-Precheck	7 spots are still empty
+cd_slide_1_1_empty	N18-Precheck	Slide 1: 1 empty
+cd_slide_2_1_empty	N18-Precheck	Slide 2: 1 empty
+cd_slide_3_all_filled	N18-Precheck	Slide 3: all filled
+cd_slide_4_1_empty	N18-Precheck	Slide 4: 1 empty
+cd_slide_5_3_empty	N18-Precheck	Slide 5: 3 empty
+cd_slide_6_1_empty	N18-Precheck	Slide 6: 1 empty
+s_saving	N18-Progress	Saving
+s_n_12_12_photos_ready_to_save	N18-Progress	12/12 photos · ready to save
+s_saving_slide_3_of_6	N18-Progress	Saving slide 3 of 6
+s_keep_framelab_open_it_only_takes_a_few_s	N18-Progress	Keep FrameLab open. It only takes a few seconds.
+cd_saving	N18-Progress	Saving
+cd_slides_saved	N18-Progress	Slides saved
+s_torn_diary_1080_1350	N18-Success	TORN DIARY · 1080 × 1350
+s_n_01	N18-Success	01
+s_n_02	N18-Success	02
+s_n_03	N18-Success	03
+s_n_04	N18-Success	04
+s_n_05	N18-Success	05
+s_n_06	N18-Success	06
+s_n_6_images_saved_in_order	N18-Success	6 images saved, in order
+s_they_re_in_your_gallery_in_an_album_call	N18-Success	They're in your gallery, in an album called “FrameLab”. Post them in this order and your photos line up across the swipe.
+s_share_to_instagram	N18-Success	Share to Instagram
+s_back_to_editor	N18-Success	Back to editor
+s_export_failed	N18-Error	Export failed
+s_slide_4_couldn_t_be_saved_slides_13_are	N18-Error	Slide 4 couldn't be saved. Slides 1–3 are already in your gallery, and nothing in your design was lost.
+s_error_not_enough_storage_space	N18-Error	Error: Not enough storage space
+s_close_2	N18-Error	Close
+cd_export_failed	N18-Error	Export failed
+s_remove_all_photos	D5-Clear	Remove all photos?
+s_locked_photos_stay_you_can_undo_this	D5-Clear	Locked photos stay. You can undo this.
+s_remove	D5-Clear	Remove
+cd_remove_all_photos	D5-Clear	Remove all photos?
+s_photo_is_locked_unlock_it_to_delete	D6-Locked	Photo is locked. Unlock it to delete.
+s_unlock_2	D6-Locked	Unlock
+s_no_empty_spot_every_spot_has_a_photo	D7-NoSlot	No empty spot. Every spot has a photo.
+s_add_slide	D7-NoSlot	Add slide
+s_photo_access_is_off	D2-Permission	Photo access is off
+s_framelab_needs_your_photos_to_fill_templ	D2-Permission	FrameLab needs your photos to fill templates and to save finished slides to your gallery.
+s_open_settings_for_framelab	D2-Permission	Open Settings for FrameLab
+s_tap_photos	D2-Permission	Tap Photos
+s_allow_access_to_all_photos	D2-Permission	Allow access to all photos
+s_open_settings	D2-Permission	Open settings
+s_not_now	D2-Permission	Not now
+s_toasts_banners	N24-Toasts	Toasts & banners
+s_inverse_surface_ink_on_light_screens_whi	N24-Toasts	Inverse surface: ink on light screens, white in the dark editor. One at a time, about 4 seconds, swipe to dismiss. They sit above the tab bar or dock.
+s_home_library_profile	N24-Toasts	HOME · LIBRARY · PROFILE
+s_draft_saved	N24-Toasts	Draft saved
+s_added_to_favourites	N24-Toasts	Added to favourites
+s_undo_2	N24-Toasts	Undo
+s_link_copied	N24-Toasts	Link copied
+s_editor	N24-Toasts	EDITOR
+s_photo_is_locked_unlock_to_delete	N24-Toasts	Photo is locked. Unlock to delete.
+s_no_empty_spot	N24-Toasts	No empty spot.
+s_n_5_photos_removed	N24-Toasts	5 photos removed
+cd_light_screens	N24-Toasts	Light screens
+cd_editor	N24-Toasts	Editor
+s_drafts_3	N8-Drafts	Drafts · 3
+s_saved_4	N8-Drafts	Saved · 4
+s_favourites_6	N8-Drafts	Favourites · 6
+s_n_5_12_photos	N8-Drafts	5/12 photos
+s_edited_yesterday	N8-Drafts	Edited yesterday
+s_ready_to_save	N8-Drafts	Ready to save
+s_edited_nov_12	N8-Drafts	Edited Nov 12
+s_n_3_11_photos	N8-Drafts	3/11 photos
+cd_my_designs	N8-Drafts	My Designs
+cd_more_options_for_torn_diary	N8-Drafts	More options for Torn Diary
+cd_more_options_for_film_reel	N8-Drafts	More options for Film Reel
+cd_more_options_for_polaroid_pile	N8-Drafts	More options for Polaroid Pile
+s_drafts	N8-DraftsEmpty	Drafts
+s_saved	N8-DraftsEmpty	Saved
+s_favourites	N8-DraftsEmpty	Favourites
+s_no_drafts_yet	N8-DraftsEmpty	No drafts yet
+s_leave_a_design_with_save_draft_and_it_wa	N8-DraftsEmpty	Leave a design with “Save draft” and it waits here, photos and all, ready to finish.
+s_browse_templates	N8-DraftsEmpty	Browse templates
+s_n_6_images_saved_today	N9-Saved	6 images · saved today
+s_n_6_images_nov_14	N9-Saved	6 images · Nov 14
+s_n_5_images_nov_9	N9-Saved	5 images · Nov 9
+s_n_6_images_oct_30	N9-Saved	6 images · Oct 30
+cd_night_flash	N9-Saved	Night Flash
+s_nothing_saved_yet	N9-SavedEmpty	Nothing saved yet
+s_when_you_save_a_design_its_images_go_to	N9-SavedEmpty	When you save a design, its images go to your gallery and a copy stays here, so you can share it again.
+s_camera_roll	N10-Favourites	Camera Roll
+s_n_5_slides_7_photos	N10-Favourites	5 slides · 7 photos
+s_big_type	N10-Favourites	Big Type
+s_n_5_slides_6_photos	N10-Favourites	5 slides · 6 photos
+s_frame_mix	N10-Favourites	Frame Mix
+cd_camera_roll	N10-Favourites	Camera Roll
+cd_big_type	N10-Favourites	Big Type
+cd_frame_mix	N10-Favourites	Frame Mix
+s_no_favourites_yet	N10-FavEmpty	No favourites yet
+s_tap_the_heart_on_any_template_preview_to	N10-FavEmpty	Tap the heart on any template preview to keep it here for later.
+s_n_6_images_1080_1350_saved_today	N11-PostDetail	6 IMAGES · 1080 × 1350 · SAVED TODAY
+s_save_again	N11-PostDetail	Save again
+s_edit_a_copy	N11-PostDetail	Edit a copy
+s_delete_from_my_designs	N11-PostDetail	Delete from My Designs
+cd_more_options	N11-PostDetail	More options
+cd_slide_2_of_6	N11-PostDetail	Slide 2 of 6
+s_sam_rivera	N12-Profile	Sam Rivera
+s_sam_shoots	N12-Profile	@sam.shoots
+s_edit_profile	N12-Profile	Edit profile
+s_designs_made	N12-Profile	Designs made
+s_posts_saved	N12-Profile	Posts saved
+s_framelab_pro	N12-Profile	FrameLab Pro
+s_every_template_hd_export_no_watermark	N12-Profile	Every template, HD export, no watermark
+s_see_plans	N12-Profile	See plans
+s_settings_2	N12-Profile	Settings
+s_help_feedback	N12-Profile	Help & feedback
+s_rate_framelab	N12-Profile	Rate FrameLab
+s_share_the_app	N12-Profile	Share the app
+s_about	N12-Profile	About
+cd_settings	N12-Profile	Settings
+cd_more	N12-Profile	More
+s_guest	N13-Guest	Guest
+s_sign_in_to_keep_drafts_and_favourites_on	N13-Guest	Sign in to keep drafts and favourites on all your devices.
+s_sign_in	N13-Guest	Sign in
+cd_guest	N13-Guest	Guest
+s_change_photo	N14-EditProfile	Change photo
+s_name	N14-EditProfile	Name
+s_handle	N14-EditProfile	Handle
+s_x	N14-EditProfile	@
+s_shown_on_links_you_share_letters_numbers	N14-EditProfile	Shown on links you share. Letters, numbers, dots and underscores.
+cd_handle	N14-EditProfile	Handle
+s_keep_your_designs_everywhere	N15-SignIn	Keep your designs everywhere
+s_sign_in_to_sync_drafts_and_favourites_ac	N15-SignIn	Sign in to sync drafts and favourites across your devices.
+s_continue_with_apple	N15-SignIn	Continue with Apple
+s_continue_with_google	N15-SignIn	Continue with Google
+s_continue_with_email	N15-SignIn	Continue with email
+s_continue_as_guest	N15-SignIn	Continue as guest
+s_by_continuing_you_agree_to_the_terms_and	N15-SignIn	By continuing you agree to the Terms and Privacy Policy.
+s_export	N16-Settings	EXPORT
+s_quality	N16-Settings	Quality
+s_max_makes_bigger_files	N16-Settings	Max makes bigger files
+s_high	N16-Settings	High
+s_max	N16-Settings	Max
+s_file_format	N16-Settings	File format
+s_jpg	N16-Settings	JPG
+s_png	N16-Settings	PNG
+s_number_slides_in_file_names	N16-Settings	Number slides in file names
+s_torn_diary_01_jpg_02_03	N16-Settings	torn-diary-01.jpg, -02, -03…
+s_save_to_an_album_called_framelab	N16-Settings	Save to an album called “FrameLab”
+s_always_show_photo_order_numbers	N16-Settings	Always show photo-order numbers
+s_snap_rotation_to_90	N16-Settings	Snap rotation to 90°
+s_haptics	N16-Settings	Haptics
+s_appearance	N16-Settings	APPEARANCE
+s_theme	N16-Settings	Theme
+s_the_editor_always_stays_dark	N16-Settings	The editor always stays dark
+s_light	N16-Settings	Light
+s_dark	N16-Settings	Dark
+s_system	N16-Settings	System
+s_permissions	N16-Settings	PERMISSIONS
+s_full_access	N16-Settings	Full access
+s_open_system_settings	N16-Settings	Open system settings
+s_storage	N16-Settings	STORAGE
+s_cache	N16-Settings	Cache
+s_n_84_mb_template_images	N16-Settings	84 MB · template images
+s_delete_all_drafts	N16-Settings	Delete all drafts
+s_account	N16-Settings	ACCOUNT
+s_signed_in_as	N16-Settings	Signed in as
+s_sign_out	N16-Settings	Sign out
+s_delete_account	N16-Settings	Delete account
+s_about_2	N16-Settings	ABOUT
+s_version	N16-Settings	Version
+s_x_y_z	N16-Settings	[x.y.z]
+s_terms_of_service	N16-Settings	Terms of Service
+s_privacy_policy	N16-Settings	Privacy Policy
+s_licences	N16-Settings	Licences
+cd_quality	N16-Settings	Quality
+cd_file_format	N16-Settings	File format
+cd_number_slides_in_file_names	N16-Settings	Number slides in file names
+cd_save_to_framelab_album	N16-Settings	Save to FrameLab album
+cd_always_show_photo_order_numbers	N16-Settings	Always show photo-order numbers
+cd_snap_rotation_to_90_degrees	N16-Settings	Snap rotation to 90 degrees
+cd_haptics	N16-Settings	Haptics
+cd_theme	N16-Settings	Theme
+s_make_every_post_look_finished	N17-Paywall	Make every post look finished.
+s_every_template_plus_new_trend_drops	N17-Paywall	Every template, plus new trend drops
+s_no_watermark_on_your_exports	N17-Paywall	No watermark on your exports
+s_max_quality_hd_export_jpg_or_png	N17-Paywall	Max-quality HD export, JPG or PNG
+s_early_access_to_new_trends	N17-Paywall	Early access to new trends
+s_best_value	N17-Paywall	BEST VALUE
+s_yearly	N17-Paywall	Yearly
+s_yearly_price	N17-Paywall	[YEARLY PRICE]
+s_per_year	N17-Paywall	per year
+s_monthly	N17-Paywall	Monthly
+s_monthly_price	N17-Paywall	[MONTHLY PRICE]
+s_per_month	N17-Paywall	per month
+s_start_free_trial	N17-Paywall	Start free trial
+s_restore_purchases	N17-Paywall	Restore purchases
+s_trial_length_and_renewal_terms_cancel_an	N17-Paywall	[Trial length and renewal terms]. Cancel anytime in your app store settings.
+cd_plan	N17-Paywall	Plan
+s_rename	N8-Menu	Rename
+s_select	N8-Menu	Select
+cd_torn_diary_options	N8-Menu	Torn Diary options
+s_rename_draft	N8-Rename	Rename draft
+s_only_you_see_this_name_the_template_stay	N8-Rename	Only you see this name. The template stays Torn Diary.
+cd_rename_draft	N8-Rename	Rename draft
+cd_draft_name	N8-Rename	Draft name
+cd_clear_name	N8-Rename	Clear name
+s_delete_torn_diary	N8-DeleteDraft	Delete “Torn Diary”?
+s_this_draft_goes_from_framelab_the_origin	N8-DeleteDraft	This draft goes from FrameLab. The original photos stay in your gallery.
+cd_delete_torn_diary	N8-DeleteDraft	Delete Torn Diary?
+s_n_2_selected	N8-Select	2 selected
+s_select_all	N8-Select	Select all
+s_edited_2_h_ago_5_12_photos	N8-Select	Edited 2 h ago · 5/12 photos
+s_edited_yesterday_ready_to_save	N8-Select	Edited yesterday · ready to save
+s_edited_nov_12_3_11_photos	N8-Select	Edited Nov 12 · 3/11 photos
+s_delete_2_2	N8-Select	Delete 2
+cd_drafts	N8-Select	Drafts
+cd_select_torn_diary	N8-Select	Select Torn Diary
+cd_select_film_reel	N8-Select	Select Film Reel
+cd_select_polaroid_pile	N8-Select	Select Polaroid Pile
+cd_actions_for_2_drafts	N8-Select	Actions for 2 drafts
+s_post_in_this_order	N9-PostInOrder	Post in this order
+s_framelab_hands_all_6_images_to_instagram	N9-PostInOrder	FrameLab hands all 6 images to Instagram, already in order.
+s_choose_a_feed_post_and_keep_the_order_as	N9-PostInOrder	Choose a feed post and keep the order as it is.
+s_add_a_caption_and_share_the_photos_line	N9-PostInOrder	Add a caption and share. The photos line up as people swipe.
+s_open_instagram	N9-PostInOrder	Open Instagram
+cd_post_in_this_order	N9-PostInOrder	Post in this order
+s_delete_from_my_designs_2	N11-DeletePost	Delete from My Designs?
+s_the_6_images_stay_in_your_gallery_only_f	N11-DeletePost	The 6 images stay in your gallery. Only FrameLab's copy is removed, so you won't be able to edit a copy later.
+cd_delete_from_my_designs	N11-DeletePost	Delete from My Designs?
+s_profile_photo	N14-PhotoSheet	Profile photo
+s_take_photo	N14-PhotoSheet	Take photo
+s_choose_from_library	N14-PhotoSheet	Choose from library
+s_remove_photo	N14-PhotoSheet	Remove photo
+cd_profile_photo	N14-PhotoSheet	Profile photo
+cd_profile_photo_options	N14-PhotoSheet	Profile photo options
+s_that_handle_is_taken_try_one_of_these	N14-HandleError	That handle is taken. Try one of these:
+s_sam_shoots_26	N14-HandleError	@sam.shoots.26
+s_samshoots	N14-HandleError	@samshoots
+s_sam_frames	N14-HandleError	@sam_frames
+s_sign_in_with_email	N15-Email	Sign in with email
+s_we_ll_email_you_a_sign_in_link_no_passwo	N15-Email	We'll email you a sign-in link. No password needed.
+s_email_2	N15-Email	Email
+s_send_link	N15-Email	Send link
+s_check_your_inbox	N15-Inbox	Check your inbox
+s_we_sent_a_sign_in_link_to_sam_example_co	N15-Inbox	We sent a sign-in link to sam@example.com. Open it on this phone to finish signing in.
+s_open_email_app	N15-Inbox	Open email app
+s_resend_link_in_0_24	N15-Inbox	Resend link in 0:24
+s_use_a_different_email	N15-Inbox	Use a different email
+s_sign_out_2	N16-SignOut	Sign out?
+s_your_drafts_stay_on_this_phone_sign_in_a	N16-SignOut	Your drafts stay on this phone. Sign in again to sync them and your favourites.
+cd_sign_out	N16-SignOut	Sign out?
+s_delete_your_framelab_account	N16-DeleteAccount	Delete your FrameLab account?
+s_gets_deleted	N16-DeleteAccount	GETS DELETED
+s_drafts_and_favourites_synced_to_your_acc	N16-DeleteAccount	Drafts and favourites synced to your account
+s_your_profile_and_the_handle_sam_shoots	N16-DeleteAccount	Your profile and the handle @sam.shoots
+s_copies_of_saved_posts_in_my_designs	N16-DeleteAccount	Copies of saved posts in My Designs
+s_stays_on_your_phone	N16-DeleteAccount	STAYS ON YOUR PHONE
+s_every_image_you_ve_saved_to_your_gallery	N16-DeleteAccount	Every image you've saved to your gallery
+s_have_pro_cancel_it_in_your_app_store_set	N16-DeleteAccount	Have Pro? Cancel it in your app store settings first. Deleting your account doesn't cancel the subscription.
+s_type_delete_to_confirm	N16-DeleteAccount	Type DELETE to confirm
+s_search_help	N12-Help	Search help
+s_common_questions	N12-Help	COMMON QUESTIONS
+s_how_do_seamless_carousels_work	N12-Help	How do seamless carousels work?
+s_each_slide_saves_as_its_own_image_some_p	N12-Help	Each slide saves as its own image. Some photos and frames cross a slide edge, so when you post the slides in order they join up into one long picture as people swipe.
+s_why_does_one_photo_spot_cover_two_slides	N12-Help	Why does one photo spot cover two slides?
+s_how_do_i_post_the_slides_in_the_right_or	N12-Help	How do I post the slides in the right order?
+s_where_are_my_drafts_kept	N12-Help	Where are my drafts kept?
+s_how_do_i_restore_framelab_pro	N12-Help	How do I restore FrameLab Pro?
+s_still_stuck	N12-Help	Still stuck?
+s_tell_us_what_happened_or_ask_for_a_templ	N12-Help	Tell us what happened, or ask for a template you'd love to see.
+s_send_feedback	N12-Help	Send feedback
+s_email_support	N12-Help	Email support
+cd_common_questions	N12-Help	Common questions
+cd_still_stuck	N12-Help	Still stuck
+s_what_s_it_about	N12-Feedback	What's it about?
+s_something_s_broken	N12-Feedback	Something's broken
+s_idea	N12-Feedback	Idea
+s_template_request	N12-Feedback	Template request
+s_other	N12-Feedback	Other
+s_tell_us_more	N12-Feedback	Tell us more
+s_a_concert_night_template_dark_background	N12-Feedback	A concert-night template: dark background, ticket stubs and a big orange date stamp across the first two slides.
+s_screenshots	N12-Feedback	Screenshots
+s_include_device_and_app_info	N12-Feedback	Include device and app info
+s_helps_us_fix_problems_faster	N12-Feedback	Helps us fix problems faster
+cd_remove_screenshot	N12-Feedback	Remove screenshot
+cd_add_screenshot	N12-Feedback	Add screenshot
+cd_include_device_and_app_info	N12-Feedback	Include device and app info
+s_enjoying_framelab	N12-Rate	Enjoying FrameLab?
+s_a_quick_rating_helps_other_creators_find	N12-Rate	A quick rating helps other creators find us. If something feels off, tell us instead.
+s_yes_rate_framelab	N12-Rate	Yes, rate FrameLab
+s_not_really_send_feedback	N12-Rate	Not really, send feedback
+s_maybe_later	N12-Rate	Maybe later
+cd_enjoying_framelab	N12-Rate	Enjoying FrameLab?
+s_version_x_y_z	N12-About	VERSION [x.y.z]
+s_website	N12-About	Website
+s_website_2	N12-About	[website]
+s_follow_on_instagram	N12-About	Follow on Instagram
+s_handle_2	N12-About	@[handle]
+s_made_by_company_name	N12-About	Made by [Company name]
+cd_about_links	N12-About	About links
+s_share_framelab	N12-Share	Share FrameLab
+s_carousels_that_flow_across_every_swipe	N12-Share	Carousels that flow across every swipe
+s_app_link	N12-Share	[APP LINK]
+s_copy_link	N12-Share	Copy link
+cd_share_framelab	N12-Share	Share FrameLab
+s_framelab_is_built_on_open_source_softwar	N16-Licences	FrameLab is built on open-source software and fonts. Thank you to everyone who makes them.
+s_software	N16-Licences	SOFTWARE
+s_react_native	N16-Licences	React Native
+s_mit	N16-Licences	MIT
+s_expo	N16-Licences	Expo
+s_supabase_js	N16-Licences	Supabase JS
+s_fonts	N16-Licences	FONTS
+s_bricolage_grotesque	N16-Licences	Bricolage Grotesque
+s_ofl_1_1	N16-Licences	OFL 1.1
+s_inter	N16-Licences	Inter
+s_dm_mono	N16-Licences	DM Mono
+s_all_other_licences	N16-Licences	All other licences
+cd_software	N16-Licences	Software
+cd_fonts	N16-Licences	Fonts
+s_you_re_pro	N17-Welcome	You're Pro.
+s_every_template_is_unlocked_and_your_expo	N17-Welcome	Every template is unlocked, and your exports save without a watermark.
+s_all_templates_including_new_trend_drops	N17-Welcome	All templates, including new trend drops
+s_no_watermark_early_access_to_trends	N17-Welcome	No watermark, early access to trends
+s_trial_ends_date_manage_in_your_app_store	N17-Welcome	TRIAL ENDS [DATE] · MANAGE IN YOUR APP STORE SETTINGS
+s_start_creating	N17-Welcome	Start creating
+s_seamless_carousels	N1-Splash	SEAMLESS CAROUSELS
+cd_framelab_is_loading	N1-Splash	FrameLab is loading
+s_skip	N2-Flow	Skip
+s_photos_and_frames_cross_from_one_slide_i	N2-Flow	Photos and frames cross from one slide into the next, so your carousel reads as one long picture.
+cd_step_1_of_3	N2-Flow	Step 1 of 3
+s_pick_your_photos_once_and_they_fill_the	N2-Add	Pick your photos once and they fill the spots in order. Then drag, pinch and rotate until they sit just right.
+cd_step_2_of_3	N2-Add	Step 2 of 3
+s_save_post_in_order	N2-Save	Save & post in order
+s_save_turns_every_slide_into_a_full_size	N2-Save	Save turns every slide into a full-size image, numbered and in order, ready to pick in Instagram.
+cd_step_3_of_3	N2-Save	Step 3 of 3
+s_let_framelab_use_your_photos	N2-Primer	Let FrameLab use your photos
+s_your_phone_will_ask_next_here_s_what_acc	N2-Primer	Your phone will ask next. Here's what access is for:
+s_pick_the_photos_that_fill_each_template	N2-Primer	Pick the photos that fill each template
+s_save_finished_slides_to_an_album_called	N2-Primer	Save finished slides to an album called “FrameLab”
+s_allow_photo_access	N2-Primer	Allow photo access

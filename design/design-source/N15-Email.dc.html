@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sign in with email</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<button type="button" aria-label="Back" style="position:absolute; left:4px; top:52px; width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+<h1 style="position:absolute; left:24px; right:24px; top:116px; margin:0; font:800 30px/34px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.8px">Sign in with email</h1>
+<p style="position:absolute; left:24px; right:24px; top:160px; margin:0; font-size:15px; line-height:22px; color:#6F685E">We'll email you a sign-in link. No password needed.</p>
+<form style="position:absolute; left:24px; right:24px; top:214px; display:flex; flex-direction:column; gap:16px">
+<label style="display:flex; flex-direction:column; gap:8px; font-size:13px; line-height:18px; font-weight:600; color:#6F685E">Email<input type="email" value="sam@example.com" autocomplete="email" style="height:52px; box-sizing:border-box; padding:0 16px; border:2px solid #16130F; border-radius:14px; background:#FFFFFF; color:#16130F; font:500 16px Inter, sans-serif; outline:none"></label>
+<button type="submit" style="height:52px; border:0; border-radius:26px; background:#FF5A36; color:#16130F; font:700 16px Inter, sans-serif">Send link</button>
+<p style="margin:0; text-align:center; font-size:12px; line-height:18px; color:#6F685E">By continuing you agree to the <a href="#" style="color:#16130F">Terms</a> and <a href="#" style="color:#16130F">Privacy Policy</a>.</p>
+</form>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

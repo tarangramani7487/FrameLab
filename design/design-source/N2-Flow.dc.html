@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Onboarding 1 — Posts that flow</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<button type="button" style="position:absolute; right:12px; top:52px; height:44px; padding:0 10px; border:0; background:transparent; color:#16130F; font:600 15px Inter, sans-serif">Skip</button>
+<div aria-hidden="true" style="position:absolute; left:15px; top:176px; width:360px; display:flex; font:500 10px/14px 'DM Mono', monospace; letter-spacing:1px; color:#6F685E"><span style="width:120px; text-align:center">SLIDE 01</span><span style="width:120px; text-align:center">SLIDE 02</span><span style="width:120px; text-align:center">SLIDE 03</span></div>
+<div aria-hidden="true" style="position:absolute; left:15px; top:198px; width:360px; height:150px; box-shadow:0 12px 30px rgba(22,19,15,.18)">
+<dc-import name="Diary" w="120" count="3" state="full" hint-size="360px,150px"></dc-import>
+<div style="position:absolute; left:120px; top:-8px; height:166px; border-left:1.5px dashed #16130F"></div>
+<div style="position:absolute; left:240px; top:-8px; height:166px; border-left:1.5px dashed #16130F"></div>
+</div>
+<div aria-hidden="true" style="position:absolute; left:0; right:0; top:378px; display:flex; justify-content:center"><span style="height:32px; padding:0 12px 0 14px; border-radius:16px; background:#16130F; color:#FFFFFF; display:flex; align-items:center; gap:6px; font:600 13px Inter, sans-serif">swipe<svg width="16" height="16" viewBox="0 0 24 24" style="stroke-width:2.2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></div>
+<div aria-label="Step 1 of 3" style="position:absolute; left:24px; top:556px; display:flex; gap:6px"><span style="width:18px; height:6px; border-radius:3px; background:#16130F"></span><span style="width:6px; height:6px; border-radius:3px; background:#8F877B"></span><span style="width:6px; height:6px; border-radius:3px; background:#8F877B"></span></div>
+<h1 style="position:absolute; left:24px; right:24px; top:582px; margin:0; font:800 36px/40px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-1.1px">Posts that flow</h1>
+<p style="position:absolute; left:24px; right:24px; top:632px; margin:0; font-size:16px; line-height:24px; color:#6F685E">Photos and frames cross from one slide into the next, so your carousel reads as one long picture.</p>
+<button type="button" style="position:absolute; left:24px; right:24px; top:748px; height:52px; border:0; border-radius:26px; background:#16130F; color:#FFFFFF; font:600 16px Inter, sans-serif">Next</button>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

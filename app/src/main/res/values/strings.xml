@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from design/tokens/ui-copy.json — exact wording. s_* = visible text, cd_* = contentDescriptions. -->
+<resources>
+    <string name="app_name">FrameLab</string>
+    <string name="s_framelab" formatted="false">FrameLab.</string> <!-- Main -->
+    <string name="s_seamless_carousels_frames_collages" formatted="false">Seamless carousels, frames &amp; collages</string> <!-- Main -->
+    <string name="s_n_126" formatted="false">126</string> <!-- Main -->
+    <string name="s_designs" formatted="false">designs</string> <!-- Main -->
+    <string name="s_search_templates" formatted="false">Search templates</string> <!-- Main -->
+    <string name="s_templates" formatted="false">Templates</string> <!-- Main -->
+    <string name="s_frames" formatted="false">Frames</string> <!-- Main -->
+    <string name="s_new_framelab_originals" formatted="false">NEW · FRAMELAB ORIGINALS</string> <!-- Main -->
+    <string name="s_one_photo_three_slides" formatted="false">One photo, three slides.</string> <!-- Main -->
+    <string name="s_photos_that_flow_across_every_swipe" formatted="false">Photos that flow across every swipe.</string> <!-- Main -->
+    <string name="s_try_film_roll" formatted="false">Try Film Roll</string> <!-- Main -->
+    <string name="s_instagram_trending" formatted="false">Instagram Trending</string> <!-- Main -->
+    <string name="s_new" formatted="false">NEW</string> <!-- Main -->
+    <string name="s_see_all" formatted="false">See all</string> <!-- Main -->
+    <string name="s_n_10" formatted="false">10</string> <!-- Main -->
+    <string name="s_torn_diary" formatted="false">Torn Diary</string> <!-- Main -->
+    <string name="s_n_6_slides_12_photos" formatted="false">6 slides · 12 photos</string> <!-- Main -->
+    <string name="s_film_reel" formatted="false">Film Reel</string> <!-- Main -->
+    <string name="s_n_6_slides_9_photos" formatted="false">6 slides · 9 photos</string> <!-- Main -->
+    <string name="s_polaroid_pile" formatted="false">Polaroid Pile</string> <!-- Main -->
+    <string name="s_n_6_slides_11_photos" formatted="false">6 slides · 11 photos</string> <!-- Main -->
+    <string name="s_torn_paper_stories" formatted="false">Torn Paper Stories</string> <!-- Main -->
+    <string name="s_n_40" formatted="false">40</string> <!-- Main -->
+    <string name="s_home" formatted="false">Home</string> <!-- Main -->
+    <string name="s_explore" formatted="false">Explore</string> <!-- Main -->
+    <string name="s_create" formatted="false">Create</string> <!-- Main -->
+    <string name="s_my_designs" formatted="false">My Designs</string> <!-- Main -->
+    <string name="s_profile" formatted="false">Profile</string> <!-- Main -->
+    <string name="cd_library" formatted="false">Library</string> <!-- Main -->
+    <string name="cd_framelab_originals" formatted="false">FrameLab Originals</string> <!-- Main -->
+    <string name="cd_instagram_trending" formatted="false">Instagram Trending</string> <!-- Main -->
+    <string name="cd_torn_diary" formatted="false">Torn Diary</string> <!-- Main -->
+    <string name="cd_film_reel" formatted="false">Film Reel</string> <!-- Main -->
+    <string name="cd_polaroid_pile" formatted="false">Polaroid Pile</string> <!-- Main -->
+    <string name="cd_torn_paper_stories" formatted="false">Torn Paper Stories</string> <!-- Main -->
+    <string name="cd_main" formatted="false">Main</string> <!-- Main -->
+    <string name="s_summer_diary" formatted="false">summer diary</string> <!-- Diary -->
+    <string name="s_vol_03_the_slow_days" formatted="false">VOL. 03 · THE SLOW DAYS</string> <!-- Diary -->
+    <string name="s_salt_hair_late_lunches_zero_plans" formatted="false">salt hair, late lunches &amp; zero plans</string> <!-- Diary -->
+    <string name="s_first_swim" formatted="false">first swim</string> <!-- Diary -->
+    <string name="s_swipe" formatted="false">swipe</string> <!-- Diary -->
+    <string name="s_n_26_11_17" formatted="false">\'26 11 17</string> <!-- Diary -->
+    <string name="s_arrival" formatted="false">arrival</string> <!-- Diary -->
+    <string name="s_day_01" formatted="false">day 01</string> <!-- Diary -->
+    <string name="s_arrived_late_ate_early_swam_anyway" formatted="false">ARRIVED LATE ATE EARLY SWAM ANYWAY</string> <!-- Diary -->
+    <string name="s_us_sunburnt" formatted="false">us, sunburnt</string> <!-- Diary -->
+    <string name="s_boat_day" formatted="false">boat day</string> <!-- Diary -->
+    <string name="s_the_two_of_us_mostly_sunburnt" formatted="false">the two of us, mostly sunburnt</string> <!-- Diary -->
+    <string name="s_day_04" formatted="false">day 04</string> <!-- Diary -->
+    <string name="s_market_beach_noodles" formatted="false">MARKET — BEACH — NOODLES</string> <!-- Diary -->
+    <string name="s_best_mango_of_my_life" formatted="false">best mango of my life</string> <!-- Diary -->
+    <string name="s_n_26_11" formatted="false">26.11</string> <!-- Diary -->
+    <string name="s_until_next_year" formatted="false">until next year</string> <!-- Diary -->
+    <string name="s_save_this_for_your_next_slow_summer" formatted="false">save this for your next slow summer</string> <!-- Diary -->
+    <string name="s_save_tag_comment" formatted="false">SAVE · TAG · COMMENT</string> <!-- Diary -->
+    <string name="s_yourhandle" formatted="false">\@yourhandle</string> <!-- Diary -->
+    <string name="s_save" formatted="false">Save</string> <!-- EditorTop -->
+    <string name="cd_back" formatted="false">Back</string> <!-- EditorTop -->
+    <string name="cd_undo" formatted="false">Undo</string> <!-- EditorTop -->
+    <string name="cd_redo" formatted="false">Redo</string> <!-- EditorTop -->
+    <string name="cd_preview" formatted="false">Preview</string> <!-- EditorTop -->
+    <string name="s_photos" formatted="false">Photos</string> <!-- Dock -->
+    <string name="s_shuffle" formatted="false">Shuffle</string> <!-- Dock -->
+    <string name="s_color" formatted="false">Color</string> <!-- Dock -->
+    <string name="s_order" formatted="false">Order</string> <!-- Dock -->
+    <string name="s_clear" formatted="false">Clear</string> <!-- Dock -->
+    <string name="cd_editor_tools" formatted="false">Editor tools</string> <!-- Dock -->
+    <string name="s_framelab_foundations" formatted="false">FrameLab. Foundations</string> <!-- Foundations -->
+    <string name="s_darkroom_paper_warm_paper_for_browsing_a" formatted="false">Darkroom &amp; Paper: warm paper for browsing, a dark photo-first editor, one coral accent. Tokens come from src/theme.ts; tokens marked * are new, added so every text pair passes WCAG AA.</string> <!-- Foundations -->
+    <string name="s_portrait_phones_390_844_touch_targets_44" formatted="false">PORTRAIT PHONES · 390 × 844 TOUCH TARGETS ≥ 44 PX</string> <!-- Foundations -->
+    <string name="s_colour_light_home_library" formatted="false">Colour · light (Home &amp; library)</string> <!-- Foundations -->
+    <string name="s_ink" formatted="false">ink</string> <!-- Foundations -->
+    <string name="s_n_16130f" formatted="false">#16130F</string> <!-- Foundations -->
+    <string name="s_text_dark_cards" formatted="false">Text, dark cards</string> <!-- Foundations -->
+    <string name="s_paper" formatted="false">paper</string> <!-- Foundations -->
+    <string name="s_faf7f2" formatted="false">#FAF7F2</string> <!-- Foundations -->
+    <string name="s_background" formatted="false">Background</string> <!-- Foundations -->
+    <string name="s_card" formatted="false">card</string> <!-- Foundations -->
+    <string name="s_ffffff" formatted="false">#FFFFFF</string> <!-- Foundations -->
+    <string name="s_fields_cards_tab_bar" formatted="false">Fields, cards, tab bar</string> <!-- Foundations -->
+    <string name="s_muted" formatted="false">muted*</string> <!-- Foundations -->
+    <string name="s_n_6f685e" formatted="false">#6F685E</string> <!-- Foundations -->
+    <string name="s_secondary_text_was_8a8378_3_5_1" formatted="false">Secondary text (was #8A8378, 3.5:1)</string> <!-- Foundations -->
+    <string name="s_line" formatted="false">line</string> <!-- Foundations -->
+    <string name="s_ece6dc" formatted="false">#ECE6DC</string> <!-- Foundations -->
+    <string name="s_borders" formatted="false">Borders</string> <!-- Foundations -->
+    <string name="s_sunk" formatted="false">sunk</string> <!-- Foundations -->
+    <string name="s_f1ece4" formatted="false">#F1ECE4</string> <!-- Foundations -->
+    <string name="s_tracks_skeletons" formatted="false">Tracks, skeletons</string> <!-- Foundations -->
+    <string name="s_accent" formatted="false">accent</string> <!-- Foundations -->
+    <string name="s_ff5a36" formatted="false">#FF5A36</string> <!-- Foundations -->
+    <string name="s_fills_only_ink_label_on_top" formatted="false">Fills only, ink label on top</string> <!-- Foundations -->
+    <string name="s_accentink" formatted="false">accentInk*</string> <!-- Foundations -->
+    <string name="s_b33a17" formatted="false">#B33A17</string> <!-- Foundations -->
+    <string name="s_accent_text_on_light" formatted="false">Accent text on light</string> <!-- Foundations -->
+    <string name="s_accentsoft" formatted="false">accentSoft</string> <!-- Foundations -->
+    <string name="s_ffe6de" formatted="false">#FFE6DE</string> <!-- Foundations -->
+    <string name="s_badges_icon_wells" formatted="false">Badges, icon wells</string> <!-- Foundations -->
+    <string name="s_danger" formatted="false">danger</string> <!-- Foundations -->
+    <string name="s_c8372d" formatted="false">#C8372D</string> <!-- Foundations -->
+    <string name="s_destructive" formatted="false">Destructive</string> <!-- Foundations -->
+    <string name="s_colour_dark_editor" formatted="false">Colour · dark (Editor)</string> <!-- Foundations -->
+    <string name="s_bg" formatted="false">bg</string> <!-- Foundations -->
+    <string name="s_n_0b0b0c" formatted="false">#0B0B0C</string> <!-- Foundations -->
+    <string name="s_surface" formatted="false">surface</string> <!-- Foundations -->
+    <string name="s_n_1c1c1e_dock_sheets" formatted="false">#1C1C1E · dock, sheets</string> <!-- Foundations -->
+    <string name="s_raised" formatted="false">raised</string> <!-- Foundations -->
+    <string name="s_n_2c2c2e_chips" formatted="false">#2C2C2E · chips</string> <!-- Foundations -->
+    <string name="s_text" formatted="false">text</string> <!-- Foundations -->
+    <string name="s_muted_2" formatted="false">muted</string> <!-- Foundations -->
+    <string name="s_n_8e8e93_on_bg_surface" formatted="false">#8E8E93 · on bg/surface</string> <!-- Foundations -->
+    <string name="s_mutedraised" formatted="false">mutedRaised*</string> <!-- Foundations -->
+    <string name="s_a1a1a6_on_raised" formatted="false">#A1A1A6 · on raised</string> <!-- Foundations -->
+    <string name="s_disabled" formatted="false">disabled</string> <!-- Foundations -->
+    <string name="s_n_5a5a5e" formatted="false">#5A5A5E</string> <!-- Foundations -->
+    <string name="s_dangerdark" formatted="false">dangerDark*</string> <!-- Foundations -->
+    <string name="s_ff6961" formatted="false">#FF6961</string> <!-- Foundations -->
+    <string name="s_active_tool_accent_icon_label_on_a_10_ac" formatted="false">Active tool: accent icon + label on a 10%% accent tint (4.9:1). Accent text never sits on raised #2C2C2E (4.5:1 fails at 11 px).</string> <!-- Foundations -->
+    <string name="s_type" formatted="false">Type</string> <!-- Foundations -->
+    <string name="s_display_bricolage_800_34_36" formatted="false">DISPLAY · BRICOLAGE 800 · 34/36</string> <!-- Foundations -->
+    <string name="s_posts_that_flow" formatted="false">Posts that flow</string> <!-- Foundations -->
+    <string name="s_screen_title_800_30_34" formatted="false">SCREEN TITLE · 800 · 30/34</string> <!-- Foundations -->
+    <string name="s_section_bricolage_700_19_24" formatted="false">SECTION · BRICOLAGE 700 · 19/24</string> <!-- Foundations -->
+    <string name="s_body_inter_500_15_22" formatted="false">BODY · INTER 500 · 15/22</string> <!-- Foundations -->
+    <string name="s_pick_photos_once_they_fill_the_spots_in" formatted="false">Pick photos once — they fill the spots in order.</string> <!-- Foundations -->
+    <string name="s_secondary_inter_400_13_18" formatted="false">SECONDARY · INTER 400 · 13/18</string> <!-- Foundations -->
+    <string name="s_label_inter_600_11_14" formatted="false">LABEL · INTER 600 · 11/14</string> <!-- Foundations -->
+    <string name="s_photos_shuffle_color_order_clear" formatted="false">Photos · Shuffle · Color · Order · Clear</string> <!-- Foundations -->
+    <string name="s_mono_dm_mono_500_1011" formatted="false">MONO · DM MONO 500 · 10–11</string> <!-- Foundations -->
+    <string name="s_new_framelab_originals_26_11_17" formatted="false">NEW · FRAMELAB ORIGINALS · \'26 11 17</string> <!-- Foundations -->
+    <string name="s_template_serif_renderer" formatted="false">TEMPLATE SERIF · RENDERER</string> <!-- Foundations -->
+    <string name="s_icons" formatted="false">Icons</string> <!-- Foundations -->
+    <string name="s_one_stroke_set_replaces_the_unicode_glyp" formatted="false">One stroke set replaces the Unicode glyphs: 24 px grid, 1.75 stroke, round caps and joins.</string> <!-- Foundations -->
+    <string name="s_back" formatted="false">back</string> <!-- Foundations -->
+    <string name="s_next" formatted="false">next</string> <!-- Foundations -->
+    <string name="s_expand" formatted="false">expand</string> <!-- Foundations -->
+    <string name="s_close" formatted="false">close</string> <!-- Foundations -->
+    <string name="s_check" formatted="false">check</string> <!-- Foundations -->
+    <string name="s_add" formatted="false">add</string> <!-- Foundations -->
+    <string name="s_search" formatted="false">search</string> <!-- Foundations -->
+    <string name="s_filters" formatted="false">filters</string> <!-- Foundations -->
+    <string name="s_home_2" formatted="false">home</string> <!-- Foundations -->
+    <string name="s_explore_2" formatted="false">explore</string> <!-- Foundations -->
+    <string name="s_profile_2" formatted="false">profile</string> <!-- Foundations -->
+    <string name="s_settings" formatted="false">settings</string> <!-- Foundations -->
+    <string name="s_favourite" formatted="false">favourite</string> <!-- Foundations -->
+    <string name="s_share" formatted="false">share</string> <!-- Foundations -->
+    <string name="s_post" formatted="false">post</string> <!-- Foundations -->
+    <string name="s_save_2" formatted="false">save</string> <!-- Foundations -->
+    <string name="s_photos_2" formatted="false">photos</string> <!-- Foundations -->
+    <string name="s_shuffle_2" formatted="false">shuffle</string> <!-- Foundations -->
+    <string name="s_color_2" formatted="false">color</string> <!-- Foundations -->
+    <string name="s_order_2" formatted="false">order</string> <!-- Foundations -->
+    <string name="s_clear_2" formatted="false">clear</string> <!-- Foundations -->
+    <string name="s_frame" formatted="false">frame</string> <!-- Foundations -->
+    <string name="s_position" formatted="false">position</string> <!-- Foundations -->
+    <string name="s_style" formatted="false">style</string> <!-- Foundations -->
+    <string name="s_duplicate" formatted="false">duplicate</string> <!-- Foundations -->
+    <string name="s_delete" formatted="false">delete</string> <!-- Foundations -->
+    <string name="s_replace" formatted="false">replace</string> <!-- Foundations -->
+    <string name="s_lock" formatted="false">lock</string> <!-- Foundations -->
+    <string name="s_unlock" formatted="false">unlock</string> <!-- Foundations -->
+    <string name="s_rotate" formatted="false">rotate</string> <!-- Foundations -->
+    <string name="s_undo" formatted="false">undo</string> <!-- Foundations -->
+    <string name="s_redo" formatted="false">redo</string> <!-- Foundations -->
+    <string name="s_preview" formatted="false">preview</string> <!-- Foundations -->
+    <string name="s_adjust" formatted="false">adjust</string> <!-- Foundations -->
+    <string name="s_zoom" formatted="false">zoom</string> <!-- Foundations -->
+    <string name="s_sticker" formatted="false">sticker</string> <!-- Foundations -->
+    <string name="s_slides" formatted="false">slides</string> <!-- Foundations -->
+    <string name="s_alert" formatted="false">alert</string> <!-- Foundations -->
+    <string name="s_offline" formatted="false">offline</string> <!-- Foundations -->
+    <string name="s_pro" formatted="false">pro</string> <!-- Foundations -->
+    <string name="s_more" formatted="false">more</string> <!-- Foundations -->
+    <string name="s_link" formatted="false">link</string> <!-- Foundations -->
+    <string name="s_email" formatted="false">email</string> <!-- Foundations -->
+    <string name="s_camera" formatted="false">camera</string> <!-- Foundations -->
+    <string name="s_help" formatted="false">help</string> <!-- Foundations -->
+    <string name="s_controls" formatted="false">Controls</string> <!-- Foundations -->
+    <string name="s_use_template" formatted="false">Use template</string> <!-- Foundations -->
+    <string name="s_share_2" formatted="false">Share…</string> <!-- Foundations -->
+    <string name="s_try_again" formatted="false">Try again</string> <!-- Foundations -->
+    <string name="s_delete_2" formatted="false">Delete</string> <!-- Foundations -->
+    <string name="s_disabled_2" formatted="false">Disabled</string> <!-- Foundations -->
+    <string name="s_torn_paper" formatted="false">Torn paper</string> <!-- Foundations -->
+    <string name="s_ratio_4_5" formatted="false">Ratio · 4:5</string> <!-- Foundations -->
+    <string name="s_style_2" formatted="false">Style</string> <!-- Foundations -->
+    <string name="s_zoom_in" formatted="false">Zoom in</string> <!-- Foundations -->
+    <string name="s_arch" formatted="false">Arch</string> <!-- Foundations -->
+    <string name="s_reset_size" formatted="false">Reset size</string> <!-- Foundations -->
+    <string name="s_shape_spacing" formatted="false">Shape &amp; spacing</string> <!-- Foundations -->
+    <string name="s_n_6_tag" formatted="false">6 tag</string> <!-- Foundations -->
+    <string name="s_n_10_thumb" formatted="false">10 thumb</string> <!-- Foundations -->
+    <string name="s_n_14_card" formatted="false">14 card</string> <!-- Foundations -->
+    <string name="s_n_22_dock" formatted="false">22 dock</string> <!-- Foundations -->
+    <string name="s_n_28_sheet" formatted="false">28 sheet</string> <!-- Foundations -->
+    <string name="s_n_4" formatted="false">4</string> <!-- Foundations -->
+    <string name="s_n_8" formatted="false">8</string> <!-- Foundations -->
+    <string name="s_n_12" formatted="false">12</string> <!-- Foundations -->
+    <string name="s_n_16" formatted="false">16</string> <!-- Foundations -->
+    <string name="s_n_20" formatted="false">20</string> <!-- Foundations -->
+    <string name="s_n_24" formatted="false">24</string> <!-- Foundations -->
+    <string name="cd_example_on" formatted="false">Example on</string> <!-- Foundations -->
+    <string name="cd_example_off" formatted="false">Example off</string> <!-- Foundations -->
+    <string name="cd_loading_templates" formatted="false">Loading templates</string> <!-- H2-Loading -->
+    <string name="s_n_26" formatted="false">26</string> <!-- H3-Error -->
+    <string name="s_framelab_originals" formatted="false">FrameLab Originals</string> <!-- H3-Error -->
+    <string name="s_built_in" formatted="false">BUILT-IN</string> <!-- H3-Error -->
+    <string name="s_film_roll" formatted="false">Film Roll</string> <!-- H3-Error -->
+    <string name="s_n_3_slides_3_photos" formatted="false">3 slides · 3 photos</string> <!-- H3-Error -->
+    <string name="s_booth_night" formatted="false">Booth Night</string> <!-- H3-Error -->
+    <string name="s_n_5_slides_8_photos" formatted="false">5 slides · 8 photos</string> <!-- H3-Error -->
+    <string name="s_postcard" formatted="false">Postcard</string> <!-- H3-Error -->
+    <string name="s_n_4_slides_6_photos" formatted="false">4 slides · 6 photos</string> <!-- H3-Error -->
+    <string name="s_couldn_t_load_more_templates" formatted="false">Couldn\'t load more templates</string> <!-- H3-Error -->
+    <string name="s_designs_built_into_the_app_still_work_ch" formatted="false">Designs built into the app still work. Check your connection, then try again.</string> <!-- H3-Error -->
+    <string name="s_error_network_request_failed" formatted="false">Error: Network request failed</string> <!-- H3-Error -->
+    <string name="cd_film_roll" formatted="false">Film Roll</string> <!-- H3-Error -->
+    <string name="cd_booth_night" formatted="false">Booth Night</string> <!-- H3-Error -->
+    <string name="cd_postcard" formatted="false">Postcard</string> <!-- H3-Error -->
+    <string name="cd_couldn_t_load_more_templates" formatted="false">Couldn\'t load more templates</string> <!-- H3-Error -->
+    <string name="s_n_36" formatted="false">36</string> <!-- H4-Frames -->
+    <string name="s_search_frames" formatted="false">Search frames</string> <!-- H4-Frames -->
+    <string name="s_prints_polaroids" formatted="false">Prints &amp; Polaroids</string> <!-- H4-Frames -->
+    <string name="s_polaroid" formatted="false">Polaroid</string> <!-- H4-Frames -->
+    <string name="s_frame_1_photo" formatted="false">Frame · 1 photo</string> <!-- H4-Frames -->
+    <string name="s_cream_lab_print" formatted="false">Cream lab print</string> <!-- H4-Frames -->
+    <string name="s_torn_edge" formatted="false">Torn edge</string> <!-- H4-Frames -->
+    <string name="s_film_cameras" formatted="false">Film &amp; cameras</string> <!-- H4-Frames -->
+    <string name="s_n_9" formatted="false">9</string> <!-- H4-Frames -->
+    <string name="s_n_35_mm_film" formatted="false">35 mm film</string> <!-- H4-Frames -->
+    <string name="s_digicam" formatted="false">Digicam</string> <!-- H4-Frames -->
+    <string name="s_frame_2_photos" formatted="false">Frame · 2 photos</string> <!-- H4-Frames -->
+    <string name="s_postage_stamp" formatted="false">Postage stamp</string> <!-- H4-Frames -->
+    <string name="cd_prints_and_polaroids" formatted="false">Prints and Polaroids</string> <!-- H4-Frames -->
+    <string name="cd_polaroid" formatted="false">Polaroid</string> <!-- H4-Frames -->
+    <string name="cd_cream_lab_print" formatted="false">Cream lab print</string> <!-- H4-Frames -->
+    <string name="cd_torn_edge" formatted="false">Torn edge</string> <!-- H4-Frames -->
+    <string name="cd_film_and_cameras" formatted="false">Film and cameras</string> <!-- H4-Frames -->
+    <string name="cd_n_35_mm_film" formatted="false">35 mm film</string> <!-- H4-Frames -->
+    <string name="cd_digicam" formatted="false">Digicam</string> <!-- H4-Frames -->
+    <string name="cd_postage_stamp" formatted="false">Postage stamp</string> <!-- H4-Frames -->
+    <string name="s_n_18" formatted="false">18</string> <!-- H5-Search -->
+    <string name="s_templates_18" formatted="false">Templates · 18</string> <!-- H5-Search -->
+    <string name="s_frames_4" formatted="false">Frames · 4</string> <!-- H5-Search -->
+    <string name="s_also_try" formatted="false">ALSO TRY</string> <!-- H5-Search -->
+    <string name="s_beach" formatted="false">Beach</string> <!-- H5-Search -->
+    <string name="s_road_trip" formatted="false">Road trip</string> <!-- H5-Search -->
+    <string name="s_japan" formatted="false">Japan</string> <!-- H5-Search -->
+    <string name="s_paris" formatted="false">Paris</string> <!-- H5-Search -->
+    <string name="s_travel" formatted="false">Travel</string> <!-- H5-Search -->
+    <string name="s_travel_journal" formatted="false">Travel Journal</string> <!-- H5-Search -->
+    <string name="s_n_6_slides_10_photos" formatted="false">6 slides · 10 photos</string> <!-- H5-Search -->
+    <string name="s_shoreline_prints" formatted="false">Shoreline Prints</string> <!-- H5-Search -->
+    <string name="s_n_1_match" formatted="false">1 match</string> <!-- H5-Search -->
+    <string name="cd_search_templates" formatted="false">Search templates</string> <!-- H5-Search -->
+    <string name="cd_clear_search" formatted="false">Clear search</string> <!-- H5-Search -->
+    <string name="cd_results" formatted="false">Results</string> <!-- H5-Search -->
+    <string name="cd_travel" formatted="false">Travel</string> <!-- H5-Search -->
+    <string name="cd_travel_journal" formatted="false">Travel Journal</string> <!-- H5-Search -->
+    <string name="cd_shoreline_prints" formatted="false">Shoreline Prints</string> <!-- H5-Search -->
+    <string name="cd_instagram_trending_1_match" formatted="false">Instagram Trending, 1 match</string> <!-- H5-Search -->
+    <string name="s_n_0" formatted="false">0</string> <!-- H6-NoResults -->
+    <string name="s_templates_0" formatted="false">Templates · 0</string> <!-- H6-NoResults -->
+    <string name="s_frames_0" formatted="false">Frames · 0</string> <!-- H6-NoResults -->
+    <string name="s_nothing_matches_bowling_night" formatted="false">Nothing matches “bowling night”</string> <!-- H6-NoResults -->
+    <string name="s_try_a_shorter_word_or_start_from_one_of" formatted="false">Try a shorter word, or start from one of these:</string> <!-- H6-NoResults -->
+    <string name="s_celebrations" formatted="false">Celebrations</string> <!-- H6-NoResults -->
+    <string name="s_night_flash" formatted="false">Night Flash</string> <!-- H6-NoResults -->
+    <string name="s_birthday" formatted="false">Birthday</string> <!-- H6-NoResults -->
+    <string name="s_stories" formatted="false">Stories</string> <!-- H6-NoResults -->
+    <string name="s_clear_search" formatted="false">Clear search</string> <!-- H6-NoResults -->
+    <string name="s_you_re_offline_showing_built_in_template" formatted="false">You\'re offline. Showing built-in templates.</string> <!-- N24-Offline -->
+    <string name="s_retry" formatted="false">Retry</string> <!-- N24-Offline -->
+    <string name="s_template_card" formatted="false">Template card</string> <!-- H7-Cards -->
+    <string name="s_thumbnails_are_the_first_slide_drawn_liv" formatted="false">Thumbnails are the first slide drawn live from layout data, so a card never depends on a fixed image. 128 × 160, radius 14. Badges sit outside the scaled art and stay crisp at any size.</string> <!-- H7-Cards -->
+    <string name="s_single_slide" formatted="false">SINGLE SLIDE</string> <!-- H7-Cards -->
+    <string name="s_clean_grid" formatted="false">Clean Grid</string> <!-- H7-Cards -->
+    <string name="s_n_4_5_4_photos" formatted="false">4:5 · 4 photos</string> <!-- H7-Cards -->
+    <string name="s_multi_slide" formatted="false">MULTI-SLIDE</string> <!-- H7-Cards -->
+    <string name="s_new_framelab_made" formatted="false">NEW · FRAMELAB-MADE</string> <!-- H7-Cards -->
+    <string name="s_frame_remote_image" formatted="false">FRAME · REMOTE IMAGE</string> <!-- H7-Cards -->
+    <string name="s_pressed_0_97_fade" formatted="false">PRESSED · 0.97 + FADE</string> <!-- H7-Cards -->
+    <string name="s_pro_locked" formatted="false">PRO · LOCKED</string> <!-- H7-Cards -->
+    <string name="s_stamp_collection" formatted="false">Stamp Collection</string> <!-- H7-Cards -->
+    <string name="s_favourite_2" formatted="false">FAVOURITE</string> <!-- H7-Cards -->
+    <string name="s_draft_your_photos" formatted="false">DRAFT · YOUR PHOTOS</string> <!-- H7-Cards -->
+    <string name="s_edited_2_h_ago" formatted="false">Edited 2 h ago</string> <!-- H7-Cards -->
+    <string name="cd_clean_grid" formatted="false">Clean Grid</string> <!-- H7-Cards -->
+    <string name="cd_stamp_collection" formatted="false">Stamp Collection</string> <!-- H7-Cards -->
+    <string name="s_search_templates_styles_topics" formatted="false">Search templates, styles, topics</string> <!-- N3-Explore -->
+    <string name="s_filters_2" formatted="false">Filters</string> <!-- N3-Explore -->
+    <string name="s_n_2" formatted="false">2</string> <!-- N3-Explore -->
+    <string name="s_slides_56" formatted="false">Slides · 5–6</string> <!-- N3-Explore -->
+    <string name="s_topic" formatted="false">Topic</string> <!-- N3-Explore -->
+    <string name="s_n_24_templates" formatted="false">24 templates</string> <!-- N3-Explore -->
+    <string name="s_trending" formatted="false">Trending</string> <!-- N3-Explore -->
+    <string name="s_slides_1" formatted="false">Slides · 1</string> <!-- N4-NoResults -->
+    <string name="s_photos_10" formatted="false">Photos · 10+</string> <!-- N4-NoResults -->
+    <string name="s_ratio_9_16" formatted="false">Ratio · 9:16</string> <!-- N4-NoResults -->
+    <string name="s_n_0_templates" formatted="false">0 templates</string> <!-- N4-NoResults -->
+    <string name="s_no_templates_match_all_4_filters" formatted="false">No templates match all 4 filters</string> <!-- N4-NoResults -->
+    <string name="s_try_fewer_filters_remove_one_below_or_cl" formatted="false">Try fewer filters. Remove one below, or clear them all.</string> <!-- N4-NoResults -->
+    <string name="s_style_stamp" formatted="false">Style · Stamp</string> <!-- N4-NoResults -->
+    <string name="s_clear_all_filters" formatted="false">Clear all filters</string> <!-- N4-NoResults -->
+    <string name="cd_remove_filter_slides_1" formatted="false">Remove filter Slides 1</string> <!-- N4-NoResults -->
+    <string name="cd_remove_filter_photos_10_or_more" formatted="false">Remove filter Photos 10 or more</string> <!-- N4-NoResults -->
+    <string name="cd_remove_filter_ratio_9_16" formatted="false">Remove filter Ratio 9:16</string> <!-- N4-NoResults -->
+    <string name="cd_remove_filter_style_stamp" formatted="false">Remove filter Style Stamp</string> <!-- N4-NoResults -->
+    <string name="s_n_40_templates_diary_pages_torn_edges" formatted="false">40 templates · diary pages, torn edges</string> <!-- N5-SeeAll -->
+    <string name="s_new_2" formatted="false">New</string> <!-- N5-SeeAll -->
+    <string name="s_most_used" formatted="false">Most used</string> <!-- N5-SeeAll -->
+    <string name="s_summer_diary_2" formatted="false">Summer Diary</string> <!-- N5-SeeAll -->
+    <string name="s_paris_notes" formatted="false">Paris Notes</string> <!-- N5-SeeAll -->
+    <string name="s_coffee_run" formatted="false">Coffee Run</string> <!-- N5-SeeAll -->
+    <string name="s_n_5_slides_9_photos" formatted="false">5 slides · 9 photos</string> <!-- N5-SeeAll -->
+    <string name="s_pet_diary" formatted="false">Pet Diary</string> <!-- N5-SeeAll -->
+    <string name="s_wedding" formatted="false">Wedding</string> <!-- N5-SeeAll -->
+    <string name="s_japan_notes" formatted="false">Japan Notes</string> <!-- N5-SeeAll -->
+    <string name="cd_filters" formatted="false">Filters</string> <!-- N5-SeeAll -->
+    <string name="cd_sort" formatted="false">Sort</string> <!-- N5-SeeAll -->
+    <string name="cd_summer_diary" formatted="false">Summer Diary</string> <!-- N5-SeeAll -->
+    <string name="cd_paris_notes" formatted="false">Paris Notes</string> <!-- N5-SeeAll -->
+    <string name="cd_coffee_run" formatted="false">Coffee Run</string> <!-- N5-SeeAll -->
+    <string name="cd_pet_diary" formatted="false">Pet Diary</string> <!-- N5-SeeAll -->
+    <string name="cd_wedding" formatted="false">Wedding</string> <!-- N5-SeeAll -->
+    <string name="cd_japan_notes" formatted="false">Japan Notes</string> <!-- N5-SeeAll -->
+    <string name="s_continue_last_draft" formatted="false">Continue last draft</string> <!-- N6-Create -->
+    <string name="s_torn_diary_5_of_12_photos_2_h_ago" formatted="false">Torn Diary · 5 of 12 photos · 2 h ago</string> <!-- N6-Create -->
+    <string name="s_start_from_a_template" formatted="false">Start from a template</string> <!-- N6-Create -->
+    <string name="s_browse_126_designs" formatted="false">Browse 126 designs</string> <!-- N6-Create -->
+    <string name="s_blank_carousel" formatted="false">Blank carousel</string> <!-- N6-Create -->
+    <string name="s_choose_a_ratio_and_slide_count" formatted="false">Choose a ratio and slide count</string> <!-- N6-Create -->
+    <string name="s_soon" formatted="false">SOON</string> <!-- N6-Create -->
+    <string name="s_add_a_frame" formatted="false">Add a frame</string> <!-- N6-Create -->
+    <string name="s_one_photo_one_decorative_frame" formatted="false">One photo, one decorative frame</string> <!-- N6-Create -->
+    <string name="cd_create" formatted="false">Create</string> <!-- N6-Create -->
+    <string name="cd_close" formatted="false">Close</string> <!-- N6-Create -->
+    <string name="s_n_6_slides_12_photos_4_5" formatted="false">6 SLIDES · 12 PHOTOS · 4:5</string> <!-- N7-Preview -->
+    <string name="s_summer" formatted="false">Summer</string> <!-- N7-Preview -->
+    <string name="s_diary" formatted="false">Diary</string> <!-- N7-Preview -->
+    <string name="s_all_6_slides_joined_how_the_swipe_flows" formatted="false">ALL 6 SLIDES, JOINED — HOW THE SWIPE FLOWS</string> <!-- N7-Preview -->
+    <string name="s_similar_templates" formatted="false">Similar templates</string> <!-- N7-Preview -->
+    <string name="s_n_6_slides" formatted="false">6 slides</string> <!-- N7-Preview -->
+    <string name="cd_torn_diary_preview" formatted="false">Torn Diary preview</string> <!-- N7-Preview -->
+    <string name="cd_slide_1_of_6" formatted="false">Slide 1 of 6</string> <!-- N7-Preview -->
+    <string name="cd_add_to_favourites" formatted="false">Add to favourites</string> <!-- N7-Preview -->
+    <string name="cd_share_link" formatted="false">Share link</string> <!-- N7-Preview -->
+    <string name="s_opening_torn_diary" formatted="false">Opening Torn Diary</string> <!-- E1-Loading -->
+    <string name="s_getting_6_slides_ready" formatted="false">Getting 6 slides ready</string> <!-- E1-Loading -->
+    <string name="s_couldn_t_open_this_design" formatted="false">Couldn\'t open this design</string> <!-- E2-Error -->
+    <string name="s_torn_diary_didn_t_finish_downloading_che" formatted="false">Torn Diary didn\'t finish downloading. Check your connection and try again.</string> <!-- E2-Error -->
+    <string name="s_error_request_timed_out" formatted="false">Error: Request timed out</string> <!-- E2-Error -->
+    <string name="s_go_back" formatted="false">Go back</string> <!-- E2-Error -->
+    <string name="s_n_0_12_photos_tap_to_add_photos" formatted="false">0/12 photos · tap + to add photos</string> <!-- E3-Empty -->
+    <string name="cd_slide_1_current" formatted="false">Slide 1, current</string> <!-- E3-Empty -->
+    <string name="cd_slide_2" formatted="false">Slide 2</string> <!-- E3-Empty -->
+    <string name="cd_slide_3" formatted="false">Slide 3</string> <!-- E3-Empty -->
+    <string name="cd_slide_4" formatted="false">Slide 4</string> <!-- E3-Empty -->
+    <string name="cd_slide_5" formatted="false">Slide 5</string> <!-- E3-Empty -->
+    <string name="cd_slide_6" formatted="false">Slide 6</string> <!-- E3-Empty -->
+    <string name="s_n_5_12_photos_tap_a_photo_to_edit_it" formatted="false">5/12 photos · tap a photo to edit it</string> <!-- E4-Filled -->
+    <string name="s_background_shows_around_paper_and_photos" formatted="false">BACKGROUND · SHOWS AROUND PAPER AND PHOTOS</string> <!-- E5-Color -->
+    <string name="cd_background_colour" formatted="false">Background colour</string> <!-- E5-Color -->
+    <string name="cd_template_colour_reset" formatted="false">Template colour (reset)</string> <!-- E5-Color -->
+    <string name="cd_white" formatted="false">White</string> <!-- E5-Color -->
+    <string name="cd_paper" formatted="false">Paper</string> <!-- E5-Color -->
+    <string name="cd_cream" formatted="false">Cream</string> <!-- E5-Color -->
+    <string name="cd_blush" formatted="false">Blush</string> <!-- E5-Color -->
+    <string name="cd_mist" formatted="false">Mist</string> <!-- E5-Color -->
+    <string name="cd_sage" formatted="false">Sage</string> <!-- E5-Color -->
+    <string name="cd_ink" formatted="false">Ink</string> <!-- E5-Color -->
+    <string name="cd_navy" formatted="false">Navy</string> <!-- E5-Color -->
+    <string name="s_photo_order_slide_by_slide_top_to_bottom" formatted="false">PHOTO ORDER · SLIDE BY SLIDE, TOP TO BOTTOM</string> <!-- E6-Order -->
+    <string name="s_n_1" formatted="false">1</string> <!-- E6-Order -->
+    <string name="s_s1" formatted="false">S1</string> <!-- E6-Order -->
+    <string name="s_n_3" formatted="false">3</string> <!-- E6-Order -->
+    <string name="s_s2" formatted="false">S2</string> <!-- E6-Order -->
+    <string name="s_n_5" formatted="false">5</string> <!-- E6-Order -->
+    <string name="s_n_6" formatted="false">6</string> <!-- E6-Order -->
+    <string name="s_s3" formatted="false">S3</string> <!-- E6-Order -->
+    <string name="s_n_7" formatted="false">7</string> <!-- E6-Order -->
+    <string name="s_s4" formatted="false">S4</string> <!-- E6-Order -->
+    <string name="s_n_11" formatted="false">11</string> <!-- E6-Order -->
+    <string name="s_s5" formatted="false">S5</string> <!-- E6-Order -->
+    <string name="s_s6" formatted="false">S6</string> <!-- E6-Order -->
+    <string name="cd_photo_order" formatted="false">Photo order</string> <!-- E6-Order -->
+    <string name="s_drag_to_move_corners_resize_sides_stretc" formatted="false">Drag to move · corners resize · sides stretch</string> <!-- E7-Selected -->
+    <string name="s_frame_2" formatted="false">Frame</string> <!-- E7-Selected -->
+    <string name="s_position_2" formatted="false">Position</string> <!-- E7-Selected -->
+    <string name="s_duplicate_2" formatted="false">Duplicate</string> <!-- E7-Selected -->
+    <string name="cd_photo_actions" formatted="false">Photo actions</string> <!-- E7-Selected -->
+    <string name="cd_delete_photo" formatted="false">Delete photo</string> <!-- E7-Selected -->
+    <string name="cd_replace_photo" formatted="false">Replace photo</string> <!-- E7-Selected -->
+    <string name="cd_lock_photo" formatted="false">Lock photo</string> <!-- E7-Selected -->
+    <string name="cd_rotate_photo_drag_to_rotate_tap_for_90" formatted="false">Rotate photo — drag to rotate, tap for 90°</string> <!-- E7-Selected -->
+    <string name="cd_deselect_photo" formatted="false">Deselect photo</string> <!-- E7-Selected -->
+    <string name="s_original" formatted="false">Original</string> <!-- E8-Frame -->
+    <string name="s_square" formatted="false">Square</string> <!-- E8-Frame -->
+    <string name="s_rounded" formatted="false">Rounded</string> <!-- E8-Frame -->
+    <string name="s_circle" formatted="false">Circle</string> <!-- E8-Frame -->
+    <string name="cd_rotate_photo" formatted="false">Rotate photo</string> <!-- E8-Frame -->
+    <string name="cd_frame_shape" formatted="false">Frame shape</string> <!-- E8-Frame -->
+    <string name="s_adjust_inside" formatted="false">Adjust inside</string> <!-- E9-Position -->
+    <string name="s_zoom_out" formatted="false">Zoom out</string> <!-- E9-Position -->
+    <string name="s_turn_photo" formatted="false">Turn photo</string> <!-- E9-Position -->
+    <string name="s_center_photo" formatted="false">Center photo</string> <!-- E9-Position -->
+    <string name="cd_position" formatted="false">Position</string> <!-- E9-Position -->
+    <string name="s_n_1_5" formatted="false">1.5×</string> <!-- E10-Crop -->
+    <string name="s_adjusting_inside_drag_to_move_pinch_to_z" formatted="false">Adjusting inside · drag to move, pinch to zoom</string> <!-- E10-Crop -->
+    <string name="s_fill" formatted="false">Fill</string> <!-- E11-Style -->
+    <string name="s_fit" formatted="false">Fit</string> <!-- E11-Style -->
+    <string name="s_flip" formatted="false">Flip</string> <!-- E11-Style -->
+    <string name="cd_style" formatted="false">Style</string> <!-- E11-Style -->
+    <string name="s_locked_unlock_to_move_or_delete" formatted="false">Locked — unlock to move or delete</string> <!-- E12-Locked -->
+    <string name="cd_unlock_photo" formatted="false">Unlock photo</string> <!-- E12-Locked -->
+    <string name="s_preview_2" formatted="false">Preview</string> <!-- N19-PreviewMode -->
+    <string name="s_n_1_6" formatted="false">1 / 6</string> <!-- N19-PreviewMode -->
+    <string name="s_keep_editing" formatted="false">Keep editing</string> <!-- N19-PreviewMode -->
+    <string name="s_save_6_images" formatted="false">Save 6 images</string> <!-- N19-PreviewMode -->
+    <string name="cd_close_preview" formatted="false">Close preview</string> <!-- N19-PreviewMode -->
+    <string name="s_edit_text" formatted="false">Edit text</string> <!-- N20-Text -->
+    <string name="s_done" formatted="false">Done</string> <!-- N20-Text -->
+    <string name="s_aa" formatted="false">Aa</string> <!-- N20-Text -->
+    <string name="s_size" formatted="false">Size</string> <!-- N20-Text -->
+    <string name="s_n_46" formatted="false">46</string> <!-- N20-Text -->
+    <string name="s_colour" formatted="false">Colour</string> <!-- N20-Text -->
+    <string name="cd_edit_text" formatted="false">Edit text</string> <!-- N20-Text -->
+    <string name="cd_text" formatted="false">Text</string> <!-- N20-Text -->
+    <string name="cd_font" formatted="false">Font</string> <!-- N20-Text -->
+    <string name="cd_sans" formatted="false">Sans</string> <!-- N20-Text -->
+    <string name="cd_serif" formatted="false">Serif</string> <!-- N20-Text -->
+    <string name="cd_mono" formatted="false">Mono</string> <!-- N20-Text -->
+    <string name="cd_alignment" formatted="false">Alignment</string> <!-- N20-Text -->
+    <string name="cd_align_left" formatted="false">Align left</string> <!-- N20-Text -->
+    <string name="cd_align_centre" formatted="false">Align centre</string> <!-- N20-Text -->
+    <string name="cd_align_right" formatted="false">Align right</string> <!-- N20-Text -->
+    <string name="cd_text_colour" formatted="false">Text colour</string> <!-- N20-Text -->
+    <string name="cd_coral" formatted="false">Coral</string> <!-- N20-Text -->
+    <string name="cd_rust" formatted="false">Rust</string> <!-- N20-Text -->
+    <string name="cd_sea" formatted="false">Sea</string> <!-- N20-Text -->
+    <string name="cd_dusk" formatted="false">Dusk</string> <!-- N20-Text -->
+    <string name="s_stickers" formatted="false">Stickers</string> <!-- N21-Stickers -->
+    <string name="s_all" formatted="false">All</string> <!-- N21-Stickers -->
+    <string name="s_tape" formatted="false">Tape</string> <!-- N21-Stickers -->
+    <string name="s_stamps" formatted="false">Stamps</string> <!-- N21-Stickers -->
+    <string name="s_dates" formatted="false">Dates</string> <!-- N21-Stickers -->
+    <string name="s_doodles" formatted="false">Doodles</string> <!-- N21-Stickers -->
+    <string name="s_chips" formatted="false">Chips</string> <!-- N21-Stickers -->
+    <string name="s_note" formatted="false">NOTE</string> <!-- N21-Stickers -->
+    <string name="s_lis" formatted="false">LIS</string> <!-- N21-Stickers -->
+    <string name="cd_stickers" formatted="false">Stickers</string> <!-- N21-Stickers -->
+    <string name="cd_close_stickers" formatted="false">Close stickers</string> <!-- N21-Stickers -->
+    <string name="cd_sticker_type" formatted="false">Sticker type</string> <!-- N21-Stickers -->
+    <string name="cd_masking_tape" formatted="false">Masking tape</string> <!-- N21-Stickers -->
+    <string name="cd_pink_tape" formatted="false">Pink tape</string> <!-- N21-Stickers -->
+    <string name="cd_gingham_tape" formatted="false">Gingham tape</string> <!-- N21-Stickers -->
+    <string name="cd_date_stamp" formatted="false">Date stamp</string> <!-- N21-Stickers -->
+    <string name="cd_postmark" formatted="false">Postmark</string> <!-- N21-Stickers -->
+    <string name="cd_star_doodle" formatted="false">Star doodle</string> <!-- N21-Stickers -->
+    <string name="cd_arrow_doodle" formatted="false">Arrow doodle</string> <!-- N21-Stickers -->
+    <string name="cd_swipe_chip" formatted="false">Swipe chip</string> <!-- N21-Stickers -->
+    <string name="cd_heart_doodle" formatted="false">Heart doodle</string> <!-- N21-Stickers -->
+    <string name="cd_paper_label" formatted="false">Paper label</string> <!-- N21-Stickers -->
+    <string name="cd_boarding_pass" formatted="false">Boarding pass</string> <!-- N21-Stickers -->
+    <string name="s_slides_2" formatted="false">Slides</string> <!-- N22-Slides -->
+    <string name="s_n_6_4_5" formatted="false">6 · 4:5</string> <!-- N22-Slides -->
+    <string name="s_slides_12_and_56_share_a_photo_so_they_m" formatted="false">Slides 1–2 and 5–6 share a photo, so they move as a pair. Long-press a slide to drag it.</string> <!-- N22-Slides -->
+    <string name="s_move_left" formatted="false">Move left</string> <!-- N22-Slides -->
+    <string name="s_move_right" formatted="false">Move right</string> <!-- N22-Slides -->
+    <string name="cd_slides" formatted="false">Slides</string> <!-- N22-Slides -->
+    <string name="cd_add_slide" formatted="false">Add slide</string> <!-- N22-Slides -->
+    <string name="cd_slide_2_actions" formatted="false">Slide 2 actions</string> <!-- N22-Slides -->
+    <string name="s_save_as_a_draft" formatted="false">Save as a draft?</string> <!-- N23-Draft -->
+    <string name="s_you_ve_placed_5_of_12_photos_save_now_an" formatted="false">You\'ve placed 5 of 12 photos. Save now and pick up where you left off in My Designs.</string> <!-- N23-Draft -->
+    <string name="s_save_draft" formatted="false">Save draft</string> <!-- N23-Draft -->
+    <string name="s_discard" formatted="false">Discard</string> <!-- N23-Draft -->
+    <string name="s_cancel" formatted="false">Cancel</string> <!-- N23-Draft -->
+    <string name="cd_save_as_a_draft" formatted="false">Save as a draft?</string> <!-- N23-Draft -->
+    <string name="s_tip_1_of_3" formatted="false">TIP 1 OF 3</string> <!-- N23-Coach -->
+    <string name="s_tap_to_add_photos" formatted="false">Tap + to add photos</string> <!-- N23-Coach -->
+    <string name="s_pick_photos_once_and_they_fill_the_spots" formatted="false">Pick photos once and they fill the spots in order, slide by slide. This one spans slides 1 and 2.</string> <!-- N23-Coach -->
+    <string name="s_skip_tips" formatted="false">Skip tips</string> <!-- N23-Coach -->
+    <string name="s_next_2" formatted="false">Next</string> <!-- N23-Coach -->
+    <string name="cd_tip_1_of_3" formatted="false">Tip 1 of 3</string> <!-- N23-Coach -->
+    <string name="s_n_7_spots_are_still_empty" formatted="false">7 spots are still empty</string> <!-- N18-Precheck -->
+    <string name="s_empty_spots_save_as_plain_paper_fill_the" formatted="false">Empty spots save as plain paper. Fill them first, or save the 6 slides as they are.</string> <!-- N18-Precheck -->
+    <string name="s_save_anyway" formatted="false">Save anyway</string> <!-- N18-Precheck -->
+    <string name="cd_n_7_spots_are_still_empty" formatted="false">7 spots are still empty</string> <!-- N18-Precheck -->
+    <string name="cd_slide_1_1_empty" formatted="false">Slide 1: 1 empty</string> <!-- N18-Precheck -->
+    <string name="cd_slide_2_1_empty" formatted="false">Slide 2: 1 empty</string> <!-- N18-Precheck -->
+    <string name="cd_slide_3_all_filled" formatted="false">Slide 3: all filled</string> <!-- N18-Precheck -->
+    <string name="cd_slide_4_1_empty" formatted="false">Slide 4: 1 empty</string> <!-- N18-Precheck -->
+    <string name="cd_slide_5_3_empty" formatted="false">Slide 5: 3 empty</string> <!-- N18-Precheck -->
+    <string name="cd_slide_6_1_empty" formatted="false">Slide 6: 1 empty</string> <!-- N18-Precheck -->
+    <string name="s_saving" formatted="false">Saving</string> <!-- N18-Progress -->
+    <string name="s_n_12_12_photos_ready_to_save" formatted="false">12/12 photos · ready to save</string> <!-- N18-Progress -->
+    <string name="s_saving_slide_3_of_6" formatted="false">Saving slide 3 of 6</string> <!-- N18-Progress -->
+    <string name="s_keep_framelab_open_it_only_takes_a_few_s" formatted="false">Keep FrameLab open. It only takes a few seconds.</string> <!-- N18-Progress -->
+    <string name="cd_saving" formatted="false">Saving</string> <!-- N18-Progress -->
+    <string name="cd_slides_saved" formatted="false">Slides saved</string> <!-- N18-Progress -->
+    <string name="s_torn_diary_1080_1350" formatted="false">TORN DIARY · 1080 × 1350</string> <!-- N18-Success -->
+    <string name="s_n_01" formatted="false">01</string> <!-- N18-Success -->
+    <string name="s_n_02" formatted="false">02</string> <!-- N18-Success -->
+    <string name="s_n_03" formatted="false">03</string> <!-- N18-Success -->
+    <string name="s_n_04" formatted="false">04</string> <!-- N18-Success -->
+    <string name="s_n_05" formatted="false">05</string> <!-- N18-Success -->
+    <string name="s_n_06" formatted="false">06</string> <!-- N18-Success -->
+    <string name="s_n_6_images_saved_in_order" formatted="false">6 images saved, in order</string> <!-- N18-Success -->
+    <string name="s_they_re_in_your_gallery_in_an_album_call" formatted="false">They\'re in your gallery, in an album called “FrameLab”. Post them in this order and your photos line up across the swipe.</string> <!-- N18-Success -->
+    <string name="s_share_to_instagram" formatted="false">Share to Instagram</string> <!-- N18-Success -->
+    <string name="s_back_to_editor" formatted="false">Back to editor</string> <!-- N18-Success -->
+    <string name="s_export_failed" formatted="false">Export failed</string> <!-- N18-Error -->
+    <string name="s_slide_4_couldn_t_be_saved_slides_13_are" formatted="false">Slide 4 couldn\'t be saved. Slides 1–3 are already in your gallery, and nothing in your design was lost.</string> <!-- N18-Error -->
+    <string name="s_error_not_enough_storage_space" formatted="false">Error: Not enough storage space</string> <!-- N18-Error -->
+    <string name="s_close_2" formatted="false">Close</string> <!-- N18-Error -->
+    <string name="cd_export_failed" formatted="false">Export failed</string> <!-- N18-Error -->
+    <string name="s_remove_all_photos" formatted="false">Remove all photos?</string> <!-- D5-Clear -->
+    <string name="s_locked_photos_stay_you_can_undo_this" formatted="false">Locked photos stay. You can undo this.</string> <!-- D5-Clear -->
+    <string name="s_remove" formatted="false">Remove</string> <!-- D5-Clear -->
+    <string name="cd_remove_all_photos" formatted="false">Remove all photos?</string> <!-- D5-Clear -->
+    <string name="s_photo_is_locked_unlock_it_to_delete" formatted="false">Photo is locked. Unlock it to delete.</string> <!-- D6-Locked -->
+    <string name="s_unlock_2" formatted="false">Unlock</string> <!-- D6-Locked -->
+    <string name="s_no_empty_spot_every_spot_has_a_photo" formatted="false">No empty spot. Every spot has a photo.</string> <!-- D7-NoSlot -->
+    <string name="s_add_slide" formatted="false">Add slide</string> <!-- D7-NoSlot -->
+    <string name="s_photo_access_is_off" formatted="false">Photo access is off</string> <!-- D2-Permission -->
+    <string name="s_framelab_needs_your_photos_to_fill_templ" formatted="false">FrameLab needs your photos to fill templates and to save finished slides to your gallery.</string> <!-- D2-Permission -->
+    <string name="s_open_settings_for_framelab" formatted="false">Open Settings for FrameLab</string> <!-- D2-Permission -->
+    <string name="s_tap_photos" formatted="false">Tap Photos</string> <!-- D2-Permission -->
+    <string name="s_allow_access_to_all_photos" formatted="false">Allow access to all photos</string> <!-- D2-Permission -->
+    <string name="s_open_settings" formatted="false">Open settings</string> <!-- D2-Permission -->
+    <string name="s_not_now" formatted="false">Not now</string> <!-- D2-Permission -->
+    <string name="s_toasts_banners" formatted="false">Toasts &amp; banners</string> <!-- N24-Toasts -->
+    <string name="s_inverse_surface_ink_on_light_screens_whi" formatted="false">Inverse surface: ink on light screens, white in the dark editor. One at a time, about 4 seconds, swipe to dismiss. They sit above the tab bar or dock.</string> <!-- N24-Toasts -->
+    <string name="s_home_library_profile" formatted="false">HOME · LIBRARY · PROFILE</string> <!-- N24-Toasts -->
+    <string name="s_draft_saved" formatted="false">Draft saved</string> <!-- N24-Toasts -->
+    <string name="s_added_to_favourites" formatted="false">Added to favourites</string> <!-- N24-Toasts -->
+    <string name="s_undo_2" formatted="false">Undo</string> <!-- N24-Toasts -->
+    <string name="s_link_copied" formatted="false">Link copied</string> <!-- N24-Toasts -->
+    <string name="s_editor" formatted="false">EDITOR</string> <!-- N24-Toasts -->
+    <string name="s_photo_is_locked_unlock_to_delete" formatted="false">Photo is locked. Unlock to delete.</string> <!-- N24-Toasts -->
+    <string name="s_no_empty_spot" formatted="false">No empty spot.</string> <!-- N24-Toasts -->
+    <string name="s_n_5_photos_removed" formatted="false">5 photos removed</string> <!-- N24-Toasts -->
+    <string name="cd_light_screens" formatted="false">Light screens</string> <!-- N24-Toasts -->
+    <string name="cd_editor" formatted="false">Editor</string> <!-- N24-Toasts -->
+    <string name="s_drafts_3" formatted="false">Drafts · 3</string> <!-- N8-Drafts -->
+    <string name="s_saved_4" formatted="false">Saved · 4</string> <!-- N8-Drafts -->
+    <string name="s_favourites_6" formatted="false">Favourites · 6</string> <!-- N8-Drafts -->
+    <string name="s_n_5_12_photos" formatted="false">5/12 photos</string> <!-- N8-Drafts -->
+    <string name="s_edited_yesterday" formatted="false">Edited yesterday</string> <!-- N8-Drafts -->
+    <string name="s_ready_to_save" formatted="false">Ready to save</string> <!-- N8-Drafts -->
+    <string name="s_edited_nov_12" formatted="false">Edited Nov 12</string> <!-- N8-Drafts -->
+    <string name="s_n_3_11_photos" formatted="false">3/11 photos</string> <!-- N8-Drafts -->
+    <string name="cd_my_designs" formatted="false">My Designs</string> <!-- N8-Drafts -->
+    <string name="cd_more_options_for_torn_diary" formatted="false">More options for Torn Diary</string> <!-- N8-Drafts -->
+    <string name="cd_more_options_for_film_reel" formatted="false">More options for Film Reel</string> <!-- N8-Drafts -->
+    <string name="cd_more_options_for_polaroid_pile" formatted="false">More options for Polaroid Pile</string> <!-- N8-Drafts -->
+    <string name="s_drafts" formatted="false">Drafts</string> <!-- N8-DraftsEmpty -->
+    <string name="s_saved" formatted="false">Saved</string> <!-- N8-DraftsEmpty -->
+    <string name="s_favourites" formatted="false">Favourites</string> <!-- N8-DraftsEmpty -->
+    <string name="s_no_drafts_yet" formatted="false">No drafts yet</string> <!-- N8-DraftsEmpty -->
+    <string name="s_leave_a_design_with_save_draft_and_it_wa" formatted="false">Leave a design with “Save draft” and it waits here, photos and all, ready to finish.</string> <!-- N8-DraftsEmpty -->
+    <string name="s_browse_templates" formatted="false">Browse templates</string> <!-- N8-DraftsEmpty -->
+    <string name="s_n_6_images_saved_today" formatted="false">6 images · saved today</string> <!-- N9-Saved -->
+    <string name="s_n_6_images_nov_14" formatted="false">6 images · Nov 14</string> <!-- N9-Saved -->
+    <string name="s_n_5_images_nov_9" formatted="false">5 images · Nov 9</string> <!-- N9-Saved -->
+    <string name="s_n_6_images_oct_30" formatted="false">6 images · Oct 30</string> <!-- N9-Saved -->
+    <string name="cd_night_flash" formatted="false">Night Flash</string> <!-- N9-Saved -->
+    <string name="s_nothing_saved_yet" formatted="false">Nothing saved yet</string> <!-- N9-SavedEmpty -->
+    <string name="s_when_you_save_a_design_its_images_go_to" formatted="false">When you save a design, its images go to your gallery and a copy stays here, so you can share it again.</string> <!-- N9-SavedEmpty -->
+    <string name="s_camera_roll" formatted="false">Camera Roll</string> <!-- N10-Favourites -->
+    <string name="s_n_5_slides_7_photos" formatted="false">5 slides · 7 photos</string> <!-- N10-Favourites -->
+    <string name="s_big_type" formatted="false">Big Type</string> <!-- N10-Favourites -->
+    <string name="s_n_5_slides_6_photos" formatted="false">5 slides · 6 photos</string> <!-- N10-Favourites -->
+    <string name="s_frame_mix" formatted="false">Frame Mix</string> <!-- N10-Favourites -->
+    <string name="cd_camera_roll" formatted="false">Camera Roll</string> <!-- N10-Favourites -->
+    <string name="cd_big_type" formatted="false">Big Type</string> <!-- N10-Favourites -->
+    <string name="cd_frame_mix" formatted="false">Frame Mix</string> <!-- N10-Favourites -->
+    <string name="s_no_favourites_yet" formatted="false">No favourites yet</string> <!-- N10-FavEmpty -->
+    <string name="s_tap_the_heart_on_any_template_preview_to" formatted="false">Tap the heart on any template preview to keep it here for later.</string> <!-- N10-FavEmpty -->
+    <string name="s_n_6_images_1080_1350_saved_today" formatted="false">6 IMAGES · 1080 × 1350 · SAVED TODAY</string> <!-- N11-PostDetail -->
+    <string name="s_save_again" formatted="false">Save again</string> <!-- N11-PostDetail -->
+    <string name="s_edit_a_copy" formatted="false">Edit a copy</string> <!-- N11-PostDetail -->
+    <string name="s_delete_from_my_designs" formatted="false">Delete from My Designs</string> <!-- N11-PostDetail -->
+    <string name="cd_more_options" formatted="false">More options</string> <!-- N11-PostDetail -->
+    <string name="cd_slide_2_of_6" formatted="false">Slide 2 of 6</string> <!-- N11-PostDetail -->
+    <string name="s_sam_rivera" formatted="false">Sam Rivera</string> <!-- N12-Profile -->
+    <string name="s_sam_shoots" formatted="false">\@sam.shoots</string> <!-- N12-Profile -->
+    <string name="s_edit_profile" formatted="false">Edit profile</string> <!-- N12-Profile -->
+    <string name="s_designs_made" formatted="false">Designs made</string> <!-- N12-Profile -->
+    <string name="s_posts_saved" formatted="false">Posts saved</string> <!-- N12-Profile -->
+    <string name="s_framelab_pro" formatted="false">FrameLab Pro</string> <!-- N12-Profile -->
+    <string name="s_every_template_hd_export_no_watermark" formatted="false">Every template, HD export, no watermark</string> <!-- N12-Profile -->
+    <string name="s_see_plans" formatted="false">See plans</string> <!-- N12-Profile -->
+    <string name="s_settings_2" formatted="false">Settings</string> <!-- N12-Profile -->
+    <string name="s_help_feedback" formatted="false">Help &amp; feedback</string> <!-- N12-Profile -->
+    <string name="s_rate_framelab" formatted="false">Rate FrameLab</string> <!-- N12-Profile -->
+    <string name="s_share_the_app" formatted="false">Share the app</string> <!-- N12-Profile -->
+    <string name="s_about" formatted="false">About</string> <!-- N12-Profile -->
+    <string name="cd_settings" formatted="false">Settings</string> <!-- N12-Profile -->
+    <string name="cd_more" formatted="false">More</string> <!-- N12-Profile -->
+    <string name="s_guest" formatted="false">Guest</string> <!-- N13-Guest -->
+    <string name="s_sign_in_to_keep_drafts_and_favourites_on" formatted="false">Sign in to keep drafts and favourites on all your devices.</string> <!-- N13-Guest -->
+    <string name="s_sign_in" formatted="false">Sign in</string> <!-- N13-Guest -->
+    <string name="cd_guest" formatted="false">Guest</string> <!-- N13-Guest -->
+    <string name="s_change_photo" formatted="false">Change photo</string> <!-- N14-EditProfile -->
+    <string name="s_name" formatted="false">Name</string> <!-- N14-EditProfile -->
+    <string name="s_handle" formatted="false">Handle</string> <!-- N14-EditProfile -->
+    <string name="s_x" formatted="false">\@</string> <!-- N14-EditProfile -->
+    <string name="s_shown_on_links_you_share_letters_numbers" formatted="false">Shown on links you share. Letters, numbers, dots and underscores.</string> <!-- N14-EditProfile -->
+    <string name="cd_handle" formatted="false">Handle</string> <!-- N14-EditProfile -->
+    <string name="s_keep_your_designs_everywhere" formatted="false">Keep your designs everywhere</string> <!-- N15-SignIn -->
+    <string name="s_sign_in_to_sync_drafts_and_favourites_ac" formatted="false">Sign in to sync drafts and favourites across your devices.</string> <!-- N15-SignIn -->
+    <string name="s_continue_with_apple" formatted="false">Continue with Apple</string> <!-- N15-SignIn -->
+    <string name="s_continue_with_google" formatted="false">Continue with Google</string> <!-- N15-SignIn -->
+    <string name="s_continue_with_email" formatted="false">Continue with email</string> <!-- N15-SignIn -->
+    <string name="s_continue_as_guest" formatted="false">Continue as guest</string> <!-- N15-SignIn -->
+    <string name="s_by_continuing_you_agree_to_the_terms_and" formatted="false">By continuing you agree to the Terms and Privacy Policy.</string> <!-- N15-SignIn -->
+    <string name="s_export" formatted="false">EXPORT</string> <!-- N16-Settings -->
+    <string name="s_quality" formatted="false">Quality</string> <!-- N16-Settings -->
+    <string name="s_max_makes_bigger_files" formatted="false">Max makes bigger files</string> <!-- N16-Settings -->
+    <string name="s_high" formatted="false">High</string> <!-- N16-Settings -->
+    <string name="s_max" formatted="false">Max</string> <!-- N16-Settings -->
+    <string name="s_file_format" formatted="false">File format</string> <!-- N16-Settings -->
+    <string name="s_jpg" formatted="false">JPG</string> <!-- N16-Settings -->
+    <string name="s_png" formatted="false">PNG</string> <!-- N16-Settings -->
+    <string name="s_number_slides_in_file_names" formatted="false">Number slides in file names</string> <!-- N16-Settings -->
+    <string name="s_torn_diary_01_jpg_02_03" formatted="false">torn-diary-01.jpg, -02, -03…</string> <!-- N16-Settings -->
+    <string name="s_save_to_an_album_called_framelab" formatted="false">Save to an album called “FrameLab”</string> <!-- N16-Settings -->
+    <string name="s_always_show_photo_order_numbers" formatted="false">Always show photo-order numbers</string> <!-- N16-Settings -->
+    <string name="s_snap_rotation_to_90" formatted="false">Snap rotation to 90°</string> <!-- N16-Settings -->
+    <string name="s_haptics" formatted="false">Haptics</string> <!-- N16-Settings -->
+    <string name="s_appearance" formatted="false">APPEARANCE</string> <!-- N16-Settings -->
+    <string name="s_theme" formatted="false">Theme</string> <!-- N16-Settings -->
+    <string name="s_the_editor_always_stays_dark" formatted="false">The editor always stays dark</string> <!-- N16-Settings -->
+    <string name="s_light" formatted="false">Light</string> <!-- N16-Settings -->
+    <string name="s_dark" formatted="false">Dark</string> <!-- N16-Settings -->
+    <string name="s_system" formatted="false">System</string> <!-- N16-Settings -->
+    <string name="s_permissions" formatted="false">PERMISSIONS</string> <!-- N16-Settings -->
+    <string name="s_full_access" formatted="false">Full access</string> <!-- N16-Settings -->
+    <string name="s_open_system_settings" formatted="false">Open system settings</string> <!-- N16-Settings -->
+    <string name="s_storage" formatted="false">STORAGE</string> <!-- N16-Settings -->
+    <string name="s_cache" formatted="false">Cache</string> <!-- N16-Settings -->
+    <string name="s_n_84_mb_template_images" formatted="false">84 MB · template images</string> <!-- N16-Settings -->
+    <string name="s_delete_all_drafts" formatted="false">Delete all drafts</string> <!-- N16-Settings -->
+    <string name="s_account" formatted="false">ACCOUNT</string> <!-- N16-Settings -->
+    <string name="s_signed_in_as" formatted="false">Signed in as</string> <!-- N16-Settings -->
+    <string name="s_sign_out" formatted="false">Sign out</string> <!-- N16-Settings -->
+    <string name="s_delete_account" formatted="false">Delete account</string> <!-- N16-Settings -->
+    <string name="s_about_2" formatted="false">ABOUT</string> <!-- N16-Settings -->
+    <string name="s_version" formatted="false">Version</string> <!-- N16-Settings -->
+    <string name="s_x_y_z" formatted="false">[x.y.z]</string> <!-- N16-Settings -->
+    <string name="s_terms_of_service" formatted="false">Terms of Service</string> <!-- N16-Settings -->
+    <string name="s_privacy_policy" formatted="false">Privacy Policy</string> <!-- N16-Settings -->
+    <string name="s_licences" formatted="false">Licences</string> <!-- N16-Settings -->
+    <string name="cd_quality" formatted="false">Quality</string> <!-- N16-Settings -->
+    <string name="cd_file_format" formatted="false">File format</string> <!-- N16-Settings -->
+    <string name="cd_number_slides_in_file_names" formatted="false">Number slides in file names</string> <!-- N16-Settings -->
+    <string name="cd_save_to_framelab_album" formatted="false">Save to FrameLab album</string> <!-- N16-Settings -->
+    <string name="cd_always_show_photo_order_numbers" formatted="false">Always show photo-order numbers</string> <!-- N16-Settings -->
+    <string name="cd_snap_rotation_to_90_degrees" formatted="false">Snap rotation to 90 degrees</string> <!-- N16-Settings -->
+    <string name="cd_haptics" formatted="false">Haptics</string> <!-- N16-Settings -->
+    <string name="cd_theme" formatted="false">Theme</string> <!-- N16-Settings -->
+    <string name="s_make_every_post_look_finished" formatted="false">Make every post look finished.</string> <!-- N17-Paywall -->
+    <string name="s_every_template_plus_new_trend_drops" formatted="false">Every template, plus new trend drops</string> <!-- N17-Paywall -->
+    <string name="s_no_watermark_on_your_exports" formatted="false">No watermark on your exports</string> <!-- N17-Paywall -->
+    <string name="s_max_quality_hd_export_jpg_or_png" formatted="false">Max-quality HD export, JPG or PNG</string> <!-- N17-Paywall -->
+    <string name="s_early_access_to_new_trends" formatted="false">Early access to new trends</string> <!-- N17-Paywall -->
+    <string name="s_best_value" formatted="false">BEST VALUE</string> <!-- N17-Paywall -->
+    <string name="s_yearly" formatted="false">Yearly</string> <!-- N17-Paywall -->
+    <string name="s_yearly_price" formatted="false">[YEARLY PRICE]</string> <!-- N17-Paywall -->
+    <string name="s_per_year" formatted="false">per year</string> <!-- N17-Paywall -->
+    <string name="s_monthly" formatted="false">Monthly</string> <!-- N17-Paywall -->
+    <string name="s_monthly_price" formatted="false">[MONTHLY PRICE]</string> <!-- N17-Paywall -->
+    <string name="s_per_month" formatted="false">per month</string> <!-- N17-Paywall -->
+    <string name="s_start_free_trial" formatted="false">Start free trial</string> <!-- N17-Paywall -->
+    <string name="s_restore_purchases" formatted="false">Restore purchases</string> <!-- N17-Paywall -->
+    <string name="s_trial_length_and_renewal_terms_cancel_an" formatted="false">[Trial length and renewal terms]. Cancel anytime in your app store settings.</string> <!-- N17-Paywall -->
+    <string name="cd_plan" formatted="false">Plan</string> <!-- N17-Paywall -->
+    <string name="s_rename" formatted="false">Rename</string> <!-- N8-Menu -->
+    <string name="s_select" formatted="false">Select</string> <!-- N8-Menu -->
+    <string name="cd_torn_diary_options" formatted="false">Torn Diary options</string> <!-- N8-Menu -->
+    <string name="s_rename_draft" formatted="false">Rename draft</string> <!-- N8-Rename -->
+    <string name="s_only_you_see_this_name_the_template_stay" formatted="false">Only you see this name. The template stays Torn Diary.</string> <!-- N8-Rename -->
+    <string name="cd_rename_draft" formatted="false">Rename draft</string> <!-- N8-Rename -->
+    <string name="cd_draft_name" formatted="false">Draft name</string> <!-- N8-Rename -->
+    <string name="cd_clear_name" formatted="false">Clear name</string> <!-- N8-Rename -->
+    <string name="s_delete_torn_diary" formatted="false">Delete “Torn Diary”?</string> <!-- N8-DeleteDraft -->
+    <string name="s_this_draft_goes_from_framelab_the_origin" formatted="false">This draft goes from FrameLab. The original photos stay in your gallery.</string> <!-- N8-DeleteDraft -->
+    <string name="cd_delete_torn_diary" formatted="false">Delete Torn Diary?</string> <!-- N8-DeleteDraft -->
+    <string name="s_n_2_selected" formatted="false">2 selected</string> <!-- N8-Select -->
+    <string name="s_select_all" formatted="false">Select all</string> <!-- N8-Select -->
+    <string name="s_edited_2_h_ago_5_12_photos" formatted="false">Edited 2 h ago · 5/12 photos</string> <!-- N8-Select -->
+    <string name="s_edited_yesterday_ready_to_save" formatted="false">Edited yesterday · ready to save</string> <!-- N8-Select -->
+    <string name="s_edited_nov_12_3_11_photos" formatted="false">Edited Nov 12 · 3/11 photos</string> <!-- N8-Select -->
+    <string name="s_delete_2_2" formatted="false">Delete 2</string> <!-- N8-Select -->
+    <string name="cd_drafts" formatted="false">Drafts</string> <!-- N8-Select -->
+    <string name="cd_select_torn_diary" formatted="false">Select Torn Diary</string> <!-- N8-Select -->
+    <string name="cd_select_film_reel" formatted="false">Select Film Reel</string> <!-- N8-Select -->
+    <string name="cd_select_polaroid_pile" formatted="false">Select Polaroid Pile</string> <!-- N8-Select -->
+    <string name="cd_actions_for_2_drafts" formatted="false">Actions for 2 drafts</string> <!-- N8-Select -->
+    <string name="s_post_in_this_order" formatted="false">Post in this order</string> <!-- N9-PostInOrder -->
+    <string name="s_framelab_hands_all_6_images_to_instagram" formatted="false">FrameLab hands all 6 images to Instagram, already in order.</string> <!-- N9-PostInOrder -->
+    <string name="s_choose_a_feed_post_and_keep_the_order_as" formatted="false">Choose a feed post and keep the order as it is.</string> <!-- N9-PostInOrder -->
+    <string name="s_add_a_caption_and_share_the_photos_line" formatted="false">Add a caption and share. The photos line up as people swipe.</string> <!-- N9-PostInOrder -->
+    <string name="s_open_instagram" formatted="false">Open Instagram</string> <!-- N9-PostInOrder -->
+    <string name="cd_post_in_this_order" formatted="false">Post in this order</string> <!-- N9-PostInOrder -->
+    <string name="s_delete_from_my_designs_2" formatted="false">Delete from My Designs?</string> <!-- N11-DeletePost -->
+    <string name="s_the_6_images_stay_in_your_gallery_only_f" formatted="false">The 6 images stay in your gallery. Only FrameLab\'s copy is removed, so you won\'t be able to edit a copy later.</string> <!-- N11-DeletePost -->
+    <string name="cd_delete_from_my_designs" formatted="false">Delete from My Designs?</string> <!-- N11-DeletePost -->
+    <string name="s_profile_photo" formatted="false">Profile photo</string> <!-- N14-PhotoSheet -->
+    <string name="s_take_photo" formatted="false">Take photo</string> <!-- N14-PhotoSheet -->
+    <string name="s_choose_from_library" formatted="false">Choose from library</string> <!-- N14-PhotoSheet -->
+    <string name="s_remove_photo" formatted="false">Remove photo</string> <!-- N14-PhotoSheet -->
+    <string name="cd_profile_photo" formatted="false">Profile photo</string> <!-- N14-PhotoSheet -->
+    <string name="cd_profile_photo_options" formatted="false">Profile photo options</string> <!-- N14-PhotoSheet -->
+    <string name="s_that_handle_is_taken_try_one_of_these" formatted="false">That handle is taken. Try one of these:</string> <!-- N14-HandleError -->
+    <string name="s_sam_shoots_26" formatted="false">\@sam.shoots.26</string> <!-- N14-HandleError -->
+    <string name="s_samshoots" formatted="false">\@samshoots</string> <!-- N14-HandleError -->
+    <string name="s_sam_frames" formatted="false">\@sam_frames</string> <!-- N14-HandleError -->
+    <string name="s_sign_in_with_email" formatted="false">Sign in with email</string> <!-- N15-Email -->
+    <string name="s_we_ll_email_you_a_sign_in_link_no_passwo" formatted="false">We\'ll email you a sign-in link. No password needed.</string> <!-- N15-Email -->
+    <string name="s_email_2" formatted="false">Email</string> <!-- N15-Email -->
+    <string name="s_send_link" formatted="false">Send link</string> <!-- N15-Email -->
+    <string name="s_check_your_inbox" formatted="false">Check your inbox</string> <!-- N15-Inbox -->
+    <string name="s_we_sent_a_sign_in_link_to_sam_example_co" formatted="false">We sent a sign-in link to sam\@example.com. Open it on this phone to finish signing in.</string> <!-- N15-Inbox -->
+    <string name="s_open_email_app" formatted="false">Open email app</string> <!-- N15-Inbox -->
+    <string name="s_resend_link_in_0_24" formatted="false">Resend link in 0:24</string> <!-- N15-Inbox -->
+    <string name="s_use_a_different_email" formatted="false">Use a different email</string> <!-- N15-Inbox -->
+    <string name="s_sign_out_2" formatted="false">Sign out?</string> <!-- N16-SignOut -->
+    <string name="s_your_drafts_stay_on_this_phone_sign_in_a" formatted="false">Your drafts stay on this phone. Sign in again to sync them and your favourites.</string> <!-- N16-SignOut -->
+    <string name="cd_sign_out" formatted="false">Sign out?</string> <!-- N16-SignOut -->
+    <string name="s_delete_your_framelab_account" formatted="false">Delete your FrameLab account?</string> <!-- N16-DeleteAccount -->
+    <string name="s_gets_deleted" formatted="false">GETS DELETED</string> <!-- N16-DeleteAccount -->
+    <string name="s_drafts_and_favourites_synced_to_your_acc" formatted="false">Drafts and favourites synced to your account</string> <!-- N16-DeleteAccount -->
+    <string name="s_your_profile_and_the_handle_sam_shoots" formatted="false">Your profile and the handle \@sam.shoots</string> <!-- N16-DeleteAccount -->
+    <string name="s_copies_of_saved_posts_in_my_designs" formatted="false">Copies of saved posts in My Designs</string> <!-- N16-DeleteAccount -->
+    <string name="s_stays_on_your_phone" formatted="false">STAYS ON YOUR PHONE</string> <!-- N16-DeleteAccount -->
+    <string name="s_every_image_you_ve_saved_to_your_gallery" formatted="false">Every image you\'ve saved to your gallery</string> <!-- N16-DeleteAccount -->
+    <string name="s_have_pro_cancel_it_in_your_app_store_set" formatted="false">Have Pro? Cancel it in your app store settings first. Deleting your account doesn\'t cancel the subscription.</string> <!-- N16-DeleteAccount -->
+    <string name="s_type_delete_to_confirm" formatted="false">Type DELETE to confirm</string> <!-- N16-DeleteAccount -->
+    <string name="s_search_help" formatted="false">Search help</string> <!-- N12-Help -->
+    <string name="s_common_questions" formatted="false">COMMON QUESTIONS</string> <!-- N12-Help -->
+    <string name="s_how_do_seamless_carousels_work" formatted="false">How do seamless carousels work?</string> <!-- N12-Help -->
+    <string name="s_each_slide_saves_as_its_own_image_some_p" formatted="false">Each slide saves as its own image. Some photos and frames cross a slide edge, so when you post the slides in order they join up into one long picture as people swipe.</string> <!-- N12-Help -->
+    <string name="s_why_does_one_photo_spot_cover_two_slides" formatted="false">Why does one photo spot cover two slides?</string> <!-- N12-Help -->
+    <string name="s_how_do_i_post_the_slides_in_the_right_or" formatted="false">How do I post the slides in the right order?</string> <!-- N12-Help -->
+    <string name="s_where_are_my_drafts_kept" formatted="false">Where are my drafts kept?</string> <!-- N12-Help -->
+    <string name="s_how_do_i_restore_framelab_pro" formatted="false">How do I restore FrameLab Pro?</string> <!-- N12-Help -->
+    <string name="s_still_stuck" formatted="false">Still stuck?</string> <!-- N12-Help -->
+    <string name="s_tell_us_what_happened_or_ask_for_a_templ" formatted="false">Tell us what happened, or ask for a template you\'d love to see.</string> <!-- N12-Help -->
+    <string name="s_send_feedback" formatted="false">Send feedback</string> <!-- N12-Help -->
+    <string name="s_email_support" formatted="false">Email support</string> <!-- N12-Help -->
+    <string name="cd_common_questions" formatted="false">Common questions</string> <!-- N12-Help -->
+    <string name="cd_still_stuck" formatted="false">Still stuck</string> <!-- N12-Help -->
+    <string name="s_what_s_it_about" formatted="false">What\'s it about?</string> <!-- N12-Feedback -->
+    <string name="s_something_s_broken" formatted="false">Something\'s broken</string> <!-- N12-Feedback -->
+    <string name="s_idea" formatted="false">Idea</string> <!-- N12-Feedback -->
+    <string name="s_template_request" formatted="false">Template request</string> <!-- N12-Feedback -->
+    <string name="s_other" formatted="false">Other</string> <!-- N12-Feedback -->
+    <string name="s_tell_us_more" formatted="false">Tell us more</string> <!-- N12-Feedback -->
+    <string name="s_a_concert_night_template_dark_background" formatted="false">A concert-night template: dark background, ticket stubs and a big orange date stamp across the first two slides.</string> <!-- N12-Feedback -->
+    <string name="s_screenshots" formatted="false">Screenshots</string> <!-- N12-Feedback -->
+    <string name="s_include_device_and_app_info" formatted="false">Include device and app info</string> <!-- N12-Feedback -->
+    <string name="s_helps_us_fix_problems_faster" formatted="false">Helps us fix problems faster</string> <!-- N12-Feedback -->
+    <string name="cd_remove_screenshot" formatted="false">Remove screenshot</string> <!-- N12-Feedback -->
+    <string name="cd_add_screenshot" formatted="false">Add screenshot</string> <!-- N12-Feedback -->
+    <string name="cd_include_device_and_app_info" formatted="false">Include device and app info</string> <!-- N12-Feedback -->
+    <string name="s_enjoying_framelab" formatted="false">Enjoying FrameLab?</string> <!-- N12-Rate -->
+    <string name="s_a_quick_rating_helps_other_creators_find" formatted="false">A quick rating helps other creators find us. If something feels off, tell us instead.</string> <!-- N12-Rate -->
+    <string name="s_yes_rate_framelab" formatted="false">Yes, rate FrameLab</string> <!-- N12-Rate -->
+    <string name="s_not_really_send_feedback" formatted="false">Not really, send feedback</string> <!-- N12-Rate -->
+    <string name="s_maybe_later" formatted="false">Maybe later</string> <!-- N12-Rate -->
+    <string name="cd_enjoying_framelab" formatted="false">Enjoying FrameLab?</string> <!-- N12-Rate -->
+    <string name="s_version_x_y_z" formatted="false">VERSION [x.y.z]</string> <!-- N12-About -->
+    <string name="s_website" formatted="false">Website</string> <!-- N12-About -->
+    <string name="s_website_2" formatted="false">[website]</string> <!-- N12-About -->
+    <string name="s_follow_on_instagram" formatted="false">Follow on Instagram</string> <!-- N12-About -->
+    <string name="s_handle_2" formatted="false">\@[handle]</string> <!-- N12-About -->
+    <string name="s_made_by_company_name" formatted="false">Made by [Company name]</string> <!-- N12-About -->
+    <string name="cd_about_links" formatted="false">About links</string> <!-- N12-About -->
+    <string name="s_share_framelab" formatted="false">Share FrameLab</string> <!-- N12-Share -->
+    <string name="s_carousels_that_flow_across_every_swipe" formatted="false">Carousels that flow across every swipe</string> <!-- N12-Share -->
+    <string name="s_app_link" formatted="false">[APP LINK]</string> <!-- N12-Share -->
+    <string name="s_copy_link" formatted="false">Copy link</string> <!-- N12-Share -->
+    <string name="cd_share_framelab" formatted="false">Share FrameLab</string> <!-- N12-Share -->
+    <string name="s_framelab_is_built_on_open_source_softwar" formatted="false">FrameLab is built on open-source software and fonts. Thank you to everyone who makes them.</string> <!-- N16-Licences -->
+    <string name="s_software" formatted="false">SOFTWARE</string> <!-- N16-Licences -->
+    <string name="s_react_native" formatted="false">React Native</string> <!-- N16-Licences -->
+    <string name="s_mit" formatted="false">MIT</string> <!-- N16-Licences -->
+    <string name="s_expo" formatted="false">Expo</string> <!-- N16-Licences -->
+    <string name="s_supabase_js" formatted="false">Supabase JS</string> <!-- N16-Licences -->
+    <string name="s_fonts" formatted="false">FONTS</string> <!-- N16-Licences -->
+    <string name="s_bricolage_grotesque" formatted="false">Bricolage Grotesque</string> <!-- N16-Licences -->
+    <string name="s_ofl_1_1" formatted="false">OFL 1.1</string> <!-- N16-Licences -->
+    <string name="s_inter" formatted="false">Inter</string> <!-- N16-Licences -->
+    <string name="s_dm_mono" formatted="false">DM Mono</string> <!-- N16-Licences -->
+    <string name="s_all_other_licences" formatted="false">All other licences</string> <!-- N16-Licences -->
+    <string name="cd_software" formatted="false">Software</string> <!-- N16-Licences -->
+    <string name="cd_fonts" formatted="false">Fonts</string> <!-- N16-Licences -->
+    <string name="s_you_re_pro" formatted="false">You\'re Pro.</string> <!-- N17-Welcome -->
+    <string name="s_every_template_is_unlocked_and_your_expo" formatted="false">Every template is unlocked, and your exports save without a watermark.</string> <!-- N17-Welcome -->
+    <string name="s_all_templates_including_new_trend_drops" formatted="false">All templates, including new trend drops</string> <!-- N17-Welcome -->
+    <string name="s_no_watermark_early_access_to_trends" formatted="false">No watermark, early access to trends</string> <!-- N17-Welcome -->
+    <string name="s_trial_ends_date_manage_in_your_app_store" formatted="false">TRIAL ENDS [DATE] · MANAGE IN YOUR APP STORE SETTINGS</string> <!-- N17-Welcome -->
+    <string name="s_start_creating" formatted="false">Start creating</string> <!-- N17-Welcome -->
+    <string name="s_seamless_carousels" formatted="false">SEAMLESS CAROUSELS</string> <!-- N1-Splash -->
+    <string name="cd_framelab_is_loading" formatted="false">FrameLab is loading</string> <!-- N1-Splash -->
+    <string name="s_skip" formatted="false">Skip</string> <!-- N2-Flow -->
+    <string name="s_photos_and_frames_cross_from_one_slide_i" formatted="false">Photos and frames cross from one slide into the next, so your carousel reads as one long picture.</string> <!-- N2-Flow -->
+    <string name="cd_step_1_of_3" formatted="false">Step 1 of 3</string> <!-- N2-Flow -->
+    <string name="s_pick_your_photos_once_and_they_fill_the" formatted="false">Pick your photos once and they fill the spots in order. Then drag, pinch and rotate until they sit just right.</string> <!-- N2-Add -->
+    <string name="cd_step_2_of_3" formatted="false">Step 2 of 3</string> <!-- N2-Add -->
+    <string name="s_save_post_in_order" formatted="false">Save &amp; post in order</string> <!-- N2-Save -->
+    <string name="s_save_turns_every_slide_into_a_full_size" formatted="false">Save turns every slide into a full-size image, numbered and in order, ready to pick in Instagram.</string> <!-- N2-Save -->
+    <string name="cd_step_3_of_3" formatted="false">Step 3 of 3</string> <!-- N2-Save -->
+    <string name="s_let_framelab_use_your_photos" formatted="false">Let FrameLab use your photos</string> <!-- N2-Primer -->
+    <string name="s_your_phone_will_ask_next_here_s_what_acc" formatted="false">Your phone will ask next. Here\'s what access is for:</string> <!-- N2-Primer -->
+    <string name="s_pick_the_photos_that_fill_each_template" formatted="false">Pick the photos that fill each template</string> <!-- N2-Primer -->
+    <string name="s_save_finished_slides_to_an_album_called" formatted="false">Save finished slides to an album called “FrameLab”</string> <!-- N2-Primer -->
+    <string name="s_allow_photo_access" formatted="false">Allow photo access</string> <!-- N2-Primer -->
+</resources>

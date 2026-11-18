@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Edit profile</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<div style="position:absolute; left:8px; right:8px; top:52px; height:48px; display:flex; align-items:center">
+<button type="button" style="width:80px; height:44px; border:0; padding:0 8px; background:transparent; color:#16130F; text-align:left; font:500 16px Inter, sans-serif">Cancel</button>
+<h1 style="flex:1; margin:0; text-align:center; font:700 17px/22px Inter, sans-serif">Edit profile</h1>
+<button type="button" style="width:80px; height:44px; border:0; padding:0 8px; background:transparent; color:#B33A17; text-align:right; font:700 16px Inter, sans-serif">Save</button>
+</div>
+<div style="position:absolute; left:147px; top:120px; width:96px; height:96px">
+<div aria-hidden="true" style="width:96px; height:96px; border-radius:50%; background:#FFE6DE; color:#16130F; display:flex; align-items:center; justify-content:center; font:800 32px 'Bricolage Grotesque', Inter, sans-serif">SR</div>
+<span aria-hidden="true" style="position:absolute; right:-2px; bottom:-2px; width:34px; height:34px; box-sizing:border-box; border-radius:50%; border:3px solid #FAF7F2; background:#16130F; color:#FFFFFF; display:flex; align-items:center; justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" style="stroke-width:2"><path d="M4 7.5h3l2-2.5h6l2 2.5h3A1.5 1.5 0 0 1 21.5 9v9a1.5 1.5 0 0 1-1.5 1.5H4A1.5 1.5 0 0 1 2.5 18V9A1.5 1.5 0 0 1 4 7.5z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></span>
+</div>
+<button type="button" style="position:absolute; left:120px; top:224px; width:150px; height:44px; border:0; background:transparent; color:#16130F; font:600 15px Inter, sans-serif; text-decoration:underline; text-underline-offset:3px">Change photo</button>
+<form style="position:absolute; left:20px; right:20px; top:288px; display:flex; flex-direction:column; gap:18px">
+<label style="display:flex; flex-direction:column; gap:8px; font-size:13px; line-height:18px; font-weight:600; color:#6F685E">Name<input type="text" value="Sam Rivera" style="height:52px; box-sizing:border-box; padding:0 16px; border:1px solid #ECE6DC; border-radius:14px; background:#FFFFFF; color:#16130F; font:500 16px Inter, sans-serif; outline:none"></label>
+<label style="display:flex; flex-direction:column; gap:8px; font-size:13px; line-height:18px; font-weight:600; color:#6F685E">Handle<span style="height:52px; box-sizing:border-box; padding:0 16px; border:2px solid #16130F; border-radius:14px; background:#FFFFFF; display:flex; align-items:center; gap:2px; font:500 16px Inter, sans-serif; color:#6F685E">@<input type="text" value="sam.shoots" aria-label="Handle" style="flex:1; min-width:0; border:0; padding:0; background:transparent; color:#16130F; font:500 16px Inter, sans-serif; outline:none"></span><span style="font-weight:400; font-size:12px; line-height:17px">Shown on links you share. Letters, numbers, dots and underscores.</span></label>
+</form>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

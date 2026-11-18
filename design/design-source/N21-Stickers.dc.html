@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Editor — stickers</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#0B0B0C; color:#FFFFFF; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<div style="position:absolute; left:0; top:48px; width:390px; height:56px"><dc-import name="EditorTop" mode="edit" undo="on" redo="off" hint-size="390px,56px"></dc-import></div>
+<div style="position:absolute; left:70px; top:112px; width:250px; height:313px; overflow:hidden"><dc-import name="Diary" w="250" count="1" state="full" hint-size="250px,313px"></dc-import></div>
+
+<section role="dialog" aria-label="Stickers" style="position:absolute; left:0; top:440px; width:390px; height:404px; box-sizing:border-box; padding:0 20px; border-radius:24px 24px 0 0; background:#1C1C1E; box-shadow:0 -10px 30px rgba(0,0,0,.45)">
+<div style="width:36px; height:5px; margin:8px auto 0; border-radius:3px; background:#48484A"></div>
+<div style="display:flex; align-items:center; justify-content:space-between; height:40px; margin-top:4px">
+<h2 style="margin:0; font:700 16px/20px Inter, sans-serif">Stickers</h2>
+<button type="button" aria-label="Close stickers" style="width:44px; height:44px; margin-right:-10px; border:0; padding:0; border-radius:22px; background:transparent; color:#FFFFFF; display:flex; align-items:center; justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg></button>
+</div>
+<div role="tablist" aria-label="Sticker type" style="display:flex; gap:6px; margin:6px -20px 0 0; overflow:hidden">
+<button type="button" role="tab" aria-selected="true" style="flex:none; height:36px; padding:0 14px; border:0; border-radius:18px; background:#FFFFFF; color:#16130F; font:600 13px Inter, sans-serif">All</button>
+<button type="button" role="tab" aria-selected="false" style="flex:none; height:36px; padding:0 14px; border:0; border-radius:18px; background:#2C2C2E; color:#FFFFFF; font:600 13px Inter, sans-serif">Tape</button>
+<button type="button" role="tab" aria-selected="false" style="flex:none; height:36px; padding:0 14px; border:0; border-radius:18px; background:#2C2C2E; color:#FFFFFF; font:600 13px Inter, sans-serif">Stamps</button>
+<button type="button" role="tab" aria-selected="false" style="flex:none; height:36px; padding:0 14px; border:0; border-radius:18px; background:#2C2C2E; color:#FFFFFF; font:600 13px Inter, sans-serif">Dates</button>
+<button type="button" role="tab" aria-selected="false" style="flex:none; height:36px; padding:0 14px; border:0; border-radius:18px; background:#2C2C2E; color:#FFFFFF; font:600 13px Inter, sans-serif">Doodles</button>
+<button type="button" role="tab" aria-selected="false" style="flex:none; height:36px; padding:0 14px; border:0; border-radius:18px; background:#2C2C2E; color:#FFFFFF; font:600 13px Inter, sans-serif">Chips</button>
+</div>
+<div style="display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:10px; margin-top:14px">
+<button type="button" aria-label="Masking tape" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center"><span style="width:56px; height:18px; transform:rotate(-8deg); background:repeating-linear-gradient(90deg, rgba(255,255,255,.2) 0 3px, rgba(255,255,255,0) 3px 7px), rgba(236,214,163,.95)"></span></button>
+<button type="button" aria-label="Pink tape" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center"><span style="width:56px; height:18px; transform:rotate(6deg); background:repeating-linear-gradient(45deg, rgba(255,255,255,.35) 0 3px, rgba(255,255,255,0) 3px 8px), #F6B7C6"></span></button>
+<button type="button" aria-label="Gingham tape" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center"><span style="width:56px; height:18px; transform:rotate(-4deg); background:repeating-linear-gradient(90deg, rgba(156,195,224,.9) 0 6px, rgba(214,232,245,.9) 6px 12px)"></span></button>
+<button type="button" aria-label="Date stamp" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center; font:500 13px 'DM Mono', monospace; letter-spacing:1px; color:#FF8A3D; text-shadow:0 0 6px rgba(255,120,40,.7)">'26 11 17</button>
+<button type="button" aria-label="Postmark" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center; position:relative"><span style="width:42px; height:42px; box-sizing:border-box; border-radius:50%; border:1.5px solid #C9C1B5"></span><svg width="40" height="20" viewBox="0 0 40 20" aria-hidden="true" style="position:absolute; left:34px; top:30px; stroke:#C9C1B5; stroke-width:1.5"><path d="M0 4q5-4 10 0t10 0 10 0 10 0M0 12q5-4 10 0t10 0 10 0 10 0"></path></svg></button>
+<button type="button" aria-label="Postage stamp" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center"><span style="position:relative; width:40px; height:50px; transform:rotate(5deg); background:radial-gradient(circle at 5px 5px, rgba(0,0,0,0) 2.4px, #FFFDF8 2.8px) -5px -5px / 10px 10px"><span style="position:absolute; left:5px; top:5px; width:30px; height:40px; background:#CDE7EA"></span></span></button>
+<button type="button" aria-label="Star doodle" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; color:#FFD86B; display:flex; align-items:center; justify-content:center"><svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" style="stroke-width:1.6"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6l-5.4 2.9 1.2-6-4.5-4.2 6.1-.7z"></path></svg></button>
+<button type="button" aria-label="Arrow doodle" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; color:#FFFFFF; display:flex; align-items:center; justify-content:center"><svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" style="stroke-width:1.5"><path d="M3.5 17c3.5-7 9-9.5 15.5-8.5"></path><path d="m15.5 5.5 3.5 3-3.5 3.2"></path></svg></button>
+<button type="button" aria-label="Swipe chip" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center"><span style="height:24px; padding:0 8px 0 10px; border-radius:12px; background:#FFFFFF; color:#16130F; display:flex; align-items:center; gap:3px; font:600 10px Inter, sans-serif">swipe<svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" style="stroke:#16130F; stroke-width:2.4"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></button>
+<button type="button" aria-label="Heart doodle" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; color:#FF8FA3; display:flex; align-items:center; justify-content:center"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" style="stroke-width:1.6"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"></path></svg></button>
+<button type="button" aria-label="Paper label" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center"><span style="padding:5px 9px; transform:rotate(-3deg); background:#F4ECDC; border:1px dashed #9C8D74; font:500 10px 'DM Mono', monospace; letter-spacing:1px; color:#2B2621">NOTE</span></button>
+<button type="button" aria-label="Boarding pass" style="height:80px; border:0; padding:0; border-radius:16px; background:#2C2C2E; display:flex; align-items:center; justify-content:center"><span style="position:relative; width:56px; height:28px; border-radius:3px; background:#FFFFFF; transform:rotate(4deg); font:700 10px/28px 'Bricolage Grotesque', sans-serif; color:#16130F; text-indent:6px; text-align:left">LIS<span style="position:absolute; left:38px; top:3px; bottom:3px; border-left:1px dashed #9C8D74"></span></span></button>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

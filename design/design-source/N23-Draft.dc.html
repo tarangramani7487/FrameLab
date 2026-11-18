@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Editor — save as draft?</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#0B0B0C; color:#FFFFFF; font-family:Inter, -apple-system, Roboto, sans-serif">
+<div style="position:absolute; left:0; top:0; width:390px; height:844px"><dc-import name="Ed" state="partial" hint="5/12 photos · tap a photo to edit it" hint-size="390px,844px"></dc-import></div>
+<div style="position:absolute; left:0; top:0; width:390px; height:844px; background:rgba(0,0,0,.6)"></div>
+<section role="dialog" aria-label="Save as a draft?" style="position:absolute; left:0; top:556px; width:390px; height:288px; box-sizing:border-box; padding:0 20px; border-radius:24px 24px 0 0; background:#1C1C1E">
+<div style="width:36px; height:5px; margin:8px auto 0; border-radius:3px; background:#48484A"></div>
+<h2 style="margin:18px 0 0; font:700 22px/28px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.3px">Save as a draft?</h2>
+<p style="margin:6px 0 0; font-size:14px; line-height:20px; color:#8E8E93">You've placed 5 of 12 photos. Save now and pick up where you left off in My Designs.</p>
+<button type="button" style="display:block; width:100%; height:52px; margin-top:20px; border:0; border-radius:26px; background:#FF5A36; color:#16130F; font:700 16px Inter, sans-serif">Save draft</button>
+<div style="display:flex; gap:10px; margin-top:10px">
+<button type="button" style="flex:1; height:48px; border:0; border-radius:24px; background:transparent; color:#FF6961; font:600 15px Inter, sans-serif">Discard</button>
+<button type="button" style="flex:1; height:48px; border:0; border-radius:24px; background:#2C2C2E; color:#FFFFFF; font:600 15px Inter, sans-serif">Cancel</button>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

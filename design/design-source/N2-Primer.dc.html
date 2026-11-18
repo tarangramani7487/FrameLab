@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Photo access primer</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<div aria-hidden="true" style="position:absolute; left:92px; top:110px; width:206px; height:206px; box-sizing:border-box; padding:12px; border-radius:24px; background:#FFFFFF; box-shadow:0 8px 24px rgba(22,19,15,.12); display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); grid-template-rows:repeat(3, minmax(0, 1fr)); gap:6px; transform:rotate(-3deg)">
+<div style="border-radius:10px; background:#F3CFC3"></div><div style="position:relative; border-radius:10px; background:#CDE7EA; box-shadow:inset 0 0 0 3px #FF5A36"><span style="position:absolute; right:4px; top:4px; width:18px; height:18px; border-radius:50%; background:#FF5A36; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" style="stroke-width:3.4"><path d="M20 6 9 17l-5-5"></path></svg></span></div><div style="border-radius:10px; background:#E3E0F3"></div>
+<div style="border-radius:10px; background:#FDE7C4"></div><div style="border-radius:10px; background:#D7EBDD"></div><div style="position:relative; border-radius:10px; background:#F6D3DC; box-shadow:inset 0 0 0 3px #FF5A36"><span style="position:absolute; right:4px; top:4px; width:18px; height:18px; border-radius:50%; background:#FF5A36; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" style="stroke-width:3.4"><path d="M20 6 9 17l-5-5"></path></svg></span></div>
+<div style="border-radius:10px; background:#CDE7EA"></div><div style="border-radius:10px; background:#F3CFC3"></div><div style="border-radius:10px; background:#FDE7C4"></div>
+</div>
+<h1 style="position:absolute; left:24px; right:24px; top:356px; margin:0; text-align:center; font:800 30px/34px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.8px">Let FrameLab use your photos</h1>
+<p style="position:absolute; left:24px; right:24px; top:432px; margin:0; text-align:center; font-size:15px; line-height:22px; color:#6F685E">Your phone will ask next. Here's what access is for:</p>
+<ul style="position:absolute; left:24px; right:24px; top:480px; margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:14px">
+<li style="display:flex; align-items:center; gap:14px; font-size:15px; line-height:21px"><span aria-hidden="true" style="flex:none; width:44px; height:44px; border-radius:14px; background:#FFE6DE; color:#B33A17; display:flex; align-items:center; justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M20 11.5V18a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18V6.5A2.5 2.5 0 0 1 6.5 4H13"></path><path d="M18 3v6M15 6h6"></path><circle cx="9" cy="9.5" r="1.5"></circle><path d="m4 17 4.5-4.5a2 2 0 0 1 2.8 0L16 17"></path></svg></span>Pick the photos that fill each template</li>
+<li style="display:flex; align-items:center; gap:14px; font-size:15px; line-height:21px"><span aria-hidden="true" style="flex:none; width:44px; height:44px; border-radius:14px; background:#FFE6DE; color:#B33A17; display:flex; align-items:center; justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M4 17v1.5A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5V17"></path></svg></span>Save finished slides to an album called “FrameLab”</li>
+</ul>
+<div style="position:absolute; left:24px; right:24px; top:692px; display:flex; flex-direction:column; gap:8px">
+<button type="button" style="height:52px; border:0; border-radius:26px; background:#FF5A36; color:#16130F; font:700 16px Inter, sans-serif">Allow photo access</button>
+<button type="button" style="height:44px; border:0; background:transparent; color:#16130F; font:600 15px Inter, sans-serif">Not now</button>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

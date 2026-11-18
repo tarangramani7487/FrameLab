@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dynamic strings for onboarding and export (D3 Saved). Base wording from ui-copy.json. -->
+<resources>
+    <!-- "TORN DIARY · 1080 × 1350" -->
+    <string name="success_meta">%1$s · %2$d × %3$d</string>
+    <!-- "6 images saved, in order" -->
+    <plurals name="success_images_saved">
+        <item quantity="one">%d image saved, in order</item>
+        <item quantity="other">%d images saved, in order</item>
+    </plurals>
+    <!-- Body when Settings › Save to an album is off. -->
+    <string name="success_body_no_album">They\'re in your gallery. Post them in this order and your photos line up across the swipe.</string>
+</resources>

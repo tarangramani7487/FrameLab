@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Editor — first-visit coach mark</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#0B0B0C; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif">
+<div style="position:absolute; left:0; top:0; width:390px; height:844px"><dc-import name="Ed" state="empty" empty="yes" undo="off" hint="0/12 photos · tap + to add photos" hint-size="390px,844px"></dc-import></div>
+<div aria-hidden="true" style="position:absolute; left:257px; top:320px; width:72px; height:72px; box-sizing:border-box; border-radius:50%; border:2px solid #FF5A36; box-shadow:0 0 0 2000px rgba(11,11,12,.74)"></div>
+<section role="dialog" aria-label="Tip 1 of 3" style="position:absolute; left:28px; top:410px; width:334px; box-sizing:border-box; padding:18px 18px 14px; border-radius:20px; background:#FFFFFF; box-shadow:0 12px 32px rgba(0,0,0,.4)">
+<span aria-hidden="true" style="position:absolute; left:258px; top:-7px; width:14px; height:14px; background:#FFFFFF; transform:rotate(45deg); border-radius:2px"></span>
+<p style="margin:0; font:500 11px/14px 'DM Mono', monospace; letter-spacing:1px; color:#6F685E">TIP 1 OF 3</p>
+<h2 style="margin:6px 0 0; font:700 19px/24px 'Bricolage Grotesque', Inter, sans-serif">Tap + to add photos</h2>
+<p style="margin:6px 0 0; font-size:14px; line-height:20px; color:#6F685E">Pick photos once and they fill the spots in order, slide by slide. This one spans slides 1 and 2.</p>
+<div style="display:flex; align-items:center; justify-content:space-between; margin-top:14px">
+<button type="button" style="height:44px; padding:0 4px; border:0; background:transparent; color:#6F685E; font:600 15px Inter, sans-serif">Skip tips</button>
+<button type="button" style="height:44px; padding:0 22px; border:0; border-radius:22px; background:#16130F; color:#FFFFFF; font:600 15px Inter, sans-serif">Next</button>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

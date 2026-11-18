@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sign in</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Inter:wght@400..700&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative; width:390px; height:844px; overflow:hidden; background:#FAF7F2; color:#16130F; font-family:Inter, -apple-system, Roboto, sans-serif; fill:none; stroke:currentColor; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round">
+<button type="button" aria-label="Close" style="position:absolute; left:8px; top:52px; width:44px; height:44px; border:0; padding:0; border-radius:22px; background:transparent; color:#16130F; display:flex; align-items:center; justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg></button>
+<div aria-hidden="true" style="position:absolute; left:43px; top:112px; filter:drop-shadow(0 8px 18px rgba(22,19,15,.18))"><dc-import name="Diary" w="96" gap="8" count="3" state="full" radius="4" hint-size="304px,120px"></dc-import></div>
+<h1 style="position:absolute; left:24px; right:24px; top:266px; margin:0; font:800 30px/34px 'Bricolage Grotesque', Inter, sans-serif; letter-spacing:-0.8px">Keep your designs everywhere</h1>
+<p style="position:absolute; left:24px; right:24px; top:342px; margin:0; font-size:15px; line-height:22px; color:#6F685E">Sign in to sync drafts and favourites across your devices.</p>
+<div style="position:absolute; left:24px; right:24px; top:404px; display:flex; flex-direction:column; gap:10px">
+<button type="button" style="height:52px; border:0; border-radius:26px; background:#16130F; color:#FFFFFF; font:600 16px Inter, sans-serif">Continue with Apple</button>
+<button type="button" style="height:52px; border:1px solid #D9D2C7; border-radius:26px; background:#FFFFFF; color:#16130F; font:600 16px Inter, sans-serif">Continue with Google</button>
+<button type="button" style="height:52px; border:1px solid #D9D2C7; border-radius:26px; background:#FFFFFF; color:#16130F; display:flex; align-items:center; justify-content:center; gap:8px; font:600 16px Inter, sans-serif"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="m3.5 7 8.5 6 8.5-6"></path></svg>Continue with email</button>
+<button type="button" style="height:44px; margin-top:6px; border:0; background:transparent; color:#16130F; font:600 15px Inter, sans-serif; text-decoration:underline; text-underline-offset:3px">Continue as guest</button>
+</div>
+<p style="position:absolute; left:32px; right:32px; top:752px; margin:0; text-align:center; font-size:12px; line-height:18px; color:#6F685E">By continuing you agree to the <a href="#" style="color:#16130F">Terms</a> and <a href="#" style="color:#16130F">Privacy Policy</a>.</p>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
