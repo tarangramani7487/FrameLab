@@ -118,9 +118,17 @@ fun ProfileScreen() {
                 StatTile("${favs.size}", stringResource(R.string.s_favourites), Modifier.weight(1f)) { app.navigate(Routes.designs(2)) }
             }
             Spacer(Modifier.height(18.dp))
-        } else {
+        } else if (AuthFlags.SIGN_IN_ENABLED) {
             GuestCard { app.navigate(Routes.SIGN_IN) }
             Spacer(Modifier.height(16.dp))
+        } else {
+            // Sign-in hidden: show the same stats a signed-in user sees.
+            Row(Modifier.padding(horizontal = 20.dp).padding(top = 6.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                StatTile("${drafts.size + posts.size}", stringResource(R.string.s_designs_made), Modifier.weight(1f)) { app.navigate(Routes.designs(0)) }
+                StatTile("${posts.size}", stringResource(R.string.s_posts_saved), Modifier.weight(1f)) { app.navigate(Routes.designs(1)) }
+                StatTile("${favs.size}", stringResource(R.string.s_favourites), Modifier.weight(1f)) { app.navigate(Routes.designs(2)) }
+            }
+            Spacer(Modifier.height(18.dp))
         }
         ProBanner(Modifier.padding(horizontal = 20.dp)) { app.navigate(if (profile.isPro) Routes.WELCOME_PRO else Routes.PAYWALL) }
         Spacer(Modifier.height(18.dp))
@@ -289,7 +297,7 @@ fun ShareAppSheet(visible: Boolean, onDismiss: () -> Unit) {
             FlButton(
                 stringResource(R.string.s_copy_link),
                 {
-                    copyToClipboard(ctx, link)
+                    copyToClipboard(ctx, LegalLinks.PLAY_STORE)
                     toaster.show(null, copied, R.drawable.ic_link)
                     onDismiss()
                 },

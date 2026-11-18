@@ -173,7 +173,7 @@ fun MyDesignsScreen(initialTab: Int) {
                         verticalArrangement = Arrangement.spacedBy(16.dp),
                     ) {
                         items(favourites, key = { it.id }) { t ->
-                            GridCard(t.design, t.name, com.htr.collagemaker.ui.components.infoLine(t), { app.openPreview(t.id) }, favourite = true)
+                            GridCard(t.design, t.name, com.htr.collagemaker.ui.components.infoLine(t), { app.openPreview(t.id) }, favourite = true, thumbnail = t.meta.thumbnail)
                         }
                     }
                 }

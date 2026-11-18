@@ -82,14 +82,23 @@ import com.htr.collagemaker.ui.theme.FlType
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-/** Legal links — placeholders until launch (HANDOFF §10). Fill in to make the rows open a browser. */
+/** Legal links (HANDOFF §10). An empty value shows a "not set up yet" toast instead of opening a browser. */
 object LegalLinks {
     const val TERMS = ""
-    const val PRIVACY = ""
-    const val WEBSITE = ""
+    const val PRIVACY = "https://framelab-app-21c8e.web.app/privacy-policy"
+    const val WEBSITE = "https://framelab-app-21c8e.web.app"
     const val INSTAGRAM = ""
     const val SUPPORT_EMAIL = ""
+    const val PLAY_STORE = "https://play.google.com/store/apps/details?id=com.htr.collagemaker"
 }
+
+/** Sign-in is hidden everywhere until accounts go live. Set to true to show the guest card, the Account section and the sign-in screens again. */
+object AuthFlags {
+    const val SIGN_IN_ENABLED = false
+}
+
+/** Real app version from the build, e.g. "1.0.0". */
+val appVersion: String get() = com.htr.collagemaker.BuildConfig.VERSION_NAME
 
 private val RowText = TextStyle(fontFamily = com.htr.collagemaker.ui.theme.Inter, fontSize = 15.sp, lineHeight = 20.sp)
 
@@ -238,8 +247,8 @@ fun SettingsScreen() {
                     }
                 }
             }
-            // ACCOUNT
-            Column {
+            // ACCOUNT (hidden while sign-in is off)
+            if (AuthFlags.SIGN_IN_ENABLED || profile.signedIn) Column {
                 MonoCaption(stringResource(R.string.s_account))
                 SettingsCard {
                     if (profile.signedIn) {
@@ -282,11 +291,10 @@ fun SettingsScreen() {
                 SettingsCard {
                     SettingsRow {
                         Text(stringResource(R.string.s_version), style = RowText, color = Fl.ink, modifier = Modifier.weight(1f))
-                        Text(stringResource(R.string.s_x_y_z), style = TextStyle(fontFamily = DmMono, fontWeight = FontWeight.Medium, fontSize = 13.sp), color = Fl.muted)
+                        Text(appVersion, style = TextStyle(fontFamily = DmMono, fontWeight = FontWeight.Medium, fontSize = 13.sp), color = Fl.muted)
                     }
                     LinkRow(stringResource(R.string.s_terms_of_service)) { open(LegalLinks.TERMS) }
-                    LinkRow(stringResource(R.string.s_privacy_policy)) { open(LegalLinks.PRIVACY) }
-                    LinkRow(stringResource(R.string.s_licences), last = true, chevron = true) { app.navigate(Routes.LICENCES) }
+                    LinkRow(stringResource(R.string.s_privacy_policy), last = true) { open(LegalLinks.PRIVACY) }
                 }
             }
             Spacer(Modifier.height(16.dp).navigationBarsPadding())

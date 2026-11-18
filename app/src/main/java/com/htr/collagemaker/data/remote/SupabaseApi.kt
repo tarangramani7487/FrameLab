@@ -24,7 +24,7 @@ object SupabaseApi {
 
     /** Every template with its layout (`preview` is the same Doc as `source_json.doc`, §4.1–4.2). */
     const val TEMPLATES_PATH =
-        "templates?select=id,template_id,title,description,size,number_of_panels,number_of_items,tier,source,preview" +
+        "templates?select=id,template_id,title,description,size,number_of_panels,number_of_items,tier,source,preview,thumbnails" +
             "&order=id&limit=1000"
 
     /** GET [path] under /rest/v1 and return the raw JSON body. Throws on network or HTTP errors. */
@@ -79,7 +79,20 @@ data class SbTemplate(
     val tier: String? = null,
     val source: String? = null,
     val preview: SbDoc? = null,
-)
+    /** Slide images (one per slide). Either URL strings or {"url": ...} objects; may be empty. */
+    val thumbnails: JsonElement? = null,
+) {
+    /** Usable slide-image URLs in slide order; empty → the app draws the template from [preview] instead. */
+    val thumbnailUrls: List<String>
+        get() = (thumbnails as? kotlinx.serialization.json.JsonArray).orEmpty().mapNotNull { e ->
+            val url = when (e) {
+                is kotlinx.serialization.json.JsonPrimitive -> e.content
+                is kotlinx.serialization.json.JsonObject -> (e["url"] as? kotlinx.serialization.json.JsonPrimitive)?.content
+                else -> null
+            }
+            url?.trim()?.takeIf { it.startsWith("http") }
+        }
+}
 
 // ───────────────────────────── Layout Doc (§5.3) ─────────────────────────────
 

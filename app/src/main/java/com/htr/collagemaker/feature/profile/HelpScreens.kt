@@ -85,6 +85,7 @@ import com.htr.collagemaker.ui.components.Wordmark
 import com.htr.collagemaker.ui.theme.DmMono
 import com.htr.collagemaker.ui.theme.Fl
 import com.htr.collagemaker.ui.theme.FlType
+import kotlinx.coroutines.launch
 
 private val Body15 = TextStyle(fontFamily = com.htr.collagemaker.ui.theme.Inter, fontSize = 15.sp, lineHeight = 20.sp)
 
@@ -98,7 +99,6 @@ fun openSupportEmail(ctx: android.content.Context, subject: String, body: String
 @Composable
 fun HelpScreen() {
     val app = LocalAppState.current
-    val ctx = LocalContext.current
     var query by rememberSaveable { mutableStateOf("") }
     var open by rememberSaveable { mutableStateOf(0) }
     val faq = listOf(
@@ -110,7 +110,6 @@ fun HelpScreen() {
     )
     val q = query.trim()
     val shown = faq.withIndex().filter { (_, f) -> q.isEmpty() || f.first.contains(q, true) || f.second.contains(q, true) }
-    val supportSubject = stringResource(R.string.lib_support_subject)
 
     Column(Modifier.fillMaxSize().background(Fl.paper).statusBarsPadding()) {
         Spacer(Modifier.height(4.dp))
@@ -150,10 +149,7 @@ fun HelpScreen() {
                 Spacer(Modifier.height(4.dp))
                 Text(stringResource(R.string.s_tell_us_what_happened_or_ask_for_a_templ), style = FlType.secondary.copy(lineHeight = 19.sp), color = Color.White.copy(alpha = .74f))
                 Spacer(Modifier.height(14.dp))
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    FlButton(stringResource(R.string.s_send_feedback), { app.navigate(Routes.FEEDBACK) }, Modifier.weight(1f), height = 44.dp, contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 8.dp))
-                    FlButton(stringResource(R.string.s_email_support), { openSupportEmail(ctx, supportSubject) }, Modifier.weight(1f), kind = BtnKind.OutlinedOnInk, height = 44.dp, contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 8.dp))
-                }
+                FlButton(stringResource(R.string.s_send_feedback), { app.navigate(Routes.FEEDBACK) }, Modifier.fillMaxWidth(), height = 48.dp)
             }
             Spacer(Modifier.height(24.dp).navigationBarsPadding())
         }
@@ -175,13 +171,14 @@ fun FeedbackScreen() {
     )
     var topic by rememberSaveable { mutableStateOf(1) }
     var message by rememberSaveable { mutableStateOf("") }
-    val shots = remember { mutableStateListOf<Uri>() }
     var includeInfo by remember(settings.includeDeviceInfo) { mutableStateOf(settings.includeDeviceInfo) }
-    val pick = rememberLauncherForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(3)) { uris ->
-        uris.forEach { if (shots.size < 3 && it !in shots) shots.add(it) }
-    }
     val sentLead = stringResource(R.string.lib_feedback_sent_lead)
     val sentBody = stringResource(R.string.lib_feedback_sent)
+    val queuedBody = stringResource(R.string.lib_feedback_queued)
+    val failedLead = stringResource(R.string.ri_failed_lead)
+    val failedBody = stringResource(R.string.ri_failed)
+    var sending by remember { mutableStateOf(false) }
+    val scope = androidx.compose.runtime.rememberCoroutineScope()
 
     Column(Modifier.fillMaxSize().background(Fl.paper).statusBarsPadding().imePadding()) {
         Spacer(Modifier.height(4.dp))
@@ -204,7 +201,7 @@ fun FeedbackScreen() {
                 var focused by remember { mutableStateOf(false) }
                 val shape = RoundedCornerShape(14.dp)
                 BasicTextField(
-                    message, { message = it },
+                    message, { message = it.take(com.htr.collagemaker.engage.Feedback.MESSAGE_MAX) },
                     textStyle = FlType.body.copy(color = Fl.ink),
                     cursorBrush = SolidColor(Fl.accent),
                     modifier = Modifier.fillMaxWidth().height(132.dp).onFocusChanged { focused = it.isFocused }
@@ -220,38 +217,6 @@ fun FeedbackScreen() {
                         }
                     },
                 )
-            }
-            Column {
-                Text(stringResource(R.string.s_screenshots), style = FieldLabel, color = Fl.muted)
-                Spacer(Modifier.height(10.dp))
-                Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                    shots.forEach { u ->
-                        Box(Modifier.size(64.dp, 80.dp).clip(RoundedCornerShape(10.dp)).background(Fl.sunk)) {
-                            AsyncImage(u, null, Modifier.fillMaxSize(), contentScale = ContentScale.Crop)
-                            Box(
-                                Modifier.align(Alignment.TopEnd).size(30.dp).clickable(role = Role.Button) { shots.remove(u) }
-                                    .semantics { contentDescription = "Remove screenshot" },
-                                contentAlignment = Alignment.Center,
-                            ) {
-                                Box(Modifier.size(22.dp).background(Fl.ink, CircleShape), contentAlignment = Alignment.Center) { FlIcon(R.drawable.ic_close, null, Color.White, 12.dp) }
-                            }
-                        }
-                    }
-                    if (shots.size < 3) {
-                        Box(
-                            Modifier.size(64.dp, 80.dp).clip(RoundedCornerShape(10.dp))
-                                .drawBehind {
-                                    drawRoundRect(
-                                        Fl.controlOff, cornerRadius = CornerRadius(10.dp.toPx()),
-                                        style = Stroke(1.5.dp.toPx(), pathEffect = PathEffect.dashPathEffect(floatArrayOf(6f, 5f))),
-                                    )
-                                }
-                                .clickable(role = Role.Button) { pick.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)) }
-                                .semantics { contentDescription = "Add screenshot" },
-                            contentAlignment = Alignment.Center,
-                        ) { FlIcon(R.drawable.ic_add, null, Fl.muted, 22.dp) }
-                    }
-                }
             }
             Row(
                 Modifier.fillMaxWidth().background(Fl.card, RoundedCornerShape(16.dp)).border(1.dp, Fl.line, RoundedCornerShape(16.dp))
@@ -269,14 +234,21 @@ fun FeedbackScreen() {
         FlButton(
             stringResource(R.string.s_send_feedback),
             {
-                // No feedback backend is configured: the message is acknowledged locally.
-                val info = if (includeInfo) "\n\n${Build.MANUFACTURER} ${Build.MODEL} · Android ${Build.VERSION.RELEASE}" else ""
-                @Suppress("UNUSED_VARIABLE") val payload = "${topics[topic]}\n$message$info"
-                toaster.show(sentLead, sentBody, R.drawable.ic_check)
-                app.back()
+                sending = true
+                scope.launch {
+                    when (com.htr.collagemaker.engage.Feedback.submit(topic, message, includeInfo)) {
+                        com.htr.collagemaker.engage.IssueReports.Result.Sent -> toaster.show(sentLead, sentBody, R.drawable.ic_check)
+                        com.htr.collagemaker.engage.IssueReports.Result.Queued -> toaster.show(sentLead, queuedBody, R.drawable.ic_offline)
+                        com.htr.collagemaker.engage.IssueReports.Result.Failed -> {
+                            toaster.show(failedLead, failedBody, R.drawable.ic_error); sending = false; return@launch
+                        }
+                    }
+                    sending = false
+                    app.back()
+                }
             },
             Modifier.padding(horizontal = 20.dp).fillMaxWidth().navigationBarsPadding().padding(bottom = 8.dp),
-            large = true, enabled = message.isNotBlank(),
+            large = true, enabled = message.isNotBlank() && !sending,
         )
     }
 }
@@ -296,7 +268,7 @@ fun AboutScreen() {
             Spacer(Modifier.height(6.dp))
             Text(stringResource(R.string.s_seamless_carousels_frames_collages), style = FlType.bodyS, color = Fl.muted)
             Spacer(Modifier.height(10.dp))
-            Text(stringResource(R.string.s_version_x_y_z), style = FlType.monoLabel, color = Fl.muted)
+            Text(stringResource(R.string.lib_version_label, appVersion), style = FlType.monoLabel, color = Fl.muted)
             Spacer(Modifier.height(28.dp))
             sampleDesign()?.let {
                 Box(
@@ -308,11 +280,10 @@ fun AboutScreen() {
             Spacer(Modifier.height(29.dp))
             Box(Modifier.padding(horizontal = 20.dp).semantics { contentDescription = "About links" }) {
                 SettingsCard {
-                    AboutRow(stringResource(R.string.s_website), stringResource(R.string.s_website_2)) { open(LegalLinks.WEBSITE) }
+                    AboutRow(stringResource(R.string.s_website), stringResource(R.string.lib_website_display)) { open(LegalLinks.WEBSITE) }
                     AboutRow(stringResource(R.string.s_follow_on_instagram), stringResource(R.string.s_handle_2)) { open(LegalLinks.INSTAGRAM) }
                     AboutRow(stringResource(R.string.s_terms_of_service), null) { open(LegalLinks.TERMS) }
-                    AboutRow(stringResource(R.string.s_privacy_policy), null) { open(LegalLinks.PRIVACY) }
-                    AboutRow(stringResource(R.string.s_licences), null, last = true, chevron = true) { app.navigate(Routes.LICENCES) }
+                    AboutRow(stringResource(R.string.s_privacy_policy), null, last = true) { open(LegalLinks.PRIVACY) }
                 }
             }
             Spacer(Modifier.height(48.dp))

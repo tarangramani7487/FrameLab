@@ -29,6 +29,10 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import coil.compose.AsyncImage
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -68,7 +72,8 @@ fun infoLine(t: Template): String = when {
 }
 
 /**
- * Template card (§5.8). Thumbnail is the first slide drawn live; badges sit outside the scaled art.
+ * Template card (§5.8). Thumbnail is the backend image when the template has one, otherwise the first
+ * slide drawn live; badges sit outside the scaled art.
  * Sizes: 128 × 160 (rows) or 169 × 211 (2-column grids, pass [width] = 169.dp).
  */
 @Composable
@@ -84,9 +89,11 @@ fun TemplateCard(
     title: String = template.name,
     design: Design = template.design,
     highlight: String? = null,
+    // Only the template's own art has a backend image; a custom [design] is always drawn live.
+    thumbnail: String? = template.meta.thumbnail.takeIf { design === template.design },
 ) {
     Column(modifier.width(width).pressable(onClick, onClickLabel = title)) {
-        CardThumb(design, width, slidesBadge = design.slides, favourite = favourite, locked = locked, showNew = showNew)
+        CardThumb(design, width, slidesBadge = design.slides, favourite = favourite, locked = locked, showNew = showNew, imageUrl = thumbnail)
         Spacer(Modifier.height(8.dp))
         HighlightText(title, highlight, FlType.cardTitle.copy(fontSize = if (width > 140.dp) 15.sp else 14.sp), Fl.ink)
         Spacer(Modifier.height(2.dp))
@@ -113,7 +120,11 @@ fun HighlightText(text: String, query: String?, style: androidx.compose.ui.text.
     }
 }
 
-/** Card thumbnail with badges. Bare variant: all badges off. */
+/**
+ * Card thumbnail with badges. Bare variant: all badges off.
+ * With [imageUrl] the backend thumbnail is shown; the live-drawn slide stays underneath while it loads
+ * and is used instead if the image fails (no network, 404).
+ */
 @Composable
 fun CardThumb(
     design: Design,
@@ -126,8 +137,11 @@ fun CardThumb(
     radius: Dp = 14.dp,
     height: Dp = width * 1.25f,
     options: RenderOptions = RenderOptions(),
+    imageUrl: String? = null,
 ) {
     val shape = RoundedCornerShape(radius)
+    var imageLoaded by remember(imageUrl) { mutableStateOf(false) }
+    var imageFailed by remember(imageUrl) { mutableStateOf(false) }
     Box(
         modifier
             .size(width, height)
@@ -135,7 +149,15 @@ fun CardThumb(
             .clip(shape)
             .background(Fl.sunk),
     ) {
-        SlideView(design, 0, Modifier.fillMaxSize(), options = options, keepRatio = false)
+        if (imageUrl == null || !imageLoaded) SlideView(design, 0, Modifier.fillMaxSize(), options = options, keepRatio = false)
+        if (imageUrl != null && !imageFailed) {
+            AsyncImage(
+                model = imageUrl, contentDescription = null,
+                modifier = Modifier.fillMaxSize(), contentScale = ContentScale.Crop,
+                onSuccess = { imageLoaded = true },
+                onError = { imageFailed = true; imageLoaded = false },
+            )
+        }
         if (slidesBadge > 1) SlidesBadge(slidesBadge, Modifier.align(Alignment.TopEnd).padding(8.dp))
         if (locked) ProBadge(Modifier.align(Alignment.TopStart).padding(8.dp))
         else if (favourite) FavBadge(Modifier.align(Alignment.TopStart).padding(8.dp))

@@ -785,7 +785,7 @@
     <string name="cd_about_links" formatted="false">About links</string> <!-- N12-About -->
     <string name="s_share_framelab" formatted="false">Share FrameLab</string> <!-- N12-Share -->
     <string name="s_carousels_that_flow_across_every_swipe" formatted="false">Carousels that flow across every swipe</string> <!-- N12-Share -->
-    <string name="s_app_link" formatted="false">[APP LINK]</string> <!-- N12-Share -->
+    <string name="s_app_link" formatted="false">play.google.com/store/apps/details?id=com.htr.collagemaker</string> <!-- N12-Share -->
     <string name="s_copy_link" formatted="false">Copy link</string> <!-- N12-Share -->
     <string name="cd_share_framelab" formatted="false">Share FrameLab</string> <!-- N12-Share -->
     <string name="s_framelab_is_built_on_open_source_softwar" formatted="false">FrameLab is built on open-source software and fonts. Thank you to everyone who makes them.</string> <!-- N16-Licences -->

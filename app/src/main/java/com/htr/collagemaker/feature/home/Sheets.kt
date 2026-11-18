@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -247,6 +248,10 @@ private fun SlidePager(t: Template) {
             val current = page == pager.currentPage
             Box(Modifier.size(slideW, slideH).semantics { contentDescription = "Slide ${page + 1} of ${t.slides}" }) {
                 SlideView(t.design, page, Modifier.fillMaxSize(), keepRatio = false)
+                // Backend slide image on top; the drawn slide shows while it loads or if it fails.
+                t.meta.thumbnailFor(page)?.let { url ->
+                    coil.compose.AsyncImage(url, null, Modifier.fillMaxSize(), contentScale = androidx.compose.ui.layout.ContentScale.Crop)
+                }
                 if (!current) Box(Modifier.fillMaxSize().background(Color.White.copy(alpha = 0.55f)))
             }
         }
@@ -264,8 +269,8 @@ private fun JoinedStrip(t: Template, modifier: Modifier) {
     val slideW = 58.dp
     Box(modifier.fillMaxWidth().horizontalScroll(rememberScrollState())) {
         val dash = PathEffect.dashPathEffect(floatArrayOf(6f, 6f))
-        StripView(
-            t.design,
+        // Drawn strip underneath, backend slide images on top (each falls back to the drawn slide).
+        Box(
             Modifier.width(slideW * t.slides).clip(RoundedCornerShape(6.dp)).drawWithContent {
                 drawContent()
                 val w = size.width / t.slides
@@ -273,7 +278,20 @@ private fun JoinedStrip(t: Template, modifier: Modifier) {
                     drawLine(Fl.ink.copy(alpha = .35f), Offset(w * i, 0f), Offset(w * i, size.height), 1.dp.toPx(), pathEffect = dash)
                 }
             },
-        )
+        ) {
+            StripView(t.design, Modifier.width(slideW * t.slides))
+            if (t.meta.thumbnails.isNotEmpty()) {
+                Row(Modifier.matchParentSize()) {
+                    for (i in 0 until t.slides) {
+                        Box(Modifier.width(slideW).fillMaxHeight()) {
+                            t.meta.thumbnailFor(i)?.let { url ->
+                                coil.compose.AsyncImage(url, null, Modifier.fillMaxSize(), contentScale = androidx.compose.ui.layout.ContentScale.Crop)
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

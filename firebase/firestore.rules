@@ -5,7 +5,7 @@ rules_version = '2';
 // Or paste into Firebase console → Firestore Database → Rules → Publish.
 //
 // The app never signs in, so every rule below is for anonymous clients.
-// Clients may only CREATE issue reports and register their own push token.
+// Clients may only CREATE issue reports and feedback, and register their own push token.
 // Nobody can read, list, change or delete anything from the app; read the data in the console.
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -13,6 +13,12 @@ service cloud.firestore {
     // "Are you getting issues?" reports (app: engage/IssueReports.kt).
     match /issue_reports/{reportId} {
       allow create: if validReport(request.resource.data);
+      allow read, update, delete: if false;
+    }
+
+    // "Send feedback" (app: engage/Feedback.kt).
+    match /feedback/{feedbackId} {
+      allow create: if validFeedback(request.resource.data);
       allow read, update, delete: if false;
     }
 
@@ -43,6 +49,23 @@ service cloud.firestore {
         && (!('device' in d) || isStr(d.device, 0, 120))
         && (!('osVersion' in d) || isStr(d.osVersion, 0, 80))
         && (!('locale' in d) || isStr(d.locale, 0, 40))
+        && (!('status' in d) || d.status == 'new')
+        && d.createdAt == request.time;
+    }
+
+    function validFeedback(d) {
+      return d.keys().hasOnly(['topic', 'message', 'platform', 'appVersion', 'versionCode', 'locale',
+                                'includeDeviceInfo', 'device', 'osVersion', 'status', 'createdAt'])
+        && d.keys().hasAll(['topic', 'message', 'createdAt'])
+        && d.topic in ['broken', 'idea', 'template_request', 'other']
+        && isStr(d.message, 1, 2000)
+        && (!('platform' in d) || isStr(d.platform, 1, 20))
+        && (!('appVersion' in d) || isStr(d.appVersion, 1, 40))
+        && (!('versionCode' in d) || d.versionCode is int)
+        && (!('locale' in d) || isStr(d.locale, 0, 40))
+        && (!('includeDeviceInfo' in d) || d.includeDeviceInfo is bool)
+        && (!('device' in d) || isStr(d.device, 0, 120))
+        && (!('osVersion' in d) || isStr(d.osVersion, 0, 80))
         && (!('status' in d) || d.status == 'new')
         && d.createdAt == request.time;
     }
