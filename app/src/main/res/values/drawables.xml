@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Status-bar icon for reminders and push campaigns (single colour, from the FrameLab icon set). -->
+    <drawable name="ic_notification">@drawable/ic_templates</drawable>
+</resources>

@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "force_app_update": {
+      "defaultValue": { "value": "1.0.0" },
+      "description": "Lowest app version allowed (versionName, e.g. 1.0.1). Apps below it show a modal that can't be closed until they update. 1.0.0 = nobody is forced.",
+      "valueType": "STRING"
+    },
+    "force_app_update_title": {
+      "defaultValue": { "value": "" },
+      "description": "Optional modal title. Empty = 'Update FrameLab'.",
+      "valueType": "STRING"
+    },
+    "force_app_update_message": {
+      "defaultValue": { "value": "" },
+      "description": "Optional modal text. Empty = the built-in message.",
+      "valueType": "STRING"
+    },
+    "force_app_update_url": {
+      "defaultValue": { "value": "" },
+      "description": "Optional link for the Update button. Empty = this app's Google Play page.",
+      "valueType": "STRING"
+    }
+  }
+}

@@ -4,6 +4,13 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.google.services)
+    alias(libs.plugins.firebase.crashlytics)
+}
+
+val localProps = Properties().apply {
+    val f = rootProject.file("local.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
 }
 
 val keystoreProps = Properties().apply {
@@ -12,19 +19,21 @@ val keystoreProps = Properties().apply {
 }
 
 android {
-    namespace = "com.framelab.app"
+    namespace = "com.htr.collagemaker"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.framelab.app"
+        applicationId = "com.htr.collagemaker"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
         vectorDrawables { useSupportLibrary = true }
-        // Supabase (read-only templates, HANDOFF §8.3). Leave blank to use the built-in catalogue only.
-        buildConfigField("String", "SUPABASE_URL", "\"\"")
-        buildConfigField("String", "SUPABASE_ANON_KEY", "\"\"")
+        // Supabase, read-only (design/backend-handoff.md). Only the publishable key may ship in the app —
+        // never the secret (service-role) key. Override in local.properties with supabase.url / supabase.anonKey;
+        // set both to blank there to use the built-in catalogue only.
+        buildConfigField("String", "SUPABASE_URL", "\"${localProps.getProperty("supabase.url", "https://eflwdrrptirhknkusxdm.supabase.co")}\"")
+        buildConfigField("String", "SUPABASE_ANON_KEY", "\"${localProps.getProperty("supabase.anonKey", "sb_publishable_LKN8xjH4CNssWRCChpusKQ_7pzOt7zs")}\"")
     }
 
     signingConfigs {
@@ -73,5 +82,16 @@ dependencies {
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlinx.coroutines.android)
+    // Firebase (app/google-services.json), versions from the BoM: Analytics, Crashlytics,
+    // Firestore (issue reports, device tokens), Cloud Messaging (campaigns) and Remote Config (force update).
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.crashlytics)
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.messaging)
+    implementation(libs.firebase.config)
+    implementation(libs.kotlinx.coroutines.play.services)
+    implementation(libs.play.review.ktx)          // In-app reviews
+    implementation(libs.androidx.work.runtime.ktx) // Scheduled local reminders
     debugImplementation(libs.androidx.ui.tooling)
 }

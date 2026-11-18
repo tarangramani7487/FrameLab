@@ -1,0 +1,60 @@
+rules_version = '2';
+
+// FrameLab / Collage Maker — Cloud Firestore security rules.
+// Deploy:  cd firebase && firebase deploy --only firestore:rules
+// Or paste into Firebase console → Firestore Database → Rules → Publish.
+//
+// The app never signs in, so every rule below is for anonymous clients.
+// Clients may only CREATE issue reports and register their own push token.
+// Nobody can read, list, change or delete anything from the app; read the data in the console.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // "Are you getting issues?" reports (app: engage/IssueReports.kt).
+    match /issue_reports/{reportId} {
+      allow create: if validReport(request.resource.data);
+      allow read, update, delete: if false;
+    }
+
+    // FCM tokens, one document per token, id == token (app: engage/Notifications.kt).
+    match /devices/{token} {
+      allow create, update: if validDevice(token, request.resource.data);
+      allow read, delete: if false;
+    }
+
+    // Everything else is closed.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isStr(v, min, max) {
+      return v is string && v.size() >= min && v.size() <= max;
+    }
+
+    function validReport(d) {
+      return d.keys().hasOnly(['title', 'description', 'platform', 'appVersion', 'versionCode',
+                                'device', 'osVersion', 'locale', 'status', 'createdAt'])
+        && d.keys().hasAll(['title', 'description', 'createdAt'])
+        && isStr(d.title, 1, 120)
+        && isStr(d.description, 1, 2000)
+        && (!('platform' in d) || isStr(d.platform, 1, 20))
+        && (!('appVersion' in d) || isStr(d.appVersion, 1, 40))
+        && (!('versionCode' in d) || d.versionCode is int)
+        && (!('device' in d) || isStr(d.device, 0, 120))
+        && (!('osVersion' in d) || isStr(d.osVersion, 0, 80))
+        && (!('locale' in d) || isStr(d.locale, 0, 40))
+        && (!('status' in d) || d.status == 'new')
+        && d.createdAt == request.time;
+    }
+
+    function validDevice(token, d) {
+      return d.keys().hasOnly(['token', 'platform', 'appVersion', 'locale', 'updatedAt'])
+        && d.token == token
+        && isStr(d.token, 20, 4096)
+        && isStr(d.platform, 1, 20)
+        && isStr(d.appVersion, 1, 40)
+        && isStr(d.locale, 0, 40)
+        && d.updatedAt == request.time;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Report an issue, notifications, force update, in-app review. -->
+<resources>
+    <!-- Are you getting issues? (Settings row, launcher quick action, modal) -->
+    <string name="ri_title">Are you getting issues?</string>
+    <string name="ri_shortcut_short">Report issue</string>
+    <string name="ri_body">Tell us what went wrong and we\'ll look into it.</string>
+    <string name="ri_field_title">Title</string>
+    <string name="ri_field_title_hint">For example: Export stops at slide 2</string>
+    <string name="ri_field_description">Description</string>
+    <string name="ri_field_description_hint">What did you do, and what happened?</string>
+    <string name="ri_device_note">Your app version and phone model are sent with the report.</string>
+    <string name="ri_submit">Submit</string>
+    <string name="ri_sent_lead">Thanks!</string>
+    <string name="ri_sent">Your report was sent.</string>
+    <string name="ri_queued">Your report will be sent when you\'re back online.</string>
+    <string name="ri_failed_lead">Couldn\'t send.</string>
+    <string name="ri_failed">Check your connection and try again.</string>
+    <string name="s_support">SUPPORT</string>
+
+    <!-- Notifications -->
+    <string name="n_channel_reminders">Reminders</string>
+    <string name="n_channel_reminders_desc">Now and then, ideas for your next carousel.</string>
+    <string name="n_channel_news">News and updates</string>
+    <string name="n_channel_news_desc">New templates and FrameLab news.</string>
+    <string-array name="n_reminder_titles">
+        <item>Your next carousel is waiting</item>
+        <item>Got photos from the weekend?</item>
+        <item>Fresh templates to try</item>
+        <item>One photo, three slides</item>
+    </string-array>
+    <string-array name="n_reminder_bodies">
+        <item>Pick a template, drop in your photos and save every slide in order.</item>
+        <item>Turn them into one seamless swipe for Instagram.</item>
+        <item>New layouts have arrived. Take a look on Home.</item>
+        <item>Spread a photo across slides so the post reads as one long picture.</item>
+    </string-array>
+
+    <!-- Force update (Remote Config force_app_update) -->
+    <string name="up_title">Update FrameLab</string>
+    <string name="up_body">This version is no longer supported. Update to the latest version to keep making carousels.</string>
+    <string name="up_action">Update now</string>
+    <string name="up_version">Your version %1$s · required %2$s</string>
+</resources>
