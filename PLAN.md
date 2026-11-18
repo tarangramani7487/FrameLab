@@ -15,11 +15,13 @@ Spec: `design/HANDOFF.md` · rules: `CLAUDE.md` · screenshots: `design/screens/
 | 8 | Editor E1–E12, N19–N23, export sheets D1/E13/D4/D5–D7 (`feature/editor/*`) | editor agent | done |
 | 9 | Integration, device run, screenshot comparison, fixes | core | done |
 
-Debug: `adb shell am start -n com.framelab.app/.MainActivity --es route "<route>"` opens any route (see `nav/Routes`).
+Debug: `adb shell am start -n com.htr.collagemaker/.MainActivity --es route "<route>"` opens any route (see `nav/Routes`).
 Placeholders in HANDOFF §10 (prices, links, company name, version) stay visible as placeholders.
 
 ## Simulated / to connect later
-- Supabase: set `SUPABASE_URL` / `SUPABASE_ANON_KEY` in `app/build.gradle.kts` (blank = built-in catalogue only).
+- Firebase (project `framelab-app-21c8e`, `app/google-services.json`): Analytics + Crashlytics via the Firebase BoM; both start automatically.
+- Supabase (connected, read-only, publishable key only): `data/remote/SupabaseApi.kt` loads `template_categories` + `templates`, `DocConverter.kt` turns the backend `Doc` layout into a `Design`. Responses are cached in `files/catalog-cache/` for offline starts; built-in catalogue only when there is neither network nor cache. Override `supabase.url` / `supabase.anonKey` in `local.properties` (blank = built-in only).
+- Backend gaps (backend-handoff §6): frames, `app_config` (hero, theme, swatches, copy) and Pro tiers aren't in Supabase yet — frames and the hero stay built-in; `tier = 'pro'` is already read as Pro.
 - Sign in with Apple/Google, Google Play Billing (Pro), feedback sending, In-App Review: local stand-ins, marked `TODO`.
 - Legal/website/support links: blank constants in `LegalLinks` (feature/profile) — rows show a placeholder toast.
 - Coach tips 2–3 copy and the Stickers/Slides buttons beside the page dots were not in the design — review.

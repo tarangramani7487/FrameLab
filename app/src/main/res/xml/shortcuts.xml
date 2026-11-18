@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher quick actions (long-press the app icon). -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="report_issue"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_report_issue"
+        android:shortcutShortLabel="@string/ri_shortcut_short"
+        android:shortcutLongLabel="@string/ri_title">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.htr.collagemaker"
+            android:targetClass="com.htr.collagemaker.MainActivity">
+            <extra android:name="action" android:value="report_issue" />
+        </intent>
+    </shortcut>
+</shortcuts>

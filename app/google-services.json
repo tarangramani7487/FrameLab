@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "472945091729",
+    "project_id": "collagemaker-app",
+    "storage_bucket": "collagemaker-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472945091729:android:df6d91bf04f1be5f678b30",
+        "android_client_info": {
+          "package_name": "com.htr.collagemaker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4PCCQFBf_rtrSaAOc2fe6mtY0xhyu_kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
