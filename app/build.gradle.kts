@@ -14,8 +14,9 @@ val localProps = Properties().apply {
 }
 
 val keystoreProps = Properties().apply {
-    val f = rootProject.file("keystore.properties")
-    if (f.exists()) f.inputStream().use { load(it) }
+    // keystore/keystore.properties (git-ignored), or keystore.properties in the project root.
+    val f = listOf("keystore/keystore.properties", "keystore.properties").map { rootProject.file(it) }.firstOrNull { it.exists() }
+    f?.inputStream()?.use { load(it) }
 }
 
 android {
@@ -50,7 +51,10 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("release")
-            isMinifyEnabled = false
+            // R8 makes Compose much faster (and the APK smaller); profileinstaller below ships the
+            // Compose baseline profiles so the first launches are smooth even on sideloaded installs.
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
@@ -80,6 +84,7 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.profileinstaller)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlinx.coroutines.android)
     // Firebase (app/google-services.json), versions from the BoM: Analytics, Crashlytics,

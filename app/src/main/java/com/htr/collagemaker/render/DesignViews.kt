@@ -79,10 +79,16 @@ object PhotoCache {
 fun designTextMeasurer(context: Context): TextMeasurer =
     TextMeasurer(createFontFamilyResolver(context), Density(1f, 1f), LayoutDirection.Ltr, cacheSize = 64)
 
+/** One shared measurer (and layout cache) for every card, preview and the editor, created once per process. */
+private var sharedMeasurer: TextMeasurer? = null
+
 @Composable
 fun rememberDesignTextMeasurer(): TextMeasurer {
     val ctx = LocalContext.current
-    return remember { designTextMeasurer(ctx) }
+    return remember {
+        sharedMeasurer ?: TextMeasurer(createFontFamilyResolver(ctx.applicationContext), Density(1f, 1f), LayoutDirection.Ltr, cacheSize = 256)
+            .also { sharedMeasurer = it }
+    }
 }
 
 /** Loads every photo used by [design] and recomposes as they arrive. */
@@ -90,17 +96,18 @@ fun rememberDesignTextMeasurer(): TextMeasurer {
 fun rememberDesignImages(design: Design, maxPx: Int = 1400): (String) -> ImageBitmap? {
     val ctx = LocalContext.current
     val loaded = remember { mutableStateMapOf<String, ImageBitmap>() }
-    val uris = design.spots.mapNotNull { it.uri }.toSet()
+    val uris = remember(design) { design.spots.mapNotNull { it.uri }.toSet() }
     LaunchedEffect(uris, maxPx) {
         for (u in uris) if (u !in loaded) PhotoCache.load(ctx, u, maxPx)?.let { loaded[u] = it }
     }
-    return { uri -> loaded[uri] ?: PhotoCache.peek(uri, maxPx) }
+    // Same lambda instance across recompositions, so canvases only redraw when a photo actually arrives.
+    return remember(maxPx) { { uri: String -> loaded[uri] ?: PhotoCache.peek(uri, maxPx) } }
 }
 
 @Composable
 fun rememberStickerArt(): (String) -> ImageBitmap? {
     val ctx = LocalContext.current
-    return remember { { name: String -> StickerArt.bitmap(ctx, name) } }
+    return remember { { name: String -> StickerArt.bitmap(ctx.applicationContext, name) } }
 }
 
 /**

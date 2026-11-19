@@ -149,7 +149,9 @@ fun CardThumb(
             .clip(shape)
             .background(Fl.sunk),
     ) {
-        if (imageUrl == null || !imageLoaded) SlideView(design, 0, Modifier.fillMaxSize(), options = options, keepRatio = false)
+        // Only draw the slide live when there's no backend image or it failed; drawing every card's
+        // vector slide underneath a loading image is what made Home rows stutter.
+        if (imageUrl == null || imageFailed) SlideView(design, 0, Modifier.fillMaxSize(), options = options, keepRatio = false)
         if (imageUrl != null && !imageFailed) {
             AsyncImage(
                 model = imageUrl, contentDescription = null,
