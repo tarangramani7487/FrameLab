@@ -46,6 +46,7 @@ object RemoteCatalog {
                     isPro = row.tier.equals("pro", ignoreCase = true),
                     framelabMade = row.source == null || row.source == "ai",
                     order = templates.size - i, // earlier in Home order = newer
+                    thumbnails = row.thumbnailUrls,
                 ),
                 design,
             )

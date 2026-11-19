@@ -37,4 +37,5 @@ fun meta(
     id: String, name: String, category: String, style: String, topic: String,
     isNew: Boolean = false, isPro: Boolean = false, framelabMade: Boolean = false, uses: Int = 0, order: Int = 0,
     kind: TemplateKind = TemplateKind.Template,
-) = TemplateMeta(id, name, kind, category, style, topic, isNew, isPro, framelabMade, uses, order)
+    thumbnails: List<String> = emptyList(),
+) = TemplateMeta(id, name, kind, category, style, topic, isNew, isPro, framelabMade, uses, order, thumbnails)

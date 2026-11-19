@@ -263,7 +263,15 @@ data class TemplateMeta(
     /** Popularity for "Trending"/"Most used" sorts. */
     val uses: Int = 0,
     val createdOrder: Int = 0,
-)
+    /** Backend slide images (index = slide). Empty = cards and the details page draw the template live. */
+    val thumbnails: List<String> = emptyList(),
+) {
+    /** Card image: the first slide's thumbnail, if any. */
+    val thumbnail: String? get() = thumbnails.firstOrNull()
+
+    /** Backend image for [slide], or null to draw that slide live. */
+    fun thumbnailFor(slide: Int): String? = thumbnails.getOrNull(slide)
+}
 
 /** The editable design document (template copy + the user's edits). Drafts store this whole object. */
 @Serializable

@@ -128,9 +128,10 @@ fun GridCard(
     modifier: Modifier = Modifier,
     favourite: Boolean = false,
     width: Dp = 169.dp,
+    thumbnail: String? = null,
 ) {
     Column(modifier.width(width).pressable(onClick, onClickLabel = title)) {
-        CardThumb(design, width, slidesBadge = design.slides, favourite = favourite)
+        CardThumb(design, width, slidesBadge = design.slides, favourite = favourite, imageUrl = thumbnail)
         Spacer(Modifier.height(8.dp))
         Text(title, style = FlType.cardTitle.copy(fontSize = 15.sp, lineHeight = 19.sp), color = Fl.ink, maxLines = 1)
         Spacer(Modifier.height(2.dp))

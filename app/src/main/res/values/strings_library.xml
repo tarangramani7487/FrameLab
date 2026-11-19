@@ -69,6 +69,7 @@
     <string name="lib_sw_kotlinx">Kotlin &amp; kotlinx libraries</string>
     <string name="lib_feedback_sent_lead">Thanks!</string>
     <string name="lib_feedback_sent">Your feedback is on its way.</string>
+    <string name="lib_feedback_queued">Your feedback will be sent when you\'re back online.</string>
     <string name="lib_feedback_subject">FrameLab feedback · %s</string>
     <string name="lib_support_subject">FrameLab support</string>
     <string name="lib_faq_a2">The spot is bigger than one slide on purpose. Its photo crosses the slide edge, so when people swipe, the picture carries on into the next slide.</string>
@@ -89,6 +90,8 @@
     <string name="lib_restore_none">No purchases to restore.</string>
     <string name="lib_restore_done">Pro restored.</string>
     <string name="lib_youre_pro_toast">You\'re Pro.</string>
-    <string name="lib_share_app_text">FrameLab — carousels that flow across every swipe. [APP LINK]</string>
+    <string name="lib_share_app_text">FrameLab — carousels that flow across every swipe. https://play.google.com/store/apps/details?id=com.htr.collagemaker</string>
+    <string name="lib_version_label">VERSION %1$s</string>
+    <string name="lib_website_display">framelab-app-21c8e.web.app</string>
     <string name="lib_pro_badge">Pro</string>
 </resources>
